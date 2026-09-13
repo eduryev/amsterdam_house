@@ -16,7 +16,7 @@
   --ink:#14181F; --ink-2:#4A5260; --ink-3:#7C8494;
   --line:#E3E0DA; --line-2:#EFEDE8;
   --brick:#C8412B; --canal:#2F6F7E;
-  --s-backlog:#6B7A8C; --s-viewed:#2F6F7E; --s-applied:#C0782A;
+  --s-backlog:#6B7A8C; --s-viewed:#D6437F; --s-applied:#C0782A;
   --s-visited:#46774E; --s-archived:#9A958C;
   --shadow:0 1px 2px rgba(20,24,31,.06), 0 4px 14px rgba(20,24,31,.05);
   --shadow-lift:0 2px 6px rgba(20,24,31,.10), 0 12px 28px rgba(20,24,31,.12);
@@ -31,7 +31,7 @@
     --ink:#ECEAE5; --ink-2:#A8AEBA; --ink-3:#7A8291;
     --line:#2C323B; --line-2:#242A32;
     --brick:#E8674F; --canal:#5BA3B4;
-    --s-backlog:#8B9AAC; --s-viewed:#5BA3B4; --s-applied:#D89B52;
+    --s-backlog:#8B9AAC; --s-viewed:#F19BC4; --s-applied:#D89B52;
     --s-visited:#6FA377; --s-archived:#8A857C;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
     --shadow-lift:0 2px 6px rgba(0,0,0,.5), 0 12px 28px rgba(0,0,0,.45);
@@ -42,7 +42,7 @@
   --ink:#ECEAE5; --ink-2:#A8AEBA; --ink-3:#7A8291;
   --line:#2C323B; --line-2:#242A32;
   --brick:#E8674F; --canal:#5BA3B4;
-  --s-backlog:#8B9AAC; --s-viewed:#5BA3B4; --s-applied:#D89B52;
+  --s-backlog:#8B9AAC; --s-viewed:#F19BC4; --s-applied:#D89B52;
   --s-visited:#6FA377; --s-archived:#8A857C;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
   --shadow-lift:0 2px 6px rgba(0,0,0,.5), 0 12px 28px rgba(0,0,0,.45);
@@ -104,6 +104,15 @@ button,select,input{font:inherit;color:inherit}
 }
 .toggle[aria-pressed="true"]{background:var(--canal); border-color:var(--canal); color:#fff}
 .f-clear{color:var(--brick); background:none; border:0; cursor:pointer; font-size:12.5px; font-weight:500; padding:4px}
+.filter-extra{display:contents}
+.toggle-row{display:contents}
+.filter-toggle{display:none}
+.f-badge{
+  display:inline-flex; align-items:center; justify-content:center; min-width:15px; height:15px;
+  border-radius:8px; background:var(--brick); color:#fff; font-size:9.5px; font-weight:700; padding:0 4px;
+}
+.f-badge[hidden]{display:none}
+.btn.icon-only{display:none}
 
 /* ---------- map ---------- */
 .map-wrap{position:relative; border-bottom:1px solid var(--line)}
@@ -122,6 +131,7 @@ button,select,input{font:inherit;color:inherit}
 .pop{font-family:var(--ui); min-width:170px}
 .pop b{display:block; font-size:13.5px; margin-bottom:2px}
 .pop .pm{font-family:var(--mono); font-size:12px; color:var(--ink-2); font-variant-numeric:tabular-nums}
+.pop-energy{font-family:var(--ui); font-weight:500; font-size:.85em; color:var(--ink-2)}
 
 /* ---------- board ---------- */
 .board-scroll{overflow-x:auto; overflow-y:hidden; padding:14px 16px 22px; -webkit-overflow-scrolling:touch}
@@ -169,7 +179,6 @@ button,select,input{font:inherit;color:inherit}
 .stats{display:flex; align-items:baseline; gap:6px; flex-wrap:wrap; font-family:var(--mono);
   font-size:12.5px; font-variant-numeric:tabular-nums; margin-bottom:7px}
 .price{font-weight:600; font-size:13.5px}
-.kk{font-size:9.5px; color:var(--ink-3); letter-spacing:.04em; font-family:var(--ui); font-weight:600}
 .stats .dim{color:var(--ink-3)}
 .ppm{color:var(--canal); font-weight:500; font-size:11.5px; margin-left:auto; padding-left:6px}
 .chips{display:flex; gap:5px; flex-wrap:wrap; align-items:center}
@@ -253,7 +262,7 @@ textarea:focus{border-color:var(--canal)}
 .dot{display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:6px;
   background:var(--ink-3); vertical-align:1px; transition:background .2s}
 .dot.ok{background:var(--s-visited)} .dot.busy{background:var(--s-applied)}
-.dot.err{background:var(--brick)} .dot.ro{background:var(--s-viewed)}
+.dot.err{background:var(--brick)} .dot.ro{background:var(--canal)}
 .sync-body code{font-family:var(--mono); font-size:11px; background:var(--surface-2);
   border:1px solid var(--line); border-radius:4px; padding:1px 4px}
 
@@ -266,12 +275,53 @@ textarea:focus{border-color:var(--canal)}
 .toast.on{opacity:1; transform:translateX(-50%) translateY(-3px)}
 
 @media (max-width:720px){
-  .mast-in{padding:9px 12px 0}
   .wordmark{font-size:23px}
-  .mast-actions{margin-left:0; width:100%}
   .board-scroll{padding:12px 12px 20px}
   .col{width:min(84vw, 300px); flex-basis:min(84vw, 300px); max-height:none}
   .col-body{max-height:62vh}
+
+  /* Collapse the title row and the filter row into: title, then one line of
+     Find + Filters + info/Theme/Sync. .mast-top and .filters keep their
+     desktop display:flex above this breakpoint — this only "dissolves" them
+     here so their children can be placed on a shared grid. */
+  .mast-in{
+    padding:9px 12px 0; display:grid;
+    grid-template-columns:1fr auto; grid-template-areas:"word word" "find actions" "panel panel";
+    column-gap:8px; row-gap:8px; align-items:center;
+  }
+  .mast-top{display:contents}
+  .filters{display:contents}
+  .wordmark{grid-area:word}
+  .mast-sub{display:none}
+  .mast-sub.open{
+    display:block; position:fixed; top:54px; left:12px; right:12px; z-index:80;
+    background:var(--surface); border:1px solid var(--line); border-radius:10px;
+    padding:10px 12px; box-shadow:var(--shadow-lift); font-size:12px; line-height:1.6;
+  }
+  .find-group{grid-area:find}
+  .find-group .f-lab{display:none}
+  .find-group input{flex:1; min-width:0; width:auto}
+  .mast-actions{grid-area:actions; margin-left:0; gap:4px}
+  .mast-actions .btn{padding:5px 7px}
+  .btn.icon-only{display:inline-flex; padding:5px 8px}
+  #btn-theme{font-size:0}
+  #btn-theme::before{content:"🌓"; font-size:14px}
+  #sync-label{max-width:46px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display:inline-block; vertical-align:middle; font-size:10.5px}
+
+  .filter-toggle{
+    display:inline-flex; align-items:center; gap:4px; white-space:nowrap;
+    border:0; background:var(--surface-2); border-radius:6px; padding:3px 8px;
+    font-size:11px; font-weight:700; color:var(--ink-2); cursor:pointer;
+  }
+  .filter-toggle[aria-expanded="true"]{background:var(--canal); color:#fff}
+  .filter-extra{grid-area:panel; display:none}
+  .filter-extra.open{
+    display:flex; flex-direction:column; gap:8px;
+    padding-top:8px; border-top:1px solid var(--line);
+  }
+  .filter-extra .f-group{width:100%; justify-content:space-between}
+  .filter-extra .f-group select, .filter-extra .f-group input{flex:1; text-align:right}
+  .toggle-row{display:flex; gap:8px; align-items:center}
 }
 </style>
 </head>
@@ -283,45 +333,51 @@ textarea:focus{border-color:var(--canal)}
       <h1 class="wordmark"><span class="xxx">XXX</span>Amsterdam House Hunt</h1>
       <div class="mast-sub" id="summary"></div>
       <div class="mast-actions">
+        <button class="btn icon-only" id="btn-info" type="button" title="Board info" aria-label="Board info" aria-haspopup="true" aria-expanded="false">ⓘ</button>
         <button class="btn" id="btn-theme" type="button" title="Switch light / dark">Theme</button>
         <button class="btn" id="btn-sync" type="button"><span class="dot" id="sync-dot"></span><span id="sync-label">Sync</span></button>
       </div>
     </div>
     <div class="filters">
-      <div class="f-group">
+      <div class="f-group find-group">
         <span class="f-lab">Find</span>
         <input type="search" id="f-q" placeholder="street or area" aria-label="Search street or area">
+        <button class="filter-toggle" id="f-filter-toggle" type="button" aria-expanded="false" aria-controls="filter-extra">Filters<span class="f-badge" id="f-badge" hidden>0</span></button>
       </div>
-      <div class="f-group">
-        <span class="f-lab">€ max</span>
-        <input type="number" id="f-price" step="25000" placeholder="no max" aria-label="Maximum price">
+      <div class="filter-extra" id="filter-extra">
+        <div class="f-group">
+          <span class="f-lab">€ max</span>
+          <input type="number" id="f-price" step="25000" placeholder="no max" aria-label="Maximum price">
+        </div>
+        <div class="f-group">
+          <span class="f-lab">m² min</span>
+          <input type="number" id="f-m2" step="5" placeholder="any" aria-label="Minimum living area">
+        </div>
+        <div class="f-group">
+          <span class="f-lab">Beds</span>
+          <select id="f-beds" aria-label="Minimum bedrooms">
+            <option value="">any</option><option value="1">1+</option><option value="2">2+</option>
+            <option value="3">3+</option><option value="4">4+</option>
+          </select>
+        </div>
+        <div class="f-group">
+          <span class="f-lab">Area</span>
+          <select id="f-hood" aria-label="Neighbourhood"><option value="">all Amsterdam</option></select>
+        </div>
+        <div class="f-group">
+          <span class="f-lab">Energy</span>
+          <select id="f-energy" aria-label="Minimum energy class">
+            <option value="">any</option><option value="A">A only</option>
+            <option value="B">B or better</option><option value="C">C or better</option>
+            <option value="D">D or better</option>
+          </select>
+        </div>
+        <div class="toggle-row">
+          <button class="toggle" id="f-g" type="button" aria-pressed="false" title="Only listings with a garden">🌳</button>
+          <button class="toggle" id="f-t" type="button" aria-pressed="false" title="Only listings with a terrace">🏖</button>
+          <button class="f-clear" id="f-clear" type="button">reset</button>
+        </div>
       </div>
-      <div class="f-group">
-        <span class="f-lab">m² min</span>
-        <input type="number" id="f-m2" step="5" placeholder="any" aria-label="Minimum living area">
-      </div>
-      <div class="f-group">
-        <span class="f-lab">Beds</span>
-        <select id="f-beds" aria-label="Minimum bedrooms">
-          <option value="">any</option><option value="1">1+</option><option value="2">2+</option>
-          <option value="3">3+</option><option value="4">4+</option>
-        </select>
-      </div>
-      <div class="f-group">
-        <span class="f-lab">Area</span>
-        <select id="f-hood" aria-label="Neighbourhood"><option value="">all Amsterdam</option></select>
-      </div>
-      <div class="f-group">
-        <span class="f-lab">Energy</span>
-        <select id="f-energy" aria-label="Minimum energy class">
-          <option value="">any</option><option value="A">A only</option>
-          <option value="B">B or better</option><option value="C">C or better</option>
-          <option value="D">D or better</option>
-        </select>
-      </div>
-      <button class="toggle" id="f-g" type="button" aria-pressed="false" title="Only listings with a garden">G</button>
-      <button class="toggle" id="f-t" type="button" aria-pressed="false" title="Only listings marked with a terrace">T</button>
-      <button class="f-clear" id="f-clear" type="button">reset</button>
     </div>
   </div>
 </header>
@@ -342,14 +398,14 @@ textarea:focus{border-color:var(--canal)}
     </div>
     <div class="sheet-body">
       <div class="field">
-        <label id="lab-energy">Energielabel</label>
+        <label id="lab-energy">Energy class</label>
         <div class="swatches" id="ed-energy" role="group" aria-labelledby="lab-energy"></div>
       </div>
       <div class="field">
         <label id="lab-out">Outdoor space</label>
         <div class="opts" role="group" aria-labelledby="lab-out">
-          <button class="opt" type="button" id="ed-g" aria-pressed="false">G · Garden</button>
-          <button class="opt" type="button" id="ed-t" aria-pressed="false">T · Terrace</button>
+          <button class="opt" type="button" id="ed-g" aria-pressed="false">🌳 Garden</button>
+          <button class="opt" type="button" id="ed-t" aria-pressed="false">🏖 Terrace</button>
         </div>
       </div>
       <div class="field">
@@ -412,17 +468,33 @@ const CUTOFF = "__CUTOFF__";
 
 const STAGES = [
   {id:'backlog',  name:'Backlog',  color:'var(--s-backlog)'},
-  {id:'viewed',   name:'Viewed',   color:'var(--s-viewed)'},
+  {id:'viewed',   name:'Liked',    color:'var(--s-viewed)'},
   {id:'applied',  name:'Applied',  color:'var(--s-applied)'},
   {id:'visited',  name:'Visited',  color:'var(--s-visited)'},
   {id:'archived', name:'Archived', color:'var(--s-archived)'},
 ];
-const STAGE_HEX = {backlog:'#6B7A8C', viewed:'#2F6F7E', applied:'#C0782A', visited:'#46774E', archived:'#9A958C'};
+const STAGE_HEX = {backlog:'#6B7A8C', viewed:'#D6437F', applied:'#C0782A', visited:'#46774E', archived:'#9A958C'};
 /* EU / Dutch energielabel colours */
 const ENERGY = {'A+++':'#009640','A++':'#009640','A+':'#009640','A':'#009640','B':'#52AE32',
   'C':'#C8D200','D':'#FFED00','E':'#FBBA00','F':'#EC6608','G':'#E30613'};
 const ENERGY_ORDER = ['A+++','A++','A+','A','B','C','D','E','F','G'];
 const DARK_TEXT = new Set(['C','D']);
+
+/* move.nl gives property type, sale status and tenure in Dutch; the board
+   shows English. Street/neighbourhood names are proper nouns and stay as-is. */
+const TYPE_EN = {
+  'Bovenwoning': 'Upper-floor apartment', 'Benedenwoning': 'Ground-floor apartment',
+  'Tussenverdieping': 'Mid-floor apartment', 'Maisonnette': 'Maisonette',
+  'Portiekflat': 'Walk-up apartment', 'Portiekwoning': 'Walk-up house',
+  'Dubbel benedenhuis': 'Extended ground-floor house', 'Tussenwoning': 'Terraced house',
+  'Hoekwoning': 'Corner house', 'Penthouse': 'Penthouse',
+};
+const typeLabel = t => TYPE_EN[t] || t;
+const STATUS_EN = {
+  'Beschikbaar': 'Available', 'Onder bod': 'Under offer', 'Verkocht': 'Sold',
+  'Verkocht onder voorbehoud': 'Sold subject to conditions', 'Ingetrokken': 'Withdrawn',
+};
+const statusLabel = s => STATUS_EN[s] || s;
 
 const LS_STATE = 'avt-house-hunt/board/v1';
 const LS_GEO   = 'avt-house-hunt/geo/v1';
@@ -471,7 +543,7 @@ const E_RANK = {'A+++':0,'A++':0,'A+':0,'A':0,'B':1,'C':2,'D':3,'E':4,'F':5,'G':
 function passes(l){
   const e = eff(l.id);
   if (F.q){
-    const hay = (l.address + ' ' + l.postcode + ' ' + hoodOf(l) + ' ' + l.type).toLowerCase();
+    const hay = (l.address + ' ' + l.postcode + ' ' + hoodOf(l) + ' ' + l.type + ' ' + typeLabel(l.type)).toLowerCase();
     if (!hay.includes(F.q)) return false;
   }
   if (F.price != null && l.price > F.price) return false;
@@ -507,21 +579,21 @@ function cardHTML(l){
       <a class="card-addr" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.address)}<span class="ext">↗</span></a>
       <div class="card-hood">${esc(hoodOf(l))} <span class="pc">· ${esc(l.postcode)}</span></div>
       <div class="stats">
-        <span class="price">${money(l.price)}</span><span class="kk">k.k.</span>
+        <span class="price">${money(l.price)}</span>
         <span class="dim">·</span><span>${l.m2} m²</span>
         <span class="ppm">${money(ppm)}/m²</span>
       </div>
       <div class="chips">
         <span class="chip rooms" title="${l.rooms} rooms${l.bedrooms!=null?', '+l.bedrooms+' bedrooms':''}">${rooms}</span>
-        <span class="chip energy ${energy?'':'unset'}" style="${eStyle}" title="Energielabel">${energy ? 'Energy '+esc(energy) : 'Energy —'}</span>
-        ${e.garden  ? `<span class="chip gt" title="Garden${l.garden_size ? ' — ' + esc(l.garden_size) : ''}">G</span>`  : ''}
-        ${e.terrace ? '<span class="chip gt" title="Balcony or roof terrace">T</span>' : ''}
-        ${l.tenure && /erfpacht/i.test(l.tenure) ? '<span class="chip lease" title="'+esc(l.tenure)+'">erfpacht</span>' : ''}
-        <span class="chip muted" title="Property type">${esc(l.type)}</span>
+        <span class="chip energy ${energy?'':'unset'}" style="${eStyle}" title="Energy class">${energy ? '⚡'+esc(energy) : '⚡—'}</span>
+        ${e.garden  ? `<span class="chip gt" title="Garden${l.garden_size ? ' — ' + esc(l.garden_size) : ''}">🌳</span>`  : ''}
+        ${e.terrace ? '<span class="chip gt" title="Balcony or roof terrace">🏖</span>' : ''}
+        ${l.tenure && /erfpacht/i.test(l.tenure) ? '<span class="chip lease" title="Leasehold — ground rent may apply">Leasehold</span>' : ''}
+        <span class="chip muted" title="Property type">${esc(typeLabel(l.type))}</span>
       </div>
       ${e.note ? `<div class="card-note">${esc(e.note)}</div>` : ''}
       <div class="card-foot">
-        <span class="seen">${gone ? esc(l.status) : 'seen ' + esc(l.first_seen)}</span>
+        <span class="seen">${gone ? esc(statusLabel(l.status)) : 'seen ' + esc(l.first_seen)}</span>
         <select class="mv" data-mv="${l.id}" aria-label="Move ${esc(l.address)} to another column">
           ${STAGES.map(s => `<option value="${s.id}"${s.id===st?' selected':''}>${s.name}</option>`).join('')}
         </select>
@@ -551,6 +623,12 @@ function render(){
           : '<p class="col-empty">nothing here</p>'}
       </div>
     </section>`).join('');
+
+  const activeExtra = ['price','m2','beds','hood','energy'].filter(k => F[k] != null && F[k] !== '').length
+    + (F.g ? 1 : 0) + (F.t ? 1 : 0);
+  const badge = document.getElementById('f-badge');
+  badge.hidden = activeExtra === 0;
+  badge.textContent = activeExtra;
 
   const total = LISTINGS.length, shown = visible.length;
   const active = LISTINGS.filter(l => stageOf(l.id) !== 'archived').length;
@@ -606,6 +684,16 @@ board.addEventListener('keydown', e => {
   const card = e.target.closest('.card');
   if (card && e.target === card){ e.preventDefault(); openEditor(card.dataset.id); }
 });
+board.addEventListener('mouseover', e => {
+  const card = e.target.closest('.card'); if (!card) return;
+  if (card.contains(e.relatedTarget)) return;
+  highlightMarker(card.dataset.id, true);
+});
+board.addEventListener('mouseout', e => {
+  const card = e.target.closest('.card'); if (!card) return;
+  if (card.contains(e.relatedTarget)) return;
+  highlightMarker(card.dataset.id, false);
+});
 
 /* ====== editor ====== */
 const dlg = document.getElementById('editor');
@@ -628,7 +716,7 @@ function openEditor(id){
   draft = {energy:e.energy, garden:e.garden, terrace:e.terrace};
   document.getElementById('ed-title').textContent = l.address;
   document.getElementById('ed-sub').textContent =
-    `${hoodOf(l)} · ${l.postcode} · ${l.m2} m² · ${l.rooms}${l.bedrooms!=null?'/'+l.bedrooms:''} · ${money(l.price)} k.k.`;
+    `${hoodOf(l)} · ${l.postcode} · ${l.m2} m² · ${l.rooms}${l.bedrooms!=null?'/'+l.bedrooms:''} · ${money(l.price)}`;
   document.getElementById('ed-note').value = e.note;
   document.getElementById('ed-src').textContent =
     e.edited ? 'edited by you' : (l.enriched ? 'from move.nl, ' + l.enriched : 'not filled in yet');
@@ -692,9 +780,10 @@ function syncMarkers(visible){
       radius:r, color:'#fff', weight:2, opacity:.95,
       fillColor:STAGE_HEX[st], fillOpacity: st === 'archived' ? .5 : .92
     });
+    m._baseR = r;
     const e = eff(l.id);
-    m.bindPopup(`<div class="pop"><b>${esc(l.address)}</b>
-      <span class="pm">${money(l.price)} · ${l.m2} m² · ${l.rooms}${l.bedrooms!=null?'/'+l.bedrooms:''}${e.energy?' · '+esc(e.energy):''}</span>
+    m.bindPopup(`<div class="pop"><b>${esc(l.address)}${e.energy ? ` <span class="pop-energy">· ⚡${esc(e.energy)}</span>` : ''}</b>
+      <span class="pm">${money(l.price)} · ${l.m2} m² · ${l.rooms}${l.bedrooms!=null?'/'+l.bedrooms:''}${e.garden?' 🌳':''}${e.terrace?' 🏖':''}</span>
       <span class="pm">${esc(hoodOf(l))}</span>
       <a href="${esc(l.url)}" target="_blank" rel="noopener">Open listing ↗</a></div>`);
     m.on('click', () => focusOn(l.id, false));
@@ -702,13 +791,36 @@ function syncMarkers(visible){
   });
   if (pts.length && !map._avtFitted){ map.fitBounds(L.latLngBounds(pts).pad(.12)); map._avtFitted = true; }
 }
+function highlightMarker(id, on){
+  const m = markers.get(id); if (!m) return;
+  const base = m._baseR || 7;
+  m.setStyle(on ? {radius:base + 4, weight:3} : {radius:base, weight:2});
+  if (on) m.bringToFront();
+}
+/* Scroll a card into view using only its OWN scroll containers (the column's
+   vertical scrollbar, the board's horizontal one) — never the page itself, so
+   a marker click never carries the map off screen. */
+function scrollCardIntoView(card){
+  const colBody = card.closest('.col-body');
+  if (colBody){
+    const cr = card.getBoundingClientRect(), pr = colBody.getBoundingClientRect();
+    if (cr.top < pr.top || cr.bottom > pr.bottom)
+      colBody.scrollBy({top: (cr.top - pr.top) - (pr.height - cr.height) / 2, behavior:'smooth'});
+  }
+  const boardScroll = document.querySelector('.board-scroll'), col = card.closest('.col');
+  if (boardScroll && col){
+    const cr = col.getBoundingClientRect(), pr = boardScroll.getBoundingClientRect();
+    if (cr.left < pr.left || cr.right > pr.right)
+      boardScroll.scrollBy({left: (cr.left - pr.left) - (pr.width - cr.width) / 2, behavior:'smooth'});
+  }
+}
 function focusOn(id, fromCard){
   selected = id;
   const m = map && markers.get(id);
   if (m && fromCard){ map.setView(m.getLatLng(), Math.max(map.getZoom(), 15)); m.openPopup(); }
   const card = board.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
   if (card && !fromCard){
-    card.scrollIntoView({behavior:'smooth', block:'center'});
+    scrollCardIntoView(card);
     card.classList.add('flash'); setTimeout(() => card.classList.remove('flash'), 1500);
   }
 }
@@ -783,6 +895,7 @@ function setSync(kind, text){
   const dot = document.getElementById('sync-dot');
   dot.className = 'dot ' + kind;
   document.getElementById('sync-label').textContent = text;
+  document.getElementById('btn-sync').title = text;
 }
 
 async function ghGet(){
@@ -940,6 +1053,38 @@ document.getElementById('f-clear').onclick = () => {
     sel.appendChild(o);
   });
 })();
+
+/* ====== mobile: Filters panel + info popover ====== */
+const filterToggle = document.getElementById('f-filter-toggle');
+const filterExtra = document.getElementById('filter-extra');
+function closeFilterPanel(){
+  filterExtra.classList.remove('open');
+  filterToggle.setAttribute('aria-expanded', 'false');
+}
+filterToggle.addEventListener('click', e => {
+  e.stopPropagation();
+  const open = filterExtra.classList.toggle('open');
+  filterToggle.setAttribute('aria-expanded', String(open));
+});
+const infoBtn = document.getElementById('btn-info');
+const infoPop = document.getElementById('summary');
+infoBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  const open = infoPop.classList.toggle('open');
+  infoBtn.setAttribute('aria-expanded', String(open));
+});
+document.addEventListener('click', e => {
+  if (filterExtra.classList.contains('open') && !filterExtra.contains(e.target) && e.target !== filterToggle)
+    closeFilterPanel();
+  if (infoPop.classList.contains('open') && !infoPop.contains(e.target) && e.target !== infoBtn){
+    infoPop.classList.remove('open'); infoBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  closeFilterPanel();
+  infoPop.classList.remove('open'); infoBtn.setAttribute('aria-expanded', 'false');
+});
 
 /* ====== theme ====== */
 const savedTheme = load(LS_THEME, null);
