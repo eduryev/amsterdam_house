@@ -17,7 +17,7 @@
   --line:#E3E0DA; --line-2:#EFEDE8;
   --brick:#C8412B; --canal:#2F6F7E;
   --s-backlog:#6B7A8C; --s-viewed:#D6437F; --s-applied:#C0782A;
-  --s-visited:#46774E; --s-disliked:#5E5A52; --s-archived:#9A958C;
+  --s-visited:#46774E; --s-disliked:#5E5A52; --s-archived:#9A958C; --s-scheduled:#3B6FA6;
   --shadow:0 1px 2px rgba(20,24,31,.06), 0 4px 14px rgba(20,24,31,.05);
   --shadow-lift:0 2px 6px rgba(20,24,31,.10), 0 12px 28px rgba(20,24,31,.12);
   --r:10px;
@@ -32,7 +32,7 @@
     --line:#2C323B; --line-2:#242A32;
     --brick:#E8674F; --canal:#5BA3B4;
     --s-backlog:#8B9AAC; --s-viewed:#F19BC4; --s-applied:#D89B52;
-    --s-visited:#6FA377; --s-disliked:#6E6A61; --s-archived:#8A857C;
+    --s-visited:#6FA377; --s-disliked:#6E6A61; --s-archived:#8A857C; --s-scheduled:#7FB0E0;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
     --shadow-lift:0 2px 6px rgba(0,0,0,.5), 0 12px 28px rgba(0,0,0,.45);
   }
@@ -43,7 +43,7 @@
   --line:#2C323B; --line-2:#242A32;
   --brick:#E8674F; --canal:#5BA3B4;
   --s-backlog:#8B9AAC; --s-viewed:#F19BC4; --s-applied:#D89B52;
-  --s-visited:#6FA377; --s-disliked:#6E6A61; --s-archived:#8A857C;
+  --s-visited:#6FA377; --s-disliked:#6E6A61; --s-archived:#8A857C; --s-scheduled:#7FB0E0;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
   --shadow-lift:0 2px 6px rgba(0,0,0,.5), 0 12px 28px rgba(0,0,0,.45);
 }
@@ -469,12 +469,13 @@ const CUTOFF = "2026-09-10";
 const STAGES = [
   {id:'backlog',  name:'Backlog',  color:'var(--s-backlog)'},
   {id:'viewed',   name:'Liked',    color:'var(--s-viewed)'},
-  {id:'applied',  name:'Applied',  color:'var(--s-applied)'},
-  {id:'visited',  name:'Visited',  color:'var(--s-visited)'},
+  {id:'applied',   name:'Viewing Applied',   color:'var(--s-applied)'},
+  {id:'scheduled', name:'Viewing Scheduled', color:'var(--s-scheduled)'},
+  {id:'visited',   name:'Visited',   color:'var(--s-visited)'},
   {id:'disliked', name:'Disliked', color:'var(--s-disliked)'},
   {id:'archived', name:'Archived', color:'var(--s-archived)'},
 ];
-const STAGE_HEX = {backlog:'#6B7A8C', viewed:'#D6437F', applied:'#C0782A', visited:'#46774E', disliked:'#5E5A52', archived:'#9A958C'};
+const STAGE_HEX = {backlog:'#6B7A8C', viewed:'#D6437F', applied:'#C0782A', scheduled:'#3B6FA6', visited:'#46774E', disliked:'#5E5A52', archived:'#9A958C'};
 /* EU / Dutch energielabel colours */
 const ENERGY = {'A+++':'#009640','A++':'#009640','A+':'#009640','A':'#009640','B':'#52AE32',
   'C':'#C8D200','D':'#FFED00','E':'#FBBA00','F':'#EC6608','G':'#E30613'};

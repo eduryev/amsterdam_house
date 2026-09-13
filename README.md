@@ -85,3 +85,38 @@ the race is rejected, and the next tick re-reads, merges and retries.
 
 A daily routine at 08:00 Amsterdam reads new AVT digests, enriches, rebuilds and
 pushes. Its prompt lives in `routine.md`.
+
+### Viewing tracker
+
+A second, hourly routine watches for viewing-related email and moves cards
+through **Viewing Applied → Viewing Scheduled** on its own. Its prompt lives
+in `viewing-routine.md`; state (which requests are already processed, which
+listings are awaiting a confirmation) lives in
+`data/viewing_tracker_state.json` on `main`.
+
+The two-step flow it's watching for:
+
+1. **Requesting a viewing** sends a "Viewing Request `<address>` in Amsterdam
+   with `<agency>`" email from `no-reply@move.nl`. The routine matches the
+   address against `data/listings.json` and moves the card to Viewing
+   Applied, noting which agency it went to.
+2. **The agency's reply lands as a separate thread** — its own subject, from
+   its own domain, not a reply inside the move.nl thread — so matching is
+   by address, never by thread ID. The routine reads that thread and only
+   treats it as confirmed once there's a specific date and time **both
+   sides have actually settled on**; an agency's opening proposal ("does
+   13:45 work?") is not itself a confirmation. Once confirmed, the card
+   moves to Viewing Scheduled with a note carrying the date, time and the
+   agency's email — written into the existing free-text `note` field
+   (`📅 Confirmed: ...`), so no new schema or UI was needed for this.
+
+It writes to `board.json` through `src/board_patch.py`, never by hand: the
+script fetches the `board` branch's current head, merges the patch in, and
+retries once if a browser's own write raced it. `viewing_line` in a patch
+becomes the note's first line (replacing a previous machine-written line, one
+starting with ✉️ or 📅) while leaving anything a human typed below it alone.
+
+It only moves a card **forward** — Backlog/Liked → Applied → Scheduled — and
+never touches one a human has already moved to Visited, Disliked, or
+Archived; it flags those in its notification instead of reviving them. It
+never invents a date or time that isn't literally in an email.
