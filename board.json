@@ -7,11 +7,6 @@
   "wenslauerstraat-69-a1-1053-ax": {
    "stage": "backlog",
    "ts": 1789297077692
-  },
-  "__dry_run_test__": {
-   "stage": "backlog",
-   "note": "✉️ board_patch.py dry run — safe to ignore/delete",
-   "ts": 1789304618962
   }
  }
 }
