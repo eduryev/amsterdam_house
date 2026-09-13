@@ -17,7 +17,7 @@
   --line:#E3E0DA; --line-2:#EFEDE8;
   --brick:#C8412B; --canal:#2F6F7E;
   --s-backlog:#6B7A8C; --s-viewed:#D6437F; --s-applied:#C0782A;
-  --s-visited:#46774E; --s-archived:#9A958C;
+  --s-visited:#46774E; --s-disliked:#5E5A52; --s-archived:#9A958C;
   --shadow:0 1px 2px rgba(20,24,31,.06), 0 4px 14px rgba(20,24,31,.05);
   --shadow-lift:0 2px 6px rgba(20,24,31,.10), 0 12px 28px rgba(20,24,31,.12);
   --r:10px;
@@ -32,7 +32,7 @@
     --line:#2C323B; --line-2:#242A32;
     --brick:#E8674F; --canal:#5BA3B4;
     --s-backlog:#8B9AAC; --s-viewed:#F19BC4; --s-applied:#D89B52;
-    --s-visited:#6FA377; --s-archived:#8A857C;
+    --s-visited:#6FA377; --s-disliked:#6E6A61; --s-archived:#8A857C;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
     --shadow-lift:0 2px 6px rgba(0,0,0,.5), 0 12px 28px rgba(0,0,0,.45);
   }
@@ -43,7 +43,7 @@
   --line:#2C323B; --line-2:#242A32;
   --brick:#E8674F; --canal:#5BA3B4;
   --s-backlog:#8B9AAC; --s-viewed:#F19BC4; --s-applied:#D89B52;
-  --s-visited:#6FA377; --s-archived:#8A857C;
+  --s-visited:#6FA377; --s-disliked:#6E6A61; --s-archived:#8A857C;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
   --shadow-lift:0 2px 6px rgba(0,0,0,.5), 0 12px 28px rgba(0,0,0,.45);
 }
@@ -471,9 +471,10 @@ const STAGES = [
   {id:'viewed',   name:'Liked',    color:'var(--s-viewed)'},
   {id:'applied',  name:'Applied',  color:'var(--s-applied)'},
   {id:'visited',  name:'Visited',  color:'var(--s-visited)'},
+  {id:'disliked', name:'Disliked', color:'var(--s-disliked)'},
   {id:'archived', name:'Archived', color:'var(--s-archived)'},
 ];
-const STAGE_HEX = {backlog:'#6B7A8C', viewed:'#D6437F', applied:'#C0782A', visited:'#46774E', archived:'#9A958C'};
+const STAGE_HEX = {backlog:'#6B7A8C', viewed:'#D6437F', applied:'#C0782A', visited:'#46774E', disliked:'#5E5A52', archived:'#9A958C'};
 /* EU / Dutch energielabel colours */
 const ENERGY = {'A+++':'#009640','A++':'#009640','A+':'#009640','A':'#009640','B':'#52AE32',
   'C':'#C8D200','D':'#FFED00','E':'#FBBA00','F':'#EC6608','G':'#E30613'};
@@ -483,11 +484,11 @@ const DARK_TEXT = new Set(['C','D']);
 /* move.nl gives property type, sale status and tenure in Dutch; the board
    shows English. Street/neighbourhood names are proper nouns and stay as-is. */
 const TYPE_EN = {
-  'Bovenwoning': 'Upper-floor apartment', 'Benedenwoning': 'Ground-floor apartment',
-  'Tussenverdieping': 'Mid-floor apartment', 'Maisonnette': 'Maisonette',
-  'Portiekflat': 'Walk-up apartment', 'Portiekwoning': 'Walk-up house',
-  'Dubbel benedenhuis': 'Extended ground-floor house', 'Tussenwoning': 'Terraced house',
-  'Hoekwoning': 'Corner house', 'Penthouse': 'Penthouse',
+  'Bovenwoning': 'Upper-floor', 'Benedenwoning': 'Ground-floor',
+  'Tussenverdieping': 'Mid-floor', 'Maisonnette': 'Maisonette',
+  'Portiekflat': 'Walk-up flat', 'Portiekwoning': 'Walk-up house',
+  'Dubbel benedenhuis': 'Extended ground-floor', 'Tussenwoning': 'Terraced',
+  'Hoekwoning': 'Corner', 'Penthouse': 'Penthouse',
 };
 const typeLabel = t => TYPE_EN[t] || t;
 const STATUS_EN = {
@@ -535,6 +536,13 @@ function patch(id, changes){
 const eur = new Intl.NumberFormat('nl-NL', {style:'currency', currency:'EUR', maximumFractionDigits:0});
 const money = n => eur.format(n).replace(/ /g,' ');
 const hoodOf = l => (PC4[l.postcode.slice(0,4)] || [l.postcode.slice(0,4)])[0];
+/* move.nl's own "listed since" date is the authoritative one; until a
+   listing is enriched we fall back to the date AVT's digest first mentioned
+   it, which can lag the real listing date by a day or two. */
+const listedDate = l => l.listed || l.first_seen;
+const listedTitle = l => l.listed
+  ? `Listed on move.nl since ${l.listed}`
+  : `First appeared in an AVT email on ${l.first_seen} — not yet checked against move.nl's own date`;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* ====== filters ====== */
@@ -574,7 +582,7 @@ function cardHTML(l){
   return `
   <article class="card${gone ? ' gone' : ''}" draggable="true" data-id="${l.id}" tabindex="0" aria-label="${esc(l.address)}">
     <span class="card-stripe" style="background:${STAGE_HEX[st]}"></span>
-    ${l.image ? `<img class="card-img" src="${esc(l.image)}" alt="" loading="lazy" onerror="this.remove()">` : ''}
+    ${l.image ? `<img class="card-img" src="${esc(l.image)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : ''}
     <div class="card-body">
       <a class="card-addr" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.address)}<span class="ext">↗</span></a>
       <div class="card-hood">${esc(hoodOf(l))} <span class="pc">· ${esc(l.postcode)}</span></div>
@@ -588,12 +596,12 @@ function cardHTML(l){
         <span class="chip energy ${energy?'':'unset'}" style="${eStyle}" title="Energy class">${energy ? '⚡'+esc(energy) : '⚡—'}</span>
         ${e.garden  ? `<span class="chip gt" title="Garden${l.garden_size ? ' — ' + esc(l.garden_size) : ''}">🌳</span>`  : ''}
         ${e.terrace ? '<span class="chip gt" title="Balcony or roof terrace">🏖</span>' : ''}
-        ${l.tenure && /erfpacht/i.test(l.tenure) ? '<span class="chip lease" title="Leasehold — ground rent may apply">Leasehold</span>' : ''}
+        ${l.tenure && /erfpacht/i.test(l.tenure) ? `<span class="chip lease" title="Leasehold: the land isn't included, so ground rent is owed to the city.${l.erfpacht_until ? ' Prepaid until ' + esc(l.erfpacht_until) + ' — no payments due before then.' : ' Check whether it is prepaid, and until when — that changes the deal a lot.'}">Leasehold</span>` : ''}
         <span class="chip muted" title="Property type">${esc(typeLabel(l.type))}</span>
       </div>
       ${e.note ? `<div class="card-note">${esc(e.note)}</div>` : ''}
       <div class="card-foot">
-        <span class="seen">${gone ? esc(statusLabel(l.status)) : 'seen ' + esc(l.first_seen)}</span>
+        <span class="seen" title="${esc(listedTitle(l))}">${gone ? esc(statusLabel(l.status)) : 'listed ' + esc(listedDate(l))}</span>
         <select class="mv" data-mv="${l.id}" aria-label="Move ${esc(l.address)} to another column">
           ${STAGES.map(s => `<option value="${s.id}"${s.id===st?' selected':''}>${s.name}</option>`).join('')}
         </select>
@@ -609,7 +617,7 @@ function render(){
   STAGES.forEach(s => groups[s.id] = []);
   visible.forEach(l => groups[stageOf(l.id)].push(l));
   // most recently listed first inside every column
-  Object.values(groups).forEach(g => g.sort((a,b) => b.first_seen.localeCompare(a.first_seen) || a.address.localeCompare(b.address)));
+  Object.values(groups).forEach(g => g.sort((a,b) => listedDate(b).localeCompare(listedDate(a)) || a.address.localeCompare(b.address)));
 
   board.innerHTML = STAGES.map(s => `
     <section class="col" data-stage="${s.id}">
@@ -801,11 +809,12 @@ function highlightMarker(id, on){
    vertical scrollbar, the board's horizontal one) — never the page itself, so
    a marker click never carries the map off screen. */
 function scrollCardIntoView(card){
+  // land the card at the top of its column, not merely "somewhere visible" —
+  // consistent placement makes it easy to track after a map-marker click.
   const colBody = card.closest('.col-body');
   if (colBody){
     const cr = card.getBoundingClientRect(), pr = colBody.getBoundingClientRect();
-    if (cr.top < pr.top || cr.bottom > pr.bottom)
-      colBody.scrollBy({top: (cr.top - pr.top) - (pr.height - cr.height) / 2, behavior:'smooth'});
+    colBody.scrollBy({top: cr.top - pr.top, behavior:'smooth'});
   }
   const boardScroll = document.querySelector('.board-scroll'), col = card.closest('.col');
   if (boardScroll && col){

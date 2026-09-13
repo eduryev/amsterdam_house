@@ -81,6 +81,14 @@ def fetch(url, tries=2):
             time.sleep(2)
     return None
 
+def _ddmmyyyy(s):
+    """'09-09-2026' -> '2026-09-09'. For older listings move.nl gives a relative
+    phrase instead ('3 maanden', '4 weken') — returns None rather than leak
+    Dutch text or a value that won't sort against real dates; the caller
+    falls back to the AVT-digest date, which is always a real date."""
+    m = re.fullmatch(r'(\d{2})-(\d{2})-(\d{4})', s.strip())
+    return f'{m.group(3)}-{m.group(2)}-{m.group(1)}' if m else None
+
 def extract(page):
     k = kenmerken(page)
     energie = k.get('Energie', {})
@@ -107,8 +115,13 @@ def extract(page):
         rec['status'] = over['Status']
     if over.get('Bijdrage VVE p/m'):
         rec['vve'] = over['Bijdrage VVE p/m']
+    listed = _ddmmyyyy(over.get('Aangeboden sinds', ''))
+    if listed:
+        rec['listed'] = listed
     if kad.get('Eigendomssituatie'):
         rec['tenure'] = kad['Eigendomssituatie']
+    if kad.get('Afgekocht tot'):
+        rec['erfpacht_until'] = kad['Afgekocht tot'][:10]   # "2057-12-15 00:00:00.0" -> "2057-12-15"
     rec['enriched'] = time.strftime('%Y-%m-%d')
     return rec
 

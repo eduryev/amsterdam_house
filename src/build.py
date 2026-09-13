@@ -35,6 +35,8 @@ def main():
             'status': r.get('status'),
             'tenure': r.get('tenure'),
             'enriched': r.get('enriched'),
+            'listed': r.get('listed'),
+            'erfpacht_until': r.get('erfpacht_until'),
             'defaultStage': 'backlog' if r['first_seen'] >= CUTOFF else 'archived',
         })
     slim.sort(key=lambda r: (r['first_seen'], r['address']))
