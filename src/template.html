@@ -78,6 +78,8 @@ button,select,input{font:inherit;color:inherit}
 .mast-sub{color:var(--ink-2); font-size:12.5px; display:flex; gap:7px; flex-wrap:wrap; align-items:baseline}
 .mast-sub b{font-family:var(--mono); font-weight:600; color:var(--ink); font-variant-numeric:tabular-nums}
 .sep{color:var(--line)}
+.robots{cursor:help}
+.robots.bad{color:var(--brick); font-weight:600}
 .mast-actions{margin-left:auto; display:flex; gap:6px; align-items:center}
 
 .btn{
@@ -644,7 +646,8 @@ function render(){
   document.getElementById('summary').innerHTML =
     `<b>${total}</b> listings from AVT <span class="sep">|</span> <b>${active}</b> live, <b>${total-active}</b> archived` +
     (shown !== total ? ` <span class="sep">|</span> <b>${shown}</b> match your filters` : '') +
-    ` <span class="sep">|</span> archived everything before ${CUTOFF} <span class="sep">|</span> built ${BUILT}`;
+    ` <span class="sep">|</span> archived everything before ${CUTOFF} <span class="sep">|</span> built ${BUILT}` +
+    healthHTML();
 
   syncMarkers(visible);
 }
@@ -990,6 +993,50 @@ function startSync(){
 }
 document.addEventListener('visibilitychange', () => { if (!document.hidden) syncTick(); });
 
+/* ====== are the robots alive? ======
+   Both routines write health.json on every run, whether or not they changed
+   anything, so a routine that has quietly stopped looks different here from
+   one that ran and found nothing. Hourly cadence, so >2.5h without a word
+   means a run was missed. */
+const ROUTINES = [['listing_refresh', 'listings'], ['viewing_tracker', 'viewings']];
+const STALE_MS = 150 * 60 * 1000;
+let HEALTH = null;
+
+function ago(iso){
+  const mins = Math.round((Date.now() - Date.parse(iso)) / 60000);
+  if (!isFinite(mins)) return '?';
+  if (mins < 1) return 'just now';
+  if (mins < 60) return mins + 'm ago';
+  const h = Math.round(mins / 60);
+  return h < 24 ? h + 'h ago' : Math.round(h / 24) + 'd ago';
+}
+
+function healthHTML(){
+  if (!HEALTH) return '';
+  const parts = [], tips = [];
+  let bad = false;
+  for (const [key, label] of ROUTINES){
+    const h = HEALTH[key];
+    if (!h || !h.at){ bad = true; parts.push(label + ' never ran'); tips.push(label + ': never reported in'); continue; }
+    if (!h.ok || Date.now() - Date.parse(h.at) > STALE_MS) bad = true;
+    parts.push(label + ' ' + ago(h.at));
+    tips.push(`${label} — ${h.ok ? '' : 'FAILED: '}${h.summary}\n(${h.at})`);
+  }
+  return ` <span class="sep">|</span> <span class="robots${bad ? ' bad' : ''}" title="${esc(tips.join('\n\n'))}">` +
+         `${bad ? '⚠' : '✓'} ${esc(parts.join(', '))}</span>`;
+}
+
+async function fetchHealth(){
+  try {
+    const r = await fetch(
+      `https://raw.githubusercontent.com/${GH.owner}/${GH.repo}/${GH.branch}/health.json?t=${Date.now()}`,
+      {cache:'no-store'});
+    if (!r.ok) return;
+    HEALTH = await r.json();
+    render();
+  } catch(_){}
+}
+
 /* ====== sync sheet ====== */
 const syncDlg = document.getElementById('sync');
 document.getElementById('btn-sync').onclick = () => {
@@ -1119,6 +1166,8 @@ function toast(msg){
 try { initMap(); } catch(err){ /* board still renders */ }
 render();
 startSync();
+fetchHealth();
+setInterval(fetchHealth, 5 * 60 * 1000);
 geocode();
 </script>
 </body>
