@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked"
  },
  "listing_refresh": {
-  "at": "2026-09-14T21:19:42Z",
+  "at": "2026-09-14T22:16:18Z",
   "ok": true,
-  "summary": "added 1: Hoofdweg 62 1; fixed parse_emails.py data-loss bug; 168 listings, 0 status changes"
+  "summary": "no new digests since 20:20 AVT email; 168 listings, 0 status changes, all enriched"
  }
 }
