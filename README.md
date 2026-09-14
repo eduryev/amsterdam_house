@@ -83,8 +83,26 @@ the race is rejected, and the next tick re-reads, merges and retries.
 
 ## Automation
 
-A daily routine at 08:00 Amsterdam reads new AVT digests, enriches, rebuilds and
-pushes. Its prompt lives in `routine.md`.
+An hourly routine (:15) reads new AVT digests, enriches, rebuilds and pushes.
+Its prompt lives in `routine.md`.
+
+### Knowing the routines are alive
+
+Both routines end every run — including runs where they found nothing — with
+
+```sh
+python3 src/heartbeat.py <listing_refresh|viewing_tracker> "<one-line summary>"
+```
+
+which writes `health.json` on the **`board`** branch (there, not `main`, so a
+heartbeat never triggers a Pages rebuild). The board's header reads it and shows
+how long ago each routine last reported in, turning red past 2.5 hours or on a
+run that reported failure. Hovering gives the last summary from each.
+
+This exists because a routine that has silently stopped and a routine that ran
+and found nothing look identical from the outside, and the platform's own
+"succeeded" only means the session exited cleanly — not that the work happened.
+One such silent no-op cost a full day of debugging.
 
 ### Viewing tracker
 
