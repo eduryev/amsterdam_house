@@ -42,6 +42,11 @@
    "stage": "scheduled",
    "note": "📅 Confirmed: 15 September 2026, 10:00 AM — B.V. Deltam Makelaardij o.g (info@deltam.nl)",
    "ts": 1789384180845
+  },
+  "bertrand-russellstraat-90-1097-hl": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789414829835
   }
  }
 }
