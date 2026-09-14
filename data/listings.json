@@ -4065,5 +4065,29 @@
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "Eeuwigdure",
   "enriched": "2026-09-14"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDEwMXwyNGMyOTE0OGUyOWExMmQyOWQyMmMwNzQxYzQ5NTYwMmMwMTRkNjljOWIzNDUwODU2MjA4ZjE3NGNmYmJkNjQ4YWU0Y2I5YzliNzk3ZGI4ZjIwNjgzZWRiZjU3MTEyZjM4YzhlYzljYThiNTFiYmZlNjRlZjA1YzQxNWI3Yzg0MHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTE4NDk3OTV8ODdmNGUzNjU3NWVkNjg4ZGU0ZDA2YjQ0YzBiYjMxNGNlZDdkMWVmODVhNTc5MDgyODBjZWEzZGEzM2UyMzlhNTU1ZWVlZTNhOWVlMTI3Zjk0NGU0N2FjODdkNTlhYmY0MjQyOGY4OTM5MjFlMjliZDkxYzkyOWFiNDIxZGI5OTM",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2898586327.jpg?height)0&check=sha256%3Abe85a5cb0aef30849910c996e162ade007745b025903424b981acb3fca93a33d&widthC5&resize=5",
+  "address": "Vaartstraat 48 3",
+  "postcode": "1075 RR",
+  "city": "Amsterdam",
+  "match": 92,
+  "price": 750000,
+  "price_label": "Vraagprijs",
+  "type": "Bovenwoning",
+  "m2": 99,
+  "rooms": 4,
+  "bedrooms": 3,
+  "id": "vaartstraat-48-3-1075-rr",
+  "first_seen": "2026-09-14",
+  "last_seen": "2026-09-14",
+  "energy": "D",
+  "garden": false,
+  "terrace": true,
+  "status": "Beschikbaar",
+  "listed": "2026-09-14",
+  "tenure": "Volle eigendom",
+  "enriched": "2026-09-14"
  }
 ]
