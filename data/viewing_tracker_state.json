@@ -10,5 +10,12 @@
   "1a04a154b0bbc599",
   "1a09f3ca65c08c36"
  ],
- "tracking": {}
+ "tracking": {},
+ "calendar_events": {
+  "achillesstraat-109-h-1076-ra": {
+   "event_id": "dfblre8plt1qke5k57feek6vlk",
+   "start": "2026-09-15T10:00:00+02:00",
+   "summary": "Apt Viewing: Achillesstraat 109 H"
+  }
+ }
 }

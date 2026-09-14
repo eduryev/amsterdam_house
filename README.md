@@ -138,3 +138,18 @@ It only moves a card **forward** — Backlog/Liked → Applied → Scheduled —
 never touches one a human has already moved to Visited, Disliked, or
 Archived; it flags those in its notification instead of reviving them. It
 never invents a date or time that isn't literally in an email.
+
+#### Calendar events
+
+Confirming a viewing (and only confirming — never a proposal) also puts it in
+Google Calendar as `Apt Viewing: <address>`, 30 minutes unless the agency gave
+an end time, with katiazoritch@gmail.com invited. The description leads with the
+move.nl link, then address, agency, contact name, phone and email taken from the
+confirming email — a missing phone is omitted, never guessed.
+
+`calendar_events` in `data/viewing_tracker_state.json` maps listing id → event
+id, which is what stops an hourly routine from creating the same event over and
+over; it must be committed in the same push as the move that created the event.
+If the agency later moves the appointment, the stored event is updated rather
+than duplicated. The account attaches a Google Meet link to new events by
+itself and the API won't remove it — harmless here, and ignored.
