@@ -78,6 +78,9 @@ button,select,input{font:inherit;color:inherit}
 .mast-sub{color:var(--ink-2); font-size:12.5px; display:flex; gap:7px; flex-wrap:wrap; align-items:baseline}
 .mast-sub b{font-family:var(--mono); font-weight:600; color:var(--ink); font-variant-numeric:tabular-nums}
 .sep{color:var(--line)}
+.who-btn{background:none; border:0; padding:0; font:inherit; color:var(--ink-2);
+  cursor:pointer; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:3px}
+.who-btn:hover{color:var(--ink)}
 .robots{cursor:help}
 .robots.bad{color:var(--brick); font-weight:600}
 .mast-actions{margin-left:auto; display:flex; gap:6px; align-items:center}
@@ -437,6 +440,25 @@ textarea:focus{border-color:var(--canal)}
   </form>
 </dialog>
 
+<dialog class="sheet" id="who">
+  <div class="sheet-head">
+    <h2>Who's this?</h2>
+    <p>So cards show whose call it was when you and Katia disagree.</p>
+  </div>
+  <div class="sync-body">
+    <div class="field">
+      <label for="who-name">Your name</label>
+      <input type="text" id="who-name" placeholder="Eduard" autocomplete="given-name" spellcheck="false" maxlength="20">
+      <p class="hint">Saved in this browser only. Change it any time in the Sync panel.</p>
+    </div>
+  </div>
+  <div class="sheet-foot">
+    <button class="btn" id="who-skip" type="button">Skip</button>
+    <span class="spacer"></span>
+    <button class="btn btn-accent" id="who-save" type="button">Save</button>
+  </div>
+</dialog>
+
 <dialog class="sheet" id="sync">
   <div class="sheet-head">
     <h2>Shared board</h2>
@@ -553,8 +575,33 @@ function stageOf(id){ return entry(id).stage || byId.get(id).defaultStage; }
    and Disliked say whose call it was. Set in the Sync panel; blank until then,
    and the routines never set it, so a machine move stays unattributed. */
 const LS_WHO = 'avt-house-hunt/who/v1';
-let who = '';
-try { who = localStorage.getItem(LS_WHO) || ''; } catch(_){}
+const LS_WHO_ASKED = 'avt-house-hunt/who-asked/v1';
+let who = '', whoAsked = false;
+try {
+  who = localStorage.getItem(LS_WHO) || '';
+  whoAsked = !!localStorage.getItem(LS_WHO_ASKED);
+} catch(_){}
+
+function setWho(name){
+  who = (name || '').trim().slice(0, 20);
+  whoAsked = true;
+  try {
+    who ? localStorage.setItem(LS_WHO, who) : localStorage.removeItem(LS_WHO);
+    localStorage.setItem(LS_WHO_ASKED, '1');
+  } catch(_){}
+}
+
+function askWho(then){
+  const dlg = document.getElementById('who'), input = document.getElementById('who-name');
+  const finish = name => { setWho(name); dlg.close(); then(); render(); };
+  input.value = who;
+  document.getElementById('who-save').onclick = () => finish(input.value);
+  document.getElementById('who-skip').onclick = () => finish('');
+  input.onkeydown = e => { if (e.key === 'Enter'){ e.preventDefault(); finish(input.value); } };
+  dlg.addEventListener('close', () => { if (!whoAsked) finish(''); }, {once:true});
+  dlg.showModal();
+  input.focus();
+}
 
 function patch(id, changes){
   if (who && changes.stage && changes.stage !== stageOf(id))
@@ -689,6 +736,8 @@ function render(){
     `<b>${total}</b> listings from AVT <span class="sep">|</span> <b>${active}</b> live, <b>${total-active}</b> archived` +
     (shown !== total ? ` <span class="sep">|</span> <b>${shown}</b> match your filters` : '') +
     ` <span class="sep">|</span> archived everything before ${CUTOFF} <span class="sep">|</span> built ${BUILT}` +
+    ` <span class="sep">|</span> <button class="who-btn" id="who-btn" type="button" title="Cards you like or dislike are signed with this">` +
+    (who ? `you: <b>${esc(who)}</b>` : 'sign your verdicts') + `</button>` +
     healthHTML();
 
   syncMarkers(visible);
@@ -717,15 +766,28 @@ board.addEventListener('drop', e => {
   const body = e.target.closest('.col-body'); if (!body || !dragId) return;
   e.preventDefault();
   const to = body.dataset.stage, id = dragId;
-  if (stageOf(id) !== to){ patch(id, {stage:to}); render(); toast(`${byId.get(id).address} → ${to}`); }
+  if (stageOf(id) !== to) moveTo(id, to);
   dragId = null;
 });
+
+/* A verdict is only worth recording if we know whose it is, so the first Like
+   or Dislike asks for a name rather than leaving the feature invisible behind
+   a setting nobody opens. Asked once, then never again — "skip" means this
+   board just doesn't attribute. */
+function moveTo(id, to){
+  const go = () => {
+    patch(id, {stage: to});
+    render();
+    toast(`${byId.get(id).address} → ${STAGES.find(s => s.id === to).name}`);
+  };
+  if (VERDICT[to] && !who && !whoAsked) askWho(go);
+  else go();
+}
 
 /* ====== card interactions ====== */
 board.addEventListener('change', e => {
   const sel = e.target.closest('[data-mv]'); if (!sel) return;
-  const id = sel.dataset.mv;
-  patch(id, {stage: sel.value}); render(); toast(`${byId.get(id).address} → ${sel.value}`);
+  moveTo(sel.dataset.mv, sel.value);
 });
 board.addEventListener('click', e => {
   const thumb = e.target.closest('[data-verdict]');
@@ -733,10 +795,7 @@ board.addEventListener('click', e => {
     const id = thumb.dataset.vid, want = thumb.dataset.verdict;
     // pressing the verdict a card already has takes it back, rather than
     // leaving no way to undo a mis-click
-    const to = stageOf(id) === want ? byId.get(id).defaultStage : want;
-    patch(id, {stage: to});
-    render();
-    toast(`${byId.get(id).address} → ${STAGES.find(s => s.id === to).name}`);
+    moveTo(id, stageOf(id) === want ? byId.get(id).defaultStage : want);
     return;
   }
   const btn = e.target.closest('[data-edit]');
@@ -1064,6 +1123,10 @@ function startSync(){
 }
 document.addEventListener('visibilitychange', () => { if (!document.hidden) syncTick(); });
 
+document.getElementById('summary').addEventListener('click', e => {
+  if (e.target.closest('#who-btn')) askWho(() => {});
+});
+
 /* ====== are the robots alive? ======
    Both routines write health.json on every run, whether or not they changed
    anything, so a routine that has quietly stopped looks different here from
@@ -1123,8 +1186,7 @@ document.getElementById('sync-close').onclick = () => syncDlg.close();
 document.getElementById('sync-save').onclick = () => {
   token = document.getElementById('sync-token').value.trim();
   try { token ? localStorage.setItem(LS_TOKEN, token) : localStorage.removeItem(LS_TOKEN); } catch(_){}
-  who = document.getElementById('sync-who').value.trim().slice(0, 20);
-  try { who ? localStorage.setItem(LS_WHO, who) : localStorage.removeItem(LS_WHO); } catch(_){}
+  setWho(document.getElementById('sync-who').value);
   remoteSha = null;
   syncDlg.close();
   toast(token ? 'Saving turned on' : 'Read-only');
