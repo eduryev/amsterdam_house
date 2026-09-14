@@ -41,16 +41,26 @@ def main():
         })
     slim.sort(key=lambda r: (r['first_seen'], r['address']))
 
+    # The listing catalogue is baked into the page, so a tab left open never
+    # learns about listings added since it loaded — and a card the viewing
+    # tracker moves for one of them stays invisible, because the board sync
+    # skips ids the page doesn't know. version.json lets an open board notice
+    # it has gone stale and offer a reload.
+    build_id = f"{datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}/{len(slim)}"
+
     tpl = open(f'{ROOT}/src/template.html').read()
     html = (tpl
             .replace('__LISTINGS__', json.dumps(slim, ensure_ascii=False, separators=(',', ':')))
             .replace('__PC4__', json.dumps(pc4, ensure_ascii=False, separators=(',', ':')))
             .replace('__BUILT__', datetime.date.today().isoformat())
+            .replace('__BUILD_ID__', build_id)
             .replace('__CUTOFF__', CUTOFF))
 
     os.makedirs(f'{ROOT}/docs', exist_ok=True)
     out = f'{ROOT}/docs/index.html'
     open(out, 'w').write(html)
+    json.dump({'build': build_id, 'listings': len(slim)},
+              open(f'{ROOT}/docs/version.json', 'w'), indent=1)
 
     live = sum(1 for r in slim if r['defaultStage'] != 'archived')
     withE = sum(1 for r in slim if r.get('energy'))

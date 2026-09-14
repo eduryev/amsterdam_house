@@ -78,6 +78,14 @@ button,select,input{font:inherit;color:inherit}
 .mast-sub{color:var(--ink-2); font-size:12.5px; display:flex; gap:7px; flex-wrap:wrap; align-items:baseline}
 .mast-sub b{font-family:var(--mono); font-weight:600; color:var(--ink); font-variant-numeric:tabular-nums}
 .sep{color:var(--line)}
+.stale-bar{
+  position:sticky; top:0; z-index:60; display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+  padding:8px 16px; font-size:12.5px; font-weight:600;
+  background:var(--s-applied); color:#fff;
+}
+.stale-bar[hidden]{display:none!important}
+.stale-bar .btn{background:rgba(255,255,255,.16); border-color:rgba(255,255,255,.5); color:#fff; margin-left:auto}
+.stale-bar .btn:hover{background:rgba(255,255,255,.28)}
 .who-btn{background:none; border:0; padding:0; font:inherit; color:var(--ink-2);
   cursor:pointer; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:3px}
 .who-btn:hover{color:var(--ink)}
@@ -345,6 +353,11 @@ textarea:focus{border-color:var(--canal)}
 </head>
 <body>
 
+<div class="stale-bar" id="stale" hidden>
+  <span id="stale-text"></span>
+  <button class="btn btn-accent" id="stale-reload" type="button">Refresh</button>
+</div>
+
 <header class="masthead">
   <div class="mast-in">
     <div class="mast-top">
@@ -506,6 +519,7 @@ textarea:focus{border-color:var(--canal)}
 const LISTINGS = __LISTINGS__;
 const PC4 = __PC4__;
 const BUILT = "__BUILT__";
+const BUILD_ID = "__BUILD_ID__";
 const CUTOFF = "__CUTOFF__";
 
 const STAGES = [
@@ -1160,6 +1174,36 @@ function healthHTML(){
          `${bad ? '⚠' : '✓'} ${esc(parts.join(', '))}</span>`;
 }
 
+/* ====== has this tab gone stale? ======
+   LISTINGS is baked in at build time, and the board sync deliberately ignores
+   ids it doesn't recognise — so a tab open since before a listing was added
+   can never show that card, however long it polls. The viewing tracker moving
+   a brand-new listing into Viewing Applied is exactly that case, and it looks
+   like the routine did nothing. Watch the deployed build id and offer a reload. */
+let staleBuild = false;
+async function checkBuild(){
+  if (staleBuild) return;
+  try {
+    const r = await fetch(`version.json?t=${Date.now()}`, {cache:'no-store'});
+    if (!r.ok) return;
+    const v = await r.json();
+    if (!v.build || v.build === BUILD_ID) return;
+    staleBuild = true;
+    const bar = document.getElementById('stale');
+    bar.querySelector('#stale-text').textContent =
+      `New listings published (${v.listings} now). This tab is showing an older copy.`;
+    bar.hidden = false;
+  } catch(_){}
+}
+/* Coming back to a tab left open for hours is the moment a reload costs
+   nothing, so take it — but never yank the page out from under someone
+   mid-edit. */
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) return;
+  checkBuild();
+  if (staleBuild && !document.querySelector('dialog[open]')) location.reload();
+});
+
 async function fetchHealth(){
   try {
     const r = await fetch(
@@ -1305,6 +1349,9 @@ render();
 startSync();
 fetchHealth();
 setInterval(fetchHealth, 5 * 60 * 1000);
+document.getElementById('stale-reload').onclick = () => location.reload();
+checkBuild();
+setInterval(checkBuild, 2 * 60 * 1000);
 geocode();
 </script>
 </body>
