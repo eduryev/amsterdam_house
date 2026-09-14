@@ -96,7 +96,11 @@
   "bataviastraat-63-d-1095-ep": {
    "stage": "visited",
    "by": "Katia",
-   "ts": 1789415826577
+   "ts": 1789415862442,
+   "energy": "B",
+   "garden": false,
+   "terrace": true,
+   "note": "Ugly buildings around , no workspot for Eduard,"
   }
  }
 }
