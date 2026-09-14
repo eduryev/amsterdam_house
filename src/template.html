@@ -129,9 +129,21 @@ button,select,input{font:inherit;color:inherit}
 
 /* ---------- map ---------- */
 .map-wrap{position:relative; border-bottom:1px solid var(--line)}
-#map{height:clamp(230px, 34vh, 380px); width:100%; background:var(--surface-2); z-index:1}
+#map{height:var(--map-h, clamp(230px, 34vh, 380px)); width:100%; background:var(--surface-2); z-index:1}
 .map-wrap.map-off #map{height:0; border:0}
 .map-wrap.map-off .map-note{position:static; margin:6px 16px; display:inline-block}
+.map-grip{
+  position:absolute; left:0; right:0; bottom:-3px; height:9px; z-index:600;
+  cursor:ns-resize; display:flex; align-items:center; justify-content:center;
+  touch-action:none;
+}
+.map-grip::before{
+  content:""; width:42px; height:3px; border-radius:2px;
+  background:var(--line); transition:background .12s;
+}
+.map-grip:hover::before, .map-wrap.resizing .map-grip::before{background:var(--ink-3)}
+.map-wrap.map-off .map-grip{display:none}
+.map-wrap.resizing{user-select:none}
 .leaflet-container{font-family:var(--ui)}
 .map-note{
   position:absolute; left:10px; bottom:10px; z-index:500;
@@ -264,6 +276,7 @@ dialog.sheet::backdrop{background:rgba(10,12,16,.44); backdrop-filter:blur(2px)}
 textarea{
   width:100%; min-height:62px; resize:vertical; border:1px solid var(--line); border-radius:8px;
   background:var(--surface-2); padding:8px 9px; font-size:12.5px; font-family:var(--ui); outline:none;
+  color:var(--ink);   /* without this it inherits the UA's black — unreadable in dark mode */
 }
 textarea:focus{border-color:var(--canal)}
 .sheet-foot{display:flex; gap:7px; padding:11px 16px 14px; border-top:1px solid var(--line); align-items:center}
@@ -278,9 +291,10 @@ textarea:focus{border-color:var(--canal)}
 .sync-body .hint{font-size:11.5px; color:var(--ink-3); line-height:1.5}
 .sync-body .field label{display:block; font-size:10.5px; font-weight:700; letter-spacing:.08em;
   text-transform:uppercase; color:var(--ink-3); margin-bottom:6px}
-.sync-body input[type=password]{width:100%; border:1px solid var(--line); border-radius:8px;
-  background:var(--surface-2); padding:8px 9px; font-family:var(--mono); font-size:12px; outline:none}
-.sync-body input[type=password]:focus{border-color:var(--canal)}
+.sync-body input[type=password], .sync-body input[type=text]{width:100%; border:1px solid var(--line);
+  border-radius:8px; background:var(--surface-2); color:var(--ink); padding:8px 9px;
+  font-family:var(--mono); font-size:12px; outline:none}
+.sync-body input:focus{border-color:var(--canal)}
 .sync-body .field .hint{margin-top:6px}
 .sync-body details{border-top:1px solid var(--line-2); padding-top:10px}
 .sync-body summary{cursor:pointer; font-size:12px; color:var(--ink-3)}
@@ -416,6 +430,8 @@ textarea:focus{border-color:var(--canal)}
 <div class="map-wrap">
   <div id="map"></div>
   <div class="map-note" id="map-note">approximate pins — refining…</div>
+  <div class="map-grip" id="map-grip" role="separator" aria-orientation="horizontal"
+       aria-label="Drag to resize the map" tabindex="0" title="Drag to resize the map"></div>
 </div>
 
 <main class="board-scroll"><div class="board" id="board"></div></main>
@@ -585,6 +601,25 @@ const SOLD = /verkocht|onder bod|ingetrokken/i;
 const VERDICT = {viewed: {mark:'♥', word:'Liked'}, disliked: {mark:'✕', word:'Disliked'}};
 function stageOf(id){ return entry(id).stage || byId.get(id).defaultStage; }
 
+/* Verdicts are per person, not per card: Eduard liking something and Katia
+   liking it are two facts, and the card should say so rather than the second
+   one overwriting the first. `verdicts` maps name -> 'viewed' | 'disliked'.
+   `stage` still decides which column the card sits in (whoever acted last
+   wins that), so a disagreement shows as a card in one column carrying both
+   marks. */
+/* Before a name is set there's no "mine", so fall back to the column — otherwise
+   a fresh board would show every thumb unlit. */
+function mineIs(id, v){
+  return who ? verdictsOf(id)[who] === v : stageOf(id) === v;
+}
+
+function verdictsOf(id){
+  const e = entry(id);
+  if (e.verdicts) return e.verdicts;
+  // cards judged before verdicts existed carry a single `by`
+  return e.by && VERDICT[e.stage] ? {[e.by]: e.stage} : {};
+}
+
 /* who's driving this browser — stamped onto a card when you move it, so Liked
    and Disliked say whose call it was. Set in the Sync panel; blank until then,
    and the routines never set it, so a machine move stays unattributed. */
@@ -618,8 +653,6 @@ function askWho(then){
 }
 
 function patch(id, changes){
-  if (who && changes.stage && changes.stage !== stageOf(id))
-    changes = Object.assign({}, changes, {by: who});
   state.items[id] = Object.assign({}, entry(id), changes, {ts: Date.now()});
   save(LS_STATE, state);
   if (typeof syncTick === 'function') setTimeout(syncTick, 400);
@@ -698,16 +731,18 @@ function cardHTML(l){
         <span class="chip muted" title="Property type">${esc(typeLabel(l.type))}</span>
         <span class="chip listed" title="${esc(listedTitle(l))}">listed ${esc(listedShort(l))}</span>
         ${gone ? `<span class="chip sold" title="Status on move.nl">${esc(statusLabel(l.status))}</span>` : ''}
-        ${VERDICT[st] && entry(l.id).by
-          ? `<span class="chip by ${st}" title="${VERDICT[st].word} by ${esc(entry(l.id).by)}">${VERDICT[st].mark} ${esc(entry(l.id).by)}</span>`
-          : ''}
+        ${Object.entries(verdictsOf(l.id)).map(([name, v]) =>
+          `<span class="chip by ${v}" title="${VERDICT[v].word} by ${esc(name)}">${VERDICT[v].mark} ${esc(name)}</span>`).join('')}
       </div>
       ${e.note ? `<div class="card-note">${esc(e.note)}</div>` : ''}
       <div class="card-foot">
-        <button class="thumb${st === 'viewed' ? ' on up' : ''}" data-verdict="viewed" data-vid="${l.id}"
-          type="button" aria-pressed="${st === 'viewed'}" title="Like${st === 'viewed' ? ' (click again to undo)' : ''}">👍</button>
-        <button class="thumb${st === 'disliked' ? ' on down' : ''}" data-verdict="disliked" data-vid="${l.id}"
-          type="button" aria-pressed="${st === 'disliked'}" title="Dislike${st === 'disliked' ? ' (click again to undo)' : ''}">👎</button>
+        ${[['viewed', 'up', '👍', 'Like'], ['disliked', 'down', '👎', 'Dislike']].map(([v, dir, icon, word]) => {
+          // lit by YOUR verdict, not the column: a card sitting in Liked because
+          // Katia liked it must not look as though you already did
+          const mine = mineIs(l.id, v);
+          return `<button class="thumb${mine ? ' on ' + dir : ''}" data-verdict="${v}" data-vid="${l.id}"
+            type="button" aria-pressed="${mine}" title="${word}${mine ? ' (click again to undo yours)' : ''}">${icon}</button>`;
+        }).join('')}
         <select class="mv" data-mv="${l.id}" aria-label="Move ${esc(l.address)} to another column">
           ${STAGES.map(s => `<option value="${s.id}"${s.id===st?' selected':''}>${s.name}</option>`).join('')}
         </select>
@@ -790,12 +825,26 @@ board.addEventListener('drop', e => {
    board just doesn't attribute. */
 function moveTo(id, to){
   const go = () => {
-    patch(id, {stage: to});
+    const changes = {stage: to};
+    if (who && VERDICT[to]) changes.verdicts = Object.assign({}, verdictsOf(id), {[who]: to});
+    patch(id, changes);
     render();
     toast(`${byId.get(id).address} → ${STAGES.find(s => s.id === to).name}`);
   };
   if (VERDICT[to] && !who && !whoAsked) askWho(go);
   else go();
+}
+
+/* Taking back your own verdict must not take back your partner's: if theirs
+   still stands the card stays in their column rather than falling all the way
+   back to Backlog. */
+function clearVerdict(id){
+  const verdicts = Object.assign({}, verdictsOf(id));
+  delete verdicts[who];
+  const left = Object.values(verdicts);
+  patch(id, {verdicts, stage: left.length ? left[left.length - 1] : byId.get(id).defaultStage});
+  render();
+  toast(`${byId.get(id).address} → ${STAGES.find(s => s.id === stageOf(id)).name}`);
 }
 
 /* ====== card interactions ====== */
@@ -807,9 +856,10 @@ board.addEventListener('click', e => {
   const thumb = e.target.closest('[data-verdict]');
   if (thumb){
     const id = thumb.dataset.vid, want = thumb.dataset.verdict;
-    // pressing the verdict a card already has takes it back, rather than
+    // pressing the verdict you already gave takes yours back, rather than
     // leaving no way to undo a mis-click
-    moveTo(id, stageOf(id) === want ? byId.get(id).defaultStage : want);
+    if (mineIs(id, want)) clearVerdict(id);
+    else moveTo(id, want);
     return;
   }
   const btn = e.target.closest('[data-edit]');
@@ -1173,6 +1223,53 @@ function healthHTML(){
   return ` <span class="sep">|</span> <span class="robots${bad ? ' bad' : ''}" title="${esc(tips.join('\n\n'))}">` +
          `${bad ? '⚠' : '✓'} ${esc(parts.join(', '))}</span>`;
 }
+
+/* ====== drag the map's lower edge to resize it ======
+   Kept in localStorage per browser rather than in the shared board — how big
+   you want the map is about your screen, not about the flat. */
+const LS_MAPH = 'avt-house-hunt/map-h/v1';
+const MAP_MIN = 140, MAP_MAX_FRAC = 0.8;
+
+function setMapHeight(px, persist){
+  const h = Math.round(Math.max(MAP_MIN, Math.min(window.innerHeight * MAP_MAX_FRAC, px)));
+  document.documentElement.style.setProperty('--map-h', h + 'px');
+  if (persist) save(LS_MAPH, h);
+  if (map) map.invalidateSize();   // Leaflet caches the container size
+  return h;
+}
+
+(function mapResize(){
+  const grip = document.getElementById('map-grip'), wrap = document.querySelector('.map-wrap');
+  const stored = load(LS_MAPH, null);
+  if (stored) setMapHeight(stored, false);
+
+  let startY = 0, startH = 0;
+  grip.addEventListener('pointerdown', e => {
+    startY = e.clientY;
+    startH = document.getElementById('map').getBoundingClientRect().height;
+    grip.setPointerCapture(e.pointerId);
+    wrap.classList.add('resizing');
+    e.preventDefault();
+  });
+  grip.addEventListener('pointermove', e => {
+    if (!grip.hasPointerCapture(e.pointerId)) return;
+    setMapHeight(startH + (e.clientY - startY), false);
+  });
+  const end = e => {
+    if (!grip.hasPointerCapture?.(e.pointerId)) return;
+    grip.releasePointerCapture(e.pointerId);
+    wrap.classList.remove('resizing');
+    save(LS_MAPH, document.getElementById('map').getBoundingClientRect().height | 0);
+  };
+  grip.addEventListener('pointerup', end);
+  grip.addEventListener('pointercancel', end);
+  grip.addEventListener('keydown', e => {
+    const step = e.key === 'ArrowUp' ? -24 : e.key === 'ArrowDown' ? 24 : 0;
+    if (!step) return;
+    e.preventDefault();
+    setMapHeight(document.getElementById('map').getBoundingClientRect().height + step, true);
+  });
+})();
 
 /* ====== has this tab gone stale? ======
    LISTINGS is baked in at build time, and the board sync deliberately ignores
