@@ -142,8 +142,9 @@ never invents a date or time that isn't literally in an email.
 #### Calendar events
 
 Confirming a viewing (and only confirming — never a proposal) also puts it in
-Google Calendar as `Apt Viewing: <address>`, 30 minutes unless the agency gave
-an end time, with katiazoritch@gmail.com invited. The description leads with the
+Google Calendar as `Apt Viewing: <address>`, 15 minutes — the standard viewing
+slot here — unless the agency actually stated an end time, with
+katiazoritch@gmail.com invited. The description leads with the
 move.nl link, then address, agency, contact name, phone and email taken from the
 confirming email — a missing phone is omitted, never guessed.
 
