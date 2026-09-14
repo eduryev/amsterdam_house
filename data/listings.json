@@ -3963,5 +3963,31 @@
   "listed": "2026-09-13",
   "tenure": "Volle eigendom",
   "enriched": "2026-09-13"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5OTIxOXxlMmE5ZmRjNzk5NWQzNWUwMTU2MjY2YTUwMGJlOTY3YzdiNDg0MWE0ZDY5YWY0YmNkN2YwODJjMGZhZmFjYTI5MjY1YzIxMDBhNDBhZWY2NTA5NDNmMzdmMjI2Mjg4MTgxZDg1YmZhY2Q2MzhlMjA5NDA1MmU1ZjQyYmJjNjZlZnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTEyMjA0MTF8OGI1NDBkZTUxN2Q3MDJiYzQ4YmQyZWU2YmJhNzg3MzE1NDk3NjYwMWY3MjhlYmM0ODBkMDNhNjQ2Y2MxMjJjZGFmZWVjYjZmYzJlOTg0MTI0MjIxNDA0MzVmMzE2NGQxOTVhNDZmZDhiMjFkNDM3ZGRhOThhN2Y2M2I2NTRlYTM",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2898512085.jpg?height)0&check=sha256%3Af6c18ac92c59bcd1287e058e4184448bab62ab0d5331298bf305738015313b0c&widthC5&resize=5",
+  "address": "Achillesstraat 109 H",
+  "postcode": "1076 RA",
+  "city": "Amsterdam",
+  "match": 92,
+  "price": 635000,
+  "price_label": "Vraagprijs",
+  "type": "Benedenwoning",
+  "m2": 79,
+  "rooms": 4,
+  "bedrooms": 3,
+  "id": "achillesstraat-109-h-1076-ra",
+  "first_seen": "2026-09-14",
+  "last_seen": "2026-09-14",
+  "energy": "D",
+  "garden": true,
+  "terrace": false,
+  "garden_size": "55 m²",
+  "status": "Beschikbaar",
+  "vve": "€ 280,00",
+  "listed": "2026-09-14",
+  "tenure": "Erfpacht",
+  "enriched": "2026-09-14"
  }
 ]
