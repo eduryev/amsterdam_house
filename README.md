@@ -148,6 +148,17 @@ katiazoritch@gmail.com invited. The description leads with the
 move.nl link, then address, agency, contact name, phone and email taken from the
 confirming email — a missing phone is omitted, never guessed.
 
+#### Forwarding to Katia
+
+The agencies only ever write to Eduard, so every agency reply — proposal,
+confirmation, reschedule, rejection — is forwarded to Katia with Eduard in cc,
+and both copies are marked read. `forwarded_message_ids` in the state file is
+what stops the hourly routine re-forwarding the same mail.
+
+Marking as read needs the Gmail connector's `gmail.modify` scope, which the
+current authorisation does not include; the forward itself works, so the
+routine treats a refused mark-as-read as a note, never a failed run.
+
 `calendar_events` in `data/viewing_tracker_state.json` maps listing id → event
 id, which is what stops an hourly routine from creating the same event over and
 over; it must be committed in the same push as the move that created the event.
