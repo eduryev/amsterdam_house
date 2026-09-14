@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-14T11:56:56Z",
+  "at": "2026-09-14T12:08:22Z",
   "ok": true,
-  "summary": "no new viewing requests (9/9 already processed); tracking empty, Achillesstraat 109 H stays scheduled with its existing calendar event, no duplicate created"
+  "summary": "no new viewing requests (9 known, all processed); 0 tracked"
  },
  "listing_refresh": {
   "at": "2026-09-14T11:20:13Z",
