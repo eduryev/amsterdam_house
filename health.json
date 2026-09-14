@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked"
  },
  "listing_refresh": {
-  "at": "2026-09-14T20:19:20Z",
+  "at": "2026-09-14T21:19:42Z",
   "ok": true,
-  "summary": "added 1: Cornelis Schuytstraat 26 2; 167 listings, 0 status changes"
+  "summary": "added 1: Hoofdweg 62 1; fixed parse_emails.py data-loss bug; 168 listings, 0 status changes"
  }
 }
