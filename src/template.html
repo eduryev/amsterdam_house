@@ -196,12 +196,23 @@ button,select,input{font:inherit;color:inherit}
 .chip.muted{color:var(--ink-3)}
 .chip.lease{background:var(--surface-2); color:var(--s-applied);
   border-color:color-mix(in srgb, var(--s-applied) 40%, var(--line)); text-transform:none; letter-spacing:.02em}
+.chip.by{text-transform:none; letter-spacing:.02em; background:var(--surface-2)}
+.chip.by.viewed{color:var(--s-viewed); border-color:color-mix(in srgb, var(--s-viewed) 45%, var(--line))}
+.chip.by.disliked{color:var(--s-disliked); border-color:color-mix(in srgb, var(--s-disliked) 45%, var(--line))}
 .card.gone{opacity:.62}
 .card.gone .card-addr{text-decoration:line-through; text-decoration-thickness:1px}
-.card.gone .seen{color:var(--brick); font-weight:600}
+.thumb{
+  background:none; border:1px solid transparent; border-radius:6px; cursor:pointer;
+  font-size:14px; line-height:1; padding:3px 5px; filter:grayscale(1); opacity:.5;
+}
+.thumb:hover{filter:none; opacity:1; background:var(--surface-2); border-color:var(--line)}
+.thumb.on{filter:none; opacity:1}
+.thumb.on.up{background:color-mix(in srgb, var(--s-viewed) 16%, transparent); border-color:var(--s-viewed)}
+.thumb.on.down{background:color-mix(in srgb, var(--s-disliked) 18%, transparent); border-color:var(--s-disliked)}
+.chip.listed{font-family:var(--mono); letter-spacing:0; color:var(--ink-3); text-transform:none}
+.chip.sold{color:var(--brick); border-color:color-mix(in srgb, var(--brick) 45%, var(--line)); text-transform:none}
 .sheet-head #ed-src{margin-top:3px; font-family:var(--ui); font-size:11px; color:var(--ink-3)}
 .card-foot{display:flex; align-items:center; gap:6px; margin-top:8px; padding-top:7px; border-top:1px solid var(--line-2)}
-.seen{font-size:10.5px; color:var(--ink-3); font-family:var(--mono)}
 .card-note{font-size:11.5px; color:var(--ink-2); margin-top:6px; padding-left:7px;
   border-left:2px solid var(--line); white-space:pre-wrap; word-break:break-word}
 .icon-btn{
@@ -211,6 +222,8 @@ button,select,input{font:inherit;color:inherit}
 .icon-btn:hover{border-color:var(--line); color:var(--ink); background:var(--surface-2)}
 .mv{font-size:11px; border:1px solid var(--line); border-radius:6px; background:var(--surface-2);
   color:var(--ink-2); padding:2px 4px; max-width:104px; cursor:pointer}
+.card-foot .mv{margin-left:auto}
+.card-foot .icon-btn{margin-left:0}
 
 /* ---------- editor ---------- */
 dialog.sheet{
@@ -433,6 +446,11 @@ textarea:focus{border-color:var(--canal)}
     <p>The board lives in <code id="sync-path">—</code>. It reloads every 10 seconds, so a card
     one of you moves shows up on the other's board shortly after.</p>
     <div class="field">
+      <label for="sync-who">Your name</label>
+      <input type="text" id="sync-who" placeholder="Eduard" autocomplete="off" spellcheck="false" maxlength="20">
+      <p class="hint">Shown on cards you like or dislike, so you can both see who made the call.</p>
+    </div>
+    <div class="field">
       <label for="sync-token">GitHub token</label>
       <input type="password" id="sync-token" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
       <p class="hint">Needed to <b>save</b> changes; reading works without one. Stored only in this
@@ -528,8 +546,19 @@ function eff(id){
   };
 }
 const SOLD = /verkocht|onder bod|ingetrokken/i;
+const VERDICT = {viewed: {mark:'♥', word:'Liked'}, disliked: {mark:'✕', word:'Disliked'}};
 function stageOf(id){ return entry(id).stage || byId.get(id).defaultStage; }
+
+/* who's driving this browser — stamped onto a card when you move it, so Liked
+   and Disliked say whose call it was. Set in the Sync panel; blank until then,
+   and the routines never set it, so a machine move stays unattributed. */
+const LS_WHO = 'avt-house-hunt/who/v1';
+let who = '';
+try { who = localStorage.getItem(LS_WHO) || ''; } catch(_){}
+
 function patch(id, changes){
+  if (who && changes.stage && changes.stage !== stageOf(id))
+    changes = Object.assign({}, changes, {by: who});
   state.items[id] = Object.assign({}, entry(id), changes, {ts: Date.now()});
   save(LS_STATE, state);
   if (typeof syncTick === 'function') setTimeout(syncTick, 400);
@@ -546,6 +575,11 @@ const listedDate = l => l.listed || l.first_seen;
 const listedTitle = l => l.listed
   ? `Listed on move.nl since ${l.listed}`
   : `First appeared in an AVT email on ${l.first_seen} — not yet checked against move.nl's own date`;
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function listedShort(l){
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(listedDate(l));
+  return m ? `${MONTHS[+m[2] - 1]} ${+m[3]}` : listedDate(l);
+}
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* ====== filters ====== */
@@ -601,10 +635,18 @@ function cardHTML(l){
         ${e.terrace ? '<span class="chip gt" title="Balcony or roof terrace">🏖</span>' : ''}
         ${l.tenure && /erfpacht/i.test(l.tenure) ? `<span class="chip lease" title="Leasehold: the land isn't included, so ground rent is owed to the city.${l.erfpacht_until ? ' Prepaid until ' + esc(l.erfpacht_until) + ' — no payments due before then.' : ' Check whether it is prepaid, and until when — that changes the deal a lot.'}">Leasehold</span>` : ''}
         <span class="chip muted" title="Property type">${esc(typeLabel(l.type))}</span>
+        <span class="chip listed" title="${esc(listedTitle(l))}">listed ${esc(listedShort(l))}</span>
+        ${gone ? `<span class="chip sold" title="Status on move.nl">${esc(statusLabel(l.status))}</span>` : ''}
+        ${VERDICT[st] && entry(l.id).by
+          ? `<span class="chip by ${st}" title="${VERDICT[st].word} by ${esc(entry(l.id).by)}">${VERDICT[st].mark} ${esc(entry(l.id).by)}</span>`
+          : ''}
       </div>
       ${e.note ? `<div class="card-note">${esc(e.note)}</div>` : ''}
       <div class="card-foot">
-        <span class="seen" title="${esc(listedTitle(l))}">${gone ? esc(statusLabel(l.status)) : 'listed ' + esc(listedDate(l))}</span>
+        <button class="thumb${st === 'viewed' ? ' on up' : ''}" data-verdict="viewed" data-vid="${l.id}"
+          type="button" aria-pressed="${st === 'viewed'}" title="Like${st === 'viewed' ? ' (click again to undo)' : ''}">👍</button>
+        <button class="thumb${st === 'disliked' ? ' on down' : ''}" data-verdict="disliked" data-vid="${l.id}"
+          type="button" aria-pressed="${st === 'disliked'}" title="Dislike${st === 'disliked' ? ' (click again to undo)' : ''}">👎</button>
         <select class="mv" data-mv="${l.id}" aria-label="Move ${esc(l.address)} to another column">
           ${STAGES.map(s => `<option value="${s.id}"${s.id===st?' selected':''}>${s.name}</option>`).join('')}
         </select>
@@ -686,6 +728,17 @@ board.addEventListener('change', e => {
   patch(id, {stage: sel.value}); render(); toast(`${byId.get(id).address} → ${sel.value}`);
 });
 board.addEventListener('click', e => {
+  const thumb = e.target.closest('[data-verdict]');
+  if (thumb){
+    const id = thumb.dataset.vid, want = thumb.dataset.verdict;
+    // pressing the verdict a card already has takes it back, rather than
+    // leaving no way to undo a mis-click
+    const to = stageOf(id) === want ? byId.get(id).defaultStage : want;
+    patch(id, {stage: to});
+    render();
+    toast(`${byId.get(id).address} → ${STAGES.find(s => s.id === to).name}`);
+    return;
+  }
   const btn = e.target.closest('[data-edit]');
   if (btn){ openEditor(btn.dataset.edit); return; }
   const card = e.target.closest('.card');
@@ -762,7 +815,25 @@ function initMap(){
     return;
   }
   try {
-    map = L.map('map', {scrollWheelZoom:false, zoomControl:true}).setView([52.3676, 4.9041], 12);
+    // scrollWheelZoom stays off so a two-finger trackpad scroll over the map
+    // scrolls the page like everywhere else. A pinch reaches us as a wheel
+    // event with ctrlKey set, and that one we take: zoom the map, not the
+    // browser. zoomSnap:0 lets the pinch resolve to fractional zoom levels
+    // instead of jumping a whole level at a time.
+    map = L.map('map', {scrollWheelZoom:false, zoomControl:true, zoomSnap:0, zoomDelta:1})
+      .setView([52.3676, 4.9041], 12);
+    document.getElementById('map').addEventListener('wheel', e => {
+      if (!e.ctrlKey) return;
+      e.preventDefault();
+      // deltaY arrives in lines or pages on some browsers; normalise to pixels,
+      // then cap one event at a single zoom level so a mouse wheel held with
+      // ctrl steps rather than leaps, while a pinch's many small deltas glide.
+      const px = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaMode === 2 ? e.deltaY * 400 : e.deltaY;
+      const step = Math.max(-1, Math.min(1, -px * 0.01));
+      const at = map.containerPointToLatLng(map.mouseEventToContainerPoint(e));
+      map.setZoomAround(at, Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), map.getZoom() + step)),
+                        {animate:false});
+    }, {passive:false});
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom:19, attribution:'&copy; OpenStreetMap contributors'
     }).addTo(map);
@@ -1044,6 +1115,7 @@ document.getElementById('btn-sync').onclick = () => {
   document.getElementById('sync-sub').textContent =
     token ? 'saving is on — changes reach both boards' : 'read-only — add a token to save your changes';
   document.getElementById('sync-token').value = token;
+  document.getElementById('sync-who').value = who;
   document.getElementById('sync-text').value = JSON.stringify(state, null, 1);
   syncDlg.showModal();
 };
@@ -1051,9 +1123,12 @@ document.getElementById('sync-close').onclick = () => syncDlg.close();
 document.getElementById('sync-save').onclick = () => {
   token = document.getElementById('sync-token').value.trim();
   try { token ? localStorage.setItem(LS_TOKEN, token) : localStorage.removeItem(LS_TOKEN); } catch(_){}
+  who = document.getElementById('sync-who').value.trim().slice(0, 20);
+  try { who ? localStorage.setItem(LS_WHO, who) : localStorage.removeItem(LS_WHO); } catch(_){}
   remoteSha = null;
   syncDlg.close();
   toast(token ? 'Saving turned on' : 'Read-only');
+  render();
   startSync();
 };
 document.getElementById('sync-forget').onclick = () => {
