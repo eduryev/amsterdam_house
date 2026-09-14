@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-14T12:08:22Z",
+  "at": "2026-09-14T13:09:58Z",
   "ok": true,
-  "summary": "no new viewing requests (9 known, all processed); 0 tracked"
+  "summary": "Achillesstraat 109 H confirmed 15 Sep 10:00 (handled by a concurrent run before my push landed — calendar invite already sent); 0 still tracked"
  },
  "listing_refresh": {
   "at": "2026-09-14T12:19:26Z",
