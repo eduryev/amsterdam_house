@@ -75,6 +75,9 @@ def parse_card(card):
 
 def main(paths, out):
     listings = {}
+    if os.path.exists(out):
+        for r in json.load(open(out)):
+            listings[r['id']] = r
     msg_count = card_count = 0
     for path in paths:
         with open(path) as f:
