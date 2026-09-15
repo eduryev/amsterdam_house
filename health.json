@@ -5,8 +5,8 @@
   "summary": "1 duplicate Viewing Request re-checked (Vrolikstraat 70 1, already archived, not revived); 0 tracked awaiting confirmation"
  },
  "listing_refresh": {
-  "at": "2026-09-15T00:17:25Z",
+  "at": "2026-09-15T01:17:31Z",
   "ok": true,
-  "summary": "no new digests since 14 Sep 20:20; 168 listings, all enriched within 2 days, 0 status changes"
+  "summary": "no new digests (checked 13-14 Sep threads, all already known); 168 listings, fully enriched as of 13-14 Sep, no full sweep due yet"
  }
 }
