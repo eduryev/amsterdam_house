@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked"
  },
  "listing_refresh": {
-  "at": "2026-09-15T20:16:34Z",
+  "at": "2026-09-15T21:17:22Z",
   "ok": true,
-  "summary": "no new digests since the 18:15 AVT email; 179 listings, 0 status changes (full refresh done last run)"
+  "summary": "no new digests since 18:15 Sep 15; 179 listings, statuses already refreshed 2h ago (7→Onder bod); 1 stale enrich_failed (Hoofdweg 62 1) left for next full pass"
  }
 }
