@@ -4241,5 +4241,30 @@
   "listed": "2026-09-14",
   "tenure": "Volle eigendom",
   "enriched": "2026-09-14"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDk1MHxlMjkwM2E0Y2RiMzY2Nzk0MDM3MDJhNTVjYzMyM2Q5M2EzYzBkNzY3MWRiODZlODA4YWM0ODBhZjZmZGZhMzQ5ODc5ZDQ1NTMzYTQ0MzJjMGExOWYyMjg0NGE1YjZkNjJmNDRhODJiODFkNzdiZTU2YWQ3ZTIwN2U1YjY2ZjZmMXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTMwODM0Njl8Mzk2N2ZmYWFhM2RjZDRiZmQwZTc0NmU0MDYzY2IyNTg3Zjg4NjMyMDljYzE1Yjk3NTJkYTVhODRlMjIxMmY1NTBkZTRmODVlOGYyNTRiOWRiM2EwM2UwMWY5OTZiZTMzMzFmN2U4NjFjMTk1ZmQwMDdmMjg5ZTQ3OGRlMTIyNjQ",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2898658019.png?height)0&check=sha256%3Ae48716ed9c8a7e14eff11be6dc7aa768bdae04c881a1714ea884c0da68f85900&widthC5&resize=5",
+  "address": "Meerhuizenplein 28 F",
+  "postcode": "1078 TD",
+  "city": "Amsterdam",
+  "match": 100,
+  "price": 775000,
+  "price_label": "Vraagprijs",
+  "type": "Bovenwoning",
+  "m2": 95,
+  "rooms": 4,
+  "bedrooms": 3,
+  "id": "meerhuizenplein-28-f-1078-td",
+  "first_seen": "2026-09-15",
+  "last_seen": "2026-09-15",
+  "energy": "B",
+  "garden": false,
+  "terrace": false,
+  "status": "Beschikbaar",
+  "vve": "€ 174,72",
+  "listed": "2026-09-15",
+  "tenure": "Erfpacht",
+  "enriched": "2026-09-15"
  }
 ]
