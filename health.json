@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked"
  },
  "listing_refresh": {
-  "at": "2026-09-15T21:17:22Z",
+  "at": "2026-09-15T22:16:42Z",
   "ok": true,
-  "summary": "no new digests since 18:15 Sep 15; 179 listings, statuses already refreshed 2h ago (7→Onder bod); 1 stale enrich_failed (Hoofdweg 62 1) left for next full pass"
+  "summary": "no new digests since last run; 179 listings, sale statuses already refreshed an hour ago"
  }
 }
