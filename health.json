@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-15T19:07:23Z",
+  "at": "2026-09-15T20:07:11Z",
   "ok": true,
-  "summary": "no new viewing requests (9 threads, all already processed); tracking empty, nothing to check"
+  "summary": "no new viewing requests; 0 tracked"
  },
  "listing_refresh": {
   "at": "2026-09-15T19:25:54Z",
