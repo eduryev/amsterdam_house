@@ -120,6 +120,13 @@
   "eerste-helmersstraat-213-3-1054-dw": {
    "stage": "archived",
    "ts": 1789568512746
+  },
+  "reyer-anslostraat-27-1-1054-kt": {
+   "stage": "disliked",
+   "verdicts": {
+    "Eduard": "disliked"
+   },
+   "ts": 1789568517904
   }
  }
 }
