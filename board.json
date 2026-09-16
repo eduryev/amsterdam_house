@@ -149,7 +149,8 @@
   "archived": "#dcdad5",
   "disliked": "#55574c",
   "visited": "#14f53a",
-  "backlog": "#7cb4f8"
+  "backlog": "#7cb4f8",
+  "scheduled": "#fcff47"
  },
- "colorsTs": 1789585567342
+ "colorsTs": 1789585587390
 }
