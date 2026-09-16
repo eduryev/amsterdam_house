@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked"
  },
  "listing_refresh": {
-  "at": "2026-09-16T06:17:10Z",
+  "at": "2026-09-16T07:24:48Z",
   "ok": true,
-  "summary": "no new digests since 15 Sep 18:15; 179 listings, all enriched, last status refresh yesterday"
+  "summary": "no new digests; re-enriched all 179, 0 status changes, 0 fetch failures"
  }
 }
