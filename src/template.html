@@ -172,7 +172,17 @@ button,select,input{font:inherit;color:inherit}
   border-bottom:1px solid var(--line); position:sticky; top:0;
   background:var(--surface-2); border-radius:12px 12px 0 0; z-index:2;
 }
-.col-dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+/* the column's colour swatch is the picker: no extra affordance to find */
+.col-dot{
+  width:13px; height:13px; border-radius:50%; flex:0 0 auto; padding:0;
+  border:1px solid transparent; background:none; cursor:pointer;
+  -webkit-appearance:none; appearance:none;
+}
+.col-dot::-webkit-color-swatch-wrapper{padding:0}
+.col-dot::-webkit-color-swatch{border:none; border-radius:50%}
+.col-dot::-moz-color-swatch{border:none; border-radius:50%}
+.col-dot:hover{border-color:var(--ink-3)}
+.col-dot:focus-visible{outline:2px solid var(--canal); outline-offset:2px}
 .col-name{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase}
 .col-n{margin-left:auto; font-family:var(--mono); font-size:11.5px; font-weight:600;
   color:var(--ink-3); font-variant-numeric:tabular-nums;
@@ -520,6 +530,7 @@ textarea:focus{border-color:var(--canal)}
     </details>
   </div>
   <div class="sheet-foot">
+    <button class="btn" id="sync-colors" type="button">Reset colours</button>
     <button class="btn" id="sync-forget" type="button">Forget token</button>
     <span class="spacer"></span>
     <button class="btn btn-accent" id="sync-save" type="button">Save</button>
@@ -548,6 +559,38 @@ const STAGES = [
   {id:'archived', name:'Archived', color:'var(--s-archived)'},
 ];
 const STAGE_HEX = {backlog:'#6B7A8C', viewed:'#D6437F', applied:'#C0782A', scheduled:'#3B6FA6', visited:'#46774E', disliked:'#5E5A52', archived:'#9A958C'};
+
+/* Column colours are a shared decision, so they live in board.json next to the
+   cards rather than in each browser — recolouring Liked here recolours it on
+   Katia's board too. One timestamp for the whole set: they change rarely, and
+   per-colour merging isn't worth the complexity.
+   A custom colour overrides the CSS variable in both themes; leaving a column
+   alone keeps its light/dark pair from the stylesheet. */
+const colorOf = s => (state.colors || {})[s] || STAGE_HEX[s];
+
+function applyColors(){
+  for (const s of STAGES){
+    const c = (state.colors || {})[s.id];
+    if (c) document.documentElement.style.setProperty(`--s-${s.id}`, c);
+    else document.documentElement.style.removeProperty(`--s-${s.id}`);
+  }
+}
+
+function setColumnColor(stage, hex){
+  state.colors = Object.assign({}, state.colors, {[stage]: hex});
+  state.colorsTs = Date.now();
+  applyColors();
+}
+
+function resetColumnColors(){
+  delete state.colors;
+  state.colorsTs = Date.now();
+  applyColors();
+  save(LS_STATE, state);
+  render();
+  if (typeof syncTick === 'function') setTimeout(syncTick, 300);
+  toast('Column colours reset');
+}
 /* EU / Dutch energielabel colours */
 const ENERGY = {'A+++':'#009640','A++':'#009640','A+':'#009640','A':'#009640','B':'#52AE32',
   'C':'#C8D200','D':'#FFED00','E':'#FBBA00','F':'#EC6608','G':'#E30613'};
@@ -712,7 +755,7 @@ function cardHTML(l){
   const gone = l.status && SOLD.test(l.status);
   return `
   <article class="card${gone ? ' gone' : ''}" draggable="true" data-id="${l.id}" tabindex="0" aria-label="${esc(l.address)}">
-    <span class="card-stripe" style="background:${STAGE_HEX[st]}"></span>
+    <span class="card-stripe" style="background:var(--s-${st})"></span>
     ${l.image ? `<img class="card-img" src="${esc(l.image)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : ''}
     <div class="card-body">
       <a class="card-addr" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.address)}<span class="ext">↗</span></a>
@@ -763,7 +806,8 @@ function render(){
   board.innerHTML = STAGES.map(s => `
     <section class="col" data-stage="${s.id}">
       <header class="col-head">
-        <span class="col-dot" style="background:${s.color}"></span>
+        <input type="color" class="col-dot" data-color="${s.id}" value="${colorOf(s.id)}"
+               aria-label="Colour for ${s.name}" title="Pick a colour for ${s.name} — Katia's board gets it too">
         <span class="col-name" style="color:${s.color}">${s.name}</span>
         <span class="col-n">${groups[s.id].length}</span>
       </header>
@@ -849,8 +893,24 @@ function clearVerdict(id){
 
 /* ====== card interactions ====== */
 board.addEventListener('change', e => {
+  const swatch = e.target.closest('[data-color]');
+  if (swatch){
+    // picker closed: now it's worth saving, re-rendering (map pins) and pushing
+    setColumnColor(swatch.dataset.color, swatch.value);
+    save(LS_STATE, state);
+    render();
+    if (typeof syncTick === 'function') setTimeout(syncTick, 300);
+    return;
+  }
   const sel = e.target.closest('[data-mv]'); if (!sel) return;
   moveTo(sel.dataset.mv, sel.value);
+});
+
+/* While the picker is open it fires per nudge. Only touch the CSS variable —
+   a re-render would tear out the very input being dragged and shut the picker. */
+board.addEventListener('input', e => {
+  const swatch = e.target.closest('[data-color]');
+  if (swatch) setColumnColor(swatch.dataset.color, swatch.value);
 });
 board.addEventListener('click', e => {
   const thumb = e.target.closest('[data-verdict]');
@@ -984,7 +1044,7 @@ function syncMarkers(visible){
     const st = stageOf(l.id), r = st === 'archived' ? 5 : 7;
     const m = L.circleMarker(c.ll, {
       radius:r, color:'#fff', weight:2, opacity:.95,
-      fillColor:STAGE_HEX[st], fillOpacity: st === 'archived' ? .5 : .92
+      fillColor:colorOf(st), fillOpacity: st === 'archived' ? .5 : .92
     });
     m._baseR = r;
     const e = eff(l.id);
@@ -1095,7 +1155,7 @@ function canon(st){
     items[id] = {};
     for (const k of Object.keys(v).sort()) if (v[k] !== undefined) items[id][k] = v[k];
   }
-  return JSON.stringify({items});
+  return JSON.stringify({items, colors: st.colors || null, colorsTs: st.colorsTs || 0});
 }
 
 function setSync(kind, text){
@@ -1147,6 +1207,12 @@ async function ghPut(body){
 
 function mergeInto(other){
   let changed = false;
+  if ((other.colorsTs || 0) > (state.colorsTs || 0)){
+    if (other.colors) state.colors = other.colors; else delete state.colors;
+    state.colorsTs = other.colorsTs;
+    applyColors();
+    changed = true;
+  }
   for (const [id, inc] of Object.entries(other.items || {})){
     if (!byId.has(id)) continue;
     const cur = state.items[id];
@@ -1334,6 +1400,7 @@ document.getElementById('sync-save').onclick = () => {
   render();
   startSync();
 };
+document.getElementById('sync-colors').onclick = () => { resetColumnColors(); syncDlg.close(); };
 document.getElementById('sync-forget').onclick = () => {
   token = '';
   try { localStorage.removeItem(LS_TOKEN); } catch(_){}
@@ -1441,6 +1508,7 @@ function toast(msg){
 }
 
 /* ====== boot ====== */
+applyColors();
 try { initMap(); } catch(err){ /* board still renders */ }
 render();
 startSync();

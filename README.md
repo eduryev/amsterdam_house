@@ -64,6 +64,13 @@ timestamp, so the most recent edit to a given listing wins, and only for that
 listing. An edit pushes within half a second rather than waiting out the interval.
 `localStorage` keeps a local copy, so the board works offline and catches up later.
 
+Column colours ride along in the same file (`colors`, with one `colorsTs` for
+the set — they change rarely, so newest-wins for the whole map is enough).
+Clicking a column's dot opens a colour picker and recolours that column on both
+boards; the header, card stripes and map pins all read the same CSS variable, so
+a custom colour applies in light and dark alike. "Reset colours" in the Sync
+panel puts every column back to its theme-aware default.
+
 It sits on its own branch deliberately: `main` serves GitHub Pages, and a commit
 every time someone moves a card would rebuild the site and hit the ~10 builds/hour
 limit.
