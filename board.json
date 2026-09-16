@@ -106,6 +106,13 @@
    "stage": "backlog",
    "by": "Katia",
    "ts": 1789416288738
+  },
+  "tesselschadestraat-5-c-1054-et": {
+   "stage": "disliked",
+   "verdicts": {
+    "Eduard": "disliked"
+   },
+   "ts": 1789568501286
   }
  }
 }
