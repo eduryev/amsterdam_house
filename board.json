@@ -38,10 +38,40 @@
    "by": "Eduard",
    "ts": 1789369588925
   },
+  "achillesstraat-109-h-1076-ra": {
+   "stage": "scheduled",
+   "note": "📅 Confirmed: 15 September 2026, 10:00 AM — B.V. Deltam Makelaardij o.g (info@deltam.nl)",
+   "ts": 1789384180845
+  },
+  "bertrand-russellstraat-90-1097-hl": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789414829835
+  },
+  "kinkerstraat-243-e-1053-ep": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789414866481
+  },
+  "vaartstraat-48-3-1075-rr": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789414907663
+  },
+  "conradstraat-86-e-1018-nk": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789414947426
+  },
   "voordewind-4-1034-kt": {
    "stage": "archived",
    "by": "Katia",
    "ts": 1789415024662
+  },
+  "gillis-van-ledenberchstraat-2-a-1052-vg": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415150345
   },
   "boulevardpad-27-1018-hn": {
    "stage": "archived",
@@ -52,6 +82,11 @@
    "stage": "archived",
    "by": "Katia",
    "ts": 1789415201376
+  },
+  "isaac-titsinghkade-4-c-1018-ca": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415225439
   },
   "eerste-van-swindenstraat-383-a-1093-gb": {
    "stage": "archived",
@@ -66,6 +101,11 @@
    "garden": false,
    "terrace": true,
    "note": "Ugly buildings around , no workspot for Eduard,"
+  },
+  "vondelstraat-68-2-1054-gg": {
+   "stage": "backlog",
+   "by": "Katia",
+   "ts": 1789416288738
   }
  }
 }
