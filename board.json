@@ -145,7 +145,8 @@
   }
  },
  "colors": {
-  "viewed": "#dd46b5"
+  "viewed": "#dd46b5",
+  "archived": "#dcdad5"
  },
- "colorsTs": 1789585464058
+ "colorsTs": 1789585476141
 }
