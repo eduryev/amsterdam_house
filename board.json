@@ -103,9 +103,12 @@
    "note": "Ugly buildings around , no workspot for Eduard,"
   },
   "vondelstraat-68-2-1054-gg": {
-   "stage": "backlog",
+   "stage": "disliked",
    "by": "Katia",
-   "ts": 1789416288738
+   "ts": 1789568507239,
+   "verdicts": {
+    "Eduard": "disliked"
+   }
   },
   "tesselschadestraat-5-c-1054-et": {
    "stage": "disliked",
