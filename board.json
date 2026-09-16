@@ -38,6 +38,35 @@
    "by": "Eduard",
    "ts": 1789369588925
   },
+  "voordewind-4-1034-kt": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415024662
+  },
+  "boulevardpad-27-1018-hn": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415179029
+  },
+  "carolina-macgillavrylaan-155-1098-xa": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415201376
+  },
+  "eerste-van-swindenstraat-383-a-1093-gb": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415384388
+  },
+  "bataviastraat-63-d-1095-ep": {
+   "stage": "visited",
+   "by": "Katia",
+   "ts": 1789415862442,
+   "energy": "B",
+   "garden": false,
+   "terrace": true,
+   "note": "Ugly buildings around , no workspot for Eduard,"
+  },
   "achillesstraat-109-h-1076-ra": {
    "stage": "scheduled",
    "note": "📅 Confirmed: 15 September 2026, 10:00 AM — B.V. Deltam Makelaardij o.g (info@deltam.nl)",
@@ -63,44 +92,15 @@
    "by": "Katia",
    "ts": 1789414947426
   },
-  "voordewind-4-1034-kt": {
-   "stage": "archived",
-   "by": "Katia",
-   "ts": 1789415024662
-  },
   "gillis-van-ledenberchstraat-2-a-1052-vg": {
    "stage": "archived",
    "by": "Katia",
    "ts": 1789415150345
   },
-  "boulevardpad-27-1018-hn": {
-   "stage": "archived",
-   "by": "Katia",
-   "ts": 1789415179029
-  },
-  "carolina-macgillavrylaan-155-1098-xa": {
-   "stage": "archived",
-   "by": "Katia",
-   "ts": 1789415201376
-  },
   "isaac-titsinghkade-4-c-1018-ca": {
    "stage": "archived",
    "by": "Katia",
    "ts": 1789415225439
-  },
-  "eerste-van-swindenstraat-383-a-1093-gb": {
-   "stage": "archived",
-   "by": "Katia",
-   "ts": 1789415384388
-  },
-  "bataviastraat-63-d-1095-ep": {
-   "stage": "visited",
-   "by": "Katia",
-   "ts": 1789415862442,
-   "energy": "B",
-   "garden": false,
-   "terrace": true,
-   "note": "Ugly buildings around , no workspot for Eduard,"
   },
   "vondelstraat-68-2-1054-gg": {
    "stage": "disliked",
@@ -127,6 +127,13 @@
     "Eduard": "disliked"
    },
    "ts": 1789568517904
+  },
+  "ceintuurbaan-314-1-1072-gl": {
+   "stage": "disliked",
+   "verdicts": {
+    "Eduard": "disliked"
+   },
+   "ts": 1789584469149
   }
  }
 }
