@@ -143,5 +143,9 @@
    "stage": "archived",
    "ts": 1789584599927
   }
- }
+ },
+ "colors": {
+  "viewed": "#d643af"
+ },
+ "colorsTs": 1789585459402
 }
