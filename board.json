@@ -147,7 +147,8 @@
  "colors": {
   "viewed": "#dd46b5",
   "archived": "#dcdad5",
-  "disliked": "#55574c"
+  "disliked": "#55574c",
+  "visited": "#14f53a"
  },
- "colorsTs": 1789585509749
+ "colorsTs": 1789585519043
 }
