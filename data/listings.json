@@ -4572,5 +4572,29 @@
   "tenure": "Erfpacht",
   "erfpacht_until": "Eeuwigdure",
   "enriched": "2026-09-16"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDAwNXw4MDAwYmVhMTUyN2I4ZDU1NjIwMTZkOWZlMzNiMDI3MDM2Mjk0OWEzYzU5NWE3NjBkZDYwZGQ1YjhkMDQ4N2Q0YzEwNWEyZDZmMTI3Y2I0NmFkMDg4NTQwMTQ2N2I2OThjZmU3ZmZjZGU5NTlmNzVlNTgxN2RhZmE2Zjc5NGFmMHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTU4NTY0OTd8NDE1MjM3ODk3OGZiM2YwMGM3M2QyNDFiZDMyYWIxOTgxYTdjYzlkZjRiNWYzMGUxZTBmYjc5MDM0OTI0YWFmMjE5OTY4ODc4OTYyNmRmMTQ0NjViMTQ5OWM4NjZmMWJhNmI4OWMzOWE5ZmJhNzRkMjY1ZWEzMzk0NGE1MGZiNWY",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2898919279.jpg?height)0&check=sha256%3Aed23d8b6b9c0656b3cec12e14612a6cb0f17ee2ede465b5f84bac4480787c45c&widthC5&resize=5",
+  "address": "Utrechtsedwarsstraat 74 C",
+  "postcode": "1017 WH",
+  "city": "Amsterdam",
+  "match": 99,
+  "price": 665000,
+  "price_label": "Vraagprijs",
+  "type": "Maisonnette",
+  "m2": 64,
+  "rooms": 2,
+  "bedrooms": 1,
+  "id": "utrechtsedwarsstraat-74-c-1017-wh",
+  "first_seen": "2026-09-16",
+  "last_seen": "2026-09-16",
+  "energy": "A",
+  "garden": false,
+  "terrace": false,
+  "status": "Beschikbaar",
+  "listed": "2026-09-16",
+  "tenure": "Volle eigendom",
+  "enriched": "2026-09-16"
  }
 ]
