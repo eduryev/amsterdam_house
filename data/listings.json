@@ -4798,5 +4798,30 @@
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "Eeuwigdure",
   "enriched": "2026-09-17"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg4MTEwNnwzZDc1NmJkNWE5M2I4NjJjNmU2ZjE5MjgyYTg5M2FjMzE0NjM3NjJkMTliODEyZTljOTQ3NThlZTgxMTQyYWVjYWVlYTFhMDY4NTlhYzNhMGNkZDI2ZjU3YzM4ZWZmMzdjOWQ2NTg1MzRmNzEyYjI5M2VmNTBmYmFjYWE5NzIzN3w5MDczNTk/overzicht",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2896984943.jpg",
+  "address": "Van Ostadestraat 282 3",
+  "postcode": "1073 TW",
+  "city": "Amsterdam",
+  "match": 95,
+  "price": 675000,
+  "price_label": "Vraagprijs",
+  "type": "Bovenwoning",
+  "m2": 83,
+  "rooms": 4,
+  "bedrooms": 3,
+  "id": "van-ostadestraat-282-3-1073-tw",
+  "first_seen": "2026-09-17",
+  "last_seen": "2026-09-17",
+  "energy": "C",
+  "garden": false,
+  "terrace": true,
+  "status": "Beschikbaar",
+  "vve": "€ 120,00",
+  "listed": "2026-08-31",
+  "tenure": "Volle eigendom",
+  "enriched": "2026-09-17"
  }
 ]
