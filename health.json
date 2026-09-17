@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked"
  },
  "listing_refresh": {
-  "at": "2026-09-17T07:18:34Z",
+  "at": "2026-09-17T08:26:55Z",
   "ok": true,
-  "summary": "no new digests since 16 Sep; 189 listings, last status refresh was yesterday so skipped"
+  "summary": "no new digests (last AVT digest already processed, now in Trash); refreshed all 189 statuses, 4 moved to Onder bod, 1 back to Beschikbaar, no sales/withdrawals"
  }
 }
