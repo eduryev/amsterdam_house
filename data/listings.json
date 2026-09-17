@@ -4772,5 +4772,31 @@
   "listed": "2026-09-16",
   "tenure": "Volle eigendom",
   "enriched": "2026-09-17"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDkzMXxiNzBlZjU3MWExMmU0Y2Y1YTViMWYxNDA1MzYwYmViYjBmODkzYWE2YTA1ZWM4YjYwY2NlZDk1MjEzNzI3OTVmM2E5MjdkMmE2OGQ4MzY0YThkMDNiN2VlNmUxZjc5ZjM5NTM3YzFlNjBiZTk5M2ViOTY1MmIyZGEwZDEyYjY1OHw5MDczNTk/overzicht",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2898992121.jpg",
+  "address": "Makassarstraat 124 B",
+  "postcode": "1095 TE",
+  "city": "Amsterdam",
+  "match": 100,
+  "price": 600000,
+  "price_label": "Vraagprijs",
+  "type": "Bovenwoning",
+  "m2": 82,
+  "rooms": 3,
+  "bedrooms": 2,
+  "id": "makassarstraat-124-b-1095-te",
+  "first_seen": "2026-09-17",
+  "last_seen": "2026-09-17",
+  "energy": "A",
+  "garden": false,
+  "terrace": true,
+  "status": "Beschikbaar",
+  "vve": "€ 158,99",
+  "listed": "2026-09-17",
+  "tenure": "Eigendom belast met erfpacht",
+  "erfpacht_until": "Eeuwigdure",
+  "enriched": "2026-09-17"
  }
 ]
