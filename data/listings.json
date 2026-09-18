@@ -5049,5 +5049,30 @@
   "listed": "2026-08-31",
   "tenure": "Volle eigendom",
   "enriched": "2026-09-17"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzE2NHxjMjczNzY1Zjc4YjhkYzFmYjZlZDA4ZTcyNjMwNTI2N2Y2NmI1MTFkY2NlMmJjZTkwM2MyZDgxYzk5Yzk5YzUxNjIyNGIzMmVjYjE5MjAyMzI0ZWRlZWY3YTQ4N2RmYWY3MTVjODFmZTE2ZTcwMjkwOWZjZWJmYmNkMWRjYzJlOXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTkxMzEyMTN8MWUyM2YwYWFlNGZjODE3NmI1NDdhZmE0YmFmYmFkZjUwYmNkOWI4MzE5ZGIzZWY4OTQ5ZGQ4MGQ1ZDg4MWEzYzdhNWI3MDQyZDNmMWZkZjZhZjIwNWZmMjg3ZWZhODMxYTliNzY4ZDUyNzc2N2ZmYjEwZTZiMDlkZmQ3MjUxYjg",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2899160969.jpg?height)0&check=sha256%3A3ded448b2d5486c30604eeb3d0468e535da44bdd429f2af6c0c71a263084d433&widthC5&resize=5",
+  "address": "Amstel 139 A",
+  "postcode": "1018 EN",
+  "city": "Amsterdam",
+  "match": 97,
+  "price": 650000,
+  "price_label": "Vraagprijs",
+  "type": "Bovenwoning",
+  "m2": 59,
+  "rooms": 3,
+  "bedrooms": 1,
+  "id": "amstel-139-a-1018-en",
+  "first_seen": "2026-09-18",
+  "last_seen": "2026-09-18",
+  "energy": "B",
+  "garden": false,
+  "terrace": true,
+  "status": "Beschikbaar",
+  "vve": "€ 207,92",
+  "listed": "2026-09-18",
+  "tenure": "Volle eigendom",
+  "enriched": "2026-09-18"
  }
 ]
