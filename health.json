@@ -5,8 +5,8 @@
   "summary": "no new requests; Pythagorasstraat 8 3 has unconfirmed phone-arranged viewing, left at Applied; 2 still tracked"
  },
  "listing_refresh": {
-  "at": "2026-09-19T18:16:47Z",
+  "at": "2026-09-19T19:16:37Z",
   "ok": true,
-  "summary": "no new digests; 214 listings, 0 status changes (already refreshed earlier today)"
+  "summary": "no new digests since 18 Sep; 214 listings unchanged (statuses already refreshed by prior run today)"
  }
 }
