@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 2 tracked (Molukkenstraat 37 3, Pythagorasstraat 8 3), no confirmation yet"
  },
  "listing_refresh": {
-  "at": "2026-09-19T04:16:29Z",
+  "at": "2026-09-19T05:16:30Z",
   "ok": true,
-  "summary": "no new digests since 18 Sep 19:55; 214 listings, 0 status changes (enrich last ran 18 Sep, not due for weekly refresh)"
+  "summary": "no new digests since 18 Sep; 214 listings, all enriched yesterday, nothing to update"
  }
 }
