@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 2 tracked awaiting confirmation, no agency replies since last run"
  },
  "listing_refresh": {
-  "at": "2026-09-19T16:16:52Z",
+  "at": "2026-09-19T17:17:01Z",
   "ok": true,
-  "summary": "no new digests since 18 Sep; 214 listings, already fully re-enriched today, 0 status changes"
+  "summary": "no new digests since 18 Sep 19:55; statuses already refreshed earlier today (214 listings, 0 further changes)"
  }
 }
