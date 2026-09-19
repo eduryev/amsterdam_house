@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-19T16:09:32Z",
+  "at": "2026-09-19T17:08:58Z",
   "ok": true,
-  "summary": "no new viewing requests (11 already processed); 2 tracked still awaiting agency confirmation, incl. an ambiguous phone-arranged note on Pythagorasstraat 8 3 flagged for review"
+  "summary": "no new viewing requests; 2 tracked awaiting confirmation, no agency replies since last run"
  },
  "listing_refresh": {
   "at": "2026-09-19T16:16:52Z",
