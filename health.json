@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (11 already processed); 2 tracked still awaiting agency confirmation, incl. an ambiguous phone-arranged note on Pythagorasstraat 8 3 flagged for review"
  },
  "listing_refresh": {
-  "at": "2026-09-19T15:16:42Z",
+  "at": "2026-09-19T16:16:52Z",
   "ok": true,
-  "summary": "no new digests since 18 Sep 19:55; statuses already refreshed earlier today; 214 listings, 0 changes"
+  "summary": "no new digests since 18 Sep; 214 listings, already fully re-enriched today, 0 status changes"
  }
 }
