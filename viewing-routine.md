@@ -101,8 +101,6 @@ email text.
 Save `data/viewing_tracker_state.json`, commit and push to `main` (plain git
 is fine here — this file isn't touched by anyone else, unlike board.json).
 
-Notify only when something happened: listings moved to Viewing Applied
-(address + agency), listings moved to **Viewing Scheduled** (address, date,
-time, agency — this is the one worth a push notification), off-board
-addresses found, or a request found for a listing already disliked/archived/
-visited. Otherwise stay quiet.
+Never send a push notification. Record everything (moves, off-board finds,
+already-archived hits, proposals, confirmations) in the state file and commit
+message only.
