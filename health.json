@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 2 still tracked (Molukkenstraat, Pythagorasstraat awaiting agency dates); Pythagorasstraat has an unconfirmed personal note flagged for review"
  },
  "listing_refresh": {
-  "at": "2026-09-20T02:17:00Z",
+  "at": "2026-09-20T03:17:20Z",
   "ok": true,
-  "summary": "no new digests since 18 Sep; 214 listings, already re-enriched and built as of 00:30 UTC today, 0 status changes"
+  "summary": "no new digests since 18 Sep; 214 listings, 0 status changes (full re-enrich already ran earlier today)"
  }
 }
