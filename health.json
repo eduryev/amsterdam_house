@@ -5,8 +5,8 @@
   "summary": "0 new requests; 3 tracked unchanged (Pythagorasstraat 8 3 has an unconfirmed phone-booked note, needs human check)"
  },
  "listing_refresh": {
-  "at": "2026-09-20T17:16:07Z",
+  "at": "2026-09-20T18:16:23Z",
   "ok": true,
-  "summary": "no new digests since 18 Sep; enrichment already refreshed earlier today; 214 listings, 0 changes"
+  "summary": "no new digests since 18 Sep; 214 listings already re-enriched and built earlier today, 0 status changes"
  }
 }
