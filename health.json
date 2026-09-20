@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 2 tracked (Molukkenstraat 37 3, Pythagorasstraat 8 3) still awaiting agency confirmation"
  },
  "listing_refresh": {
-  "at": "2026-09-20T05:16:39Z",
+  "at": "2026-09-20T06:17:20Z",
   "ok": true,
-  "summary": "no new digests since 18 Sep; 214 listings, last full re-enrich already ran today with 0 changes"
+  "summary": "no new AVT digests since 18 Sep; 214 listings, already fully enriched (last full re-enrich was hours ago), 0 status changes"
  }
 }
