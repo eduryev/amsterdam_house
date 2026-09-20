@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-20T00:09:52Z",
+  "at": "2026-09-20T01:08:37Z",
   "ok": true,
-  "summary": "0 new requests; 2 tracked unchanged (Molukkenstraat 37 3, Pythagorasstraat 8 3 still applied, no agency confirmation email); Pythagorasstraat has an ambiguous phone-booked note flagged for review"
+  "summary": "0 new requests; 2 tracked (Molukkenstraat 37 3, Pythagorasstraat 8 3) still awaiting a datable agency confirmation"
  },
  "listing_refresh": {
   "at": "2026-09-20T00:31:09Z",
