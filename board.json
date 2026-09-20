@@ -184,6 +184,13 @@
    "stage": "applied",
    "note": "✉️ Viewing requested — Keizerskroon Makelaars",
    "ts": 1789906088488
+  },
+  "govert-flinckstraat-347-2-1074-cc": {
+   "stage": "disliked",
+   "verdicts": {
+    "Eduard": "disliked"
+   },
+   "ts": 1789915304921
   }
  },
  "colors": {
