@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-20T17:09:13Z",
+  "at": "2026-09-20T18:09:59Z",
   "ok": true,
-  "summary": "no new viewing requests; 3 tracked (Pythagorasstraat phone-scheduled Fri, unconfirmed by email), none confirmed"
+  "summary": "0 new requests; 3 tracked unchanged (Pythagorasstraat 8 3 has an unconfirmed phone-booked note, needs human check)"
  },
  "listing_refresh": {
   "at": "2026-09-20T17:16:07Z",
