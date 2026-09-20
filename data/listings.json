@@ -5399,5 +5399,31 @@
   "vve": "€ 234,39",
   "listed": "2026-09-18",
   "enriched": "2026-09-20"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwODU5OXwzNWMxYWJkYWQ5NmIxODlmMDJjMWVhODJlN2VmOTBmY2YxZGI3YmQyODAzOTRmNjY1NDBiMzY0Y2IzNDIxYTIyOTExMmQ2ZmJjZGNkMWU2ODM0ZjYzNDY1NjJiZTA5YzNlYjEyNWQwNmIxZmJkOTg0YjQ4OTFhYWZkOTUxODJkMHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MjE2MTMyMjF8MTE5MjVmOGUzZDUwZDQ0MmFhNDU0MWQxYWVhYjkzNjJmOTMxODVmN2NmY2U5ZDRlNzcyOTlkMTZlMjRiZGJjMDFiYTg1MWIyZTQ0ZTI5MDM1NjEyZjIwYzM0YmViMGYyZDIyZmIwM2M0YjMxZjg4OGNiNDRjYTVmMWMyMWRhODU",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2899301927.jpg?height=290&check=sha256%3Adafa8330e147aa4d46105a58eb63f86bce9d802c78f9cfdf16b9ffc16f4ea374&width=435&resize=5",
+  "address": "Conny Stuartstraat 10",
+  "postcode": "1031 HZ",
+  "city": "Amsterdam",
+  "match": 99,
+  "price": 600000,
+  "price_label": "Vraagprijs",
+  "type": "Tussenverdieping",
+  "m2": 65,
+  "rooms": 3,
+  "bedrooms": 2,
+  "id": "conny-stuartstraat-10-1031-hz",
+  "first_seen": "2026-09-20",
+  "last_seen": "2026-09-20",
+  "energy": "A+",
+  "garden": false,
+  "terrace": true,
+  "status": "Beschikbaar",
+  "vve": "€ 229,00",
+  "listed": "2026-09-20",
+  "tenure": "Eigendom belast met erfpacht",
+  "erfpacht_until": "2072-01-31",
+  "enriched": "2026-09-20"
  }
 ]
