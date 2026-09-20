@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-20T01:08:37Z",
+  "at": "2026-09-20T02:09:05Z",
   "ok": true,
-  "summary": "0 new requests; 2 tracked (Molukkenstraat 37 3, Pythagorasstraat 8 3) still awaiting a datable agency confirmation"
+  "summary": "no new viewing requests; Pythagorasstraat 8 3 has an unconfirmed phone-booked slot (no agency email) - flagged; Molukkenstraat 37 3 still awaiting agency reply"
  },
  "listing_refresh": {
   "at": "2026-09-20T01:17:04Z",
