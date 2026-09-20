@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; Molukkenstraat/Pythagorasstraat still awaiting written confirmation (2 tracked)"
  },
  "listing_refresh": {
-  "at": "2026-09-20T04:16:40Z",
+  "at": "2026-09-20T05:16:39Z",
   "ok": true,
-  "summary": "no new digests since 18 Sep 19:55; 214 listings, already re-enriched today, 0 status changes"
+  "summary": "no new digests since 18 Sep; 214 listings, last full re-enrich already ran today with 0 changes"
  }
 }
