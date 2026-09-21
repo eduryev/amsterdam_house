@@ -5425,5 +5425,31 @@
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2072-01-31",
   "enriched": "2026-09-20"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwODczNHwwNGYxZWI3M2I3OTAzNThmNjkzNzc0YTExZGVhNzU2MWNlOWE1MDNmYjRhYTg4NTU1MDNiMDI1NjYxZTc3YTRiNjYzNDY3MjFkNDJmNmM1YWNkNzJlNTJkYzAxZGI3ZTFiNDIxMjg5MGRhMzc1YzU5OGNkY2E5M2YzY2M2MDhjNnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MjE4NDUxNzl8OWQ5M2M3NjVjMzg2MjFkNjgyOTZjNDViZDFhMzVmOGI4MTE3YjEyNTliMTdlNGNhMTBlMmFjZjliMDNmNmM0ODg4Yjg0MWZmMjE2MGM1MTFiYzc4ODA0M2IwNzc1NmUzMWE3MzUwNGJiYjk5ZGU2ZmFjNDhmZjY0Njc2NGM5ODY",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2899313515.jpg?height=290&width=435&resize=5",
+  "address": "Lia Doranastraat 44",
+  "postcode": "1031 HK",
+  "city": "Amsterdam",
+  "match": 100,
+  "price": 750000,
+  "price_label": "Vraagprijs",
+  "type": "Bovenwoning",
+  "m2": 87,
+  "rooms": 3,
+  "bedrooms": 2,
+  "id": "lia-doranastraat-44-1031-hk",
+  "first_seen": "2026-09-21",
+  "last_seen": "2026-09-21",
+  "energy": "A++",
+  "garden": false,
+  "terrace": true,
+  "status": "Beschikbaar",
+  "vve": "€ 142,00",
+  "listed": "2026-09-21",
+  "tenure": "Eigendom belast met erfpacht",
+  "erfpacht_until": "2071-05-15",
+  "enriched": "2026-09-21"
  }
 ]
