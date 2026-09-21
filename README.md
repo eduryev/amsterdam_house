@@ -32,7 +32,19 @@ python3 src/enrich.py --only-missing     # or bare, to refresh sale statuses
 python3 src/build.py
 ```
 
-`CUTOFF` in `src/build.py` (currently `2026-09-10`) decides what starts in Archived.
+Three constants in `src/build.py` decide what starts in Archived:
+
+| constant | value | effect |
+|---|---|---|
+| `CUTOFF` | `2026-09-10` | first seen earlier → Archived |
+| `MIN_M2` | `70` | under 70 m² → Archived |
+| `MIN_BEDROOMS` | `2` | one bedroom or fewer → Archived |
+
+They set the **default** stage only. A card either of us has actually moved
+carries its own stage in `board.json` and keeps it, so a 64 m² flat we liked
+anyway stays liked — which is why archiving is done by rebuilding rather than
+by writing to the board. An *unknown* bedroom count counts as unknown, not as
+too small: a parsing miss leaves a flat in Backlog rather than hiding it.
 
 ## Where the fields come from
 
