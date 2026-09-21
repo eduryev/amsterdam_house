@@ -38,6 +38,35 @@
    "by": "Eduard",
    "ts": 1789369588925
   },
+  "voordewind-4-1034-kt": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415024662
+  },
+  "boulevardpad-27-1018-hn": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415179029
+  },
+  "carolina-macgillavrylaan-155-1098-xa": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415201376
+  },
+  "eerste-van-swindenstraat-383-a-1093-gb": {
+   "stage": "archived",
+   "by": "Katia",
+   "ts": 1789415384388
+  },
+  "bataviastraat-63-d-1095-ep": {
+   "stage": "visited",
+   "by": "Katia",
+   "ts": 1789415862442,
+   "energy": "B",
+   "garden": false,
+   "terrace": true,
+   "note": "Ugly buildings around , no workspot for Eduard,"
+  },
   "achillesstraat-109-h-1076-ra": {
    "stage": "scheduled",
    "note": "📅 Confirmed: 15 September 2026, 10:00 AM — B.V. Deltam Makelaardij o.g (info@deltam.nl)",
@@ -63,44 +92,15 @@
    "by": "Katia",
    "ts": 1789414947426
   },
-  "voordewind-4-1034-kt": {
-   "stage": "archived",
-   "by": "Katia",
-   "ts": 1789415024662
-  },
   "gillis-van-ledenberchstraat-2-a-1052-vg": {
    "stage": "archived",
    "by": "Katia",
    "ts": 1789415150345
   },
-  "boulevardpad-27-1018-hn": {
-   "stage": "archived",
-   "by": "Katia",
-   "ts": 1789415179029
-  },
-  "carolina-macgillavrylaan-155-1098-xa": {
-   "stage": "archived",
-   "by": "Katia",
-   "ts": 1789415201376
-  },
   "isaac-titsinghkade-4-c-1018-ca": {
    "stage": "archived",
    "by": "Katia",
    "ts": 1789415225439
-  },
-  "eerste-van-swindenstraat-383-a-1093-gb": {
-   "stage": "archived",
-   "by": "Katia",
-   "ts": 1789415384388
-  },
-  "bataviastraat-63-d-1095-ep": {
-   "stage": "visited",
-   "by": "Katia",
-   "ts": 1789415862442,
-   "energy": "B",
-   "garden": false,
-   "terrace": true,
-   "note": "Ugly buildings around , no workspot for Eduard,"
   },
   "vondelstraat-68-2-1054-gg": {
    "stage": "disliked",
@@ -162,56 +162,12 @@
    "stage": "archived",
    "ts": 1789665233214
   },
-  "molukkenstraat-37-3-1095-at": {
-   "stage": "scheduled",
-   "note": "📅 Confirmed: 22 September 2026, 16:00 — Van Huis Uit Makelaars (info@vanhuisuit-makelaars.nl)",
-   "ts": 1789978170222
-  },
-  "pythagorasstraat-8-3-1098-gb": {
-   "stage": "scheduled",
-   "note": "📅 Confirmed: Friday 25 September 2026, 10:00 — La Maison Makelaars & Taxateurs (noortje@lamaison.nl)",
-   "ts": 1789977694178
-  },
-  "amstel-139-a-1018-en": {
-   "stage": "archived",
-   "ts": 1789895485307
-  },
-  "bosboom-toussaintstraat-42-2-1054-at": {
-   "stage": "archived",
-   "ts": 1789895497915
-  },
-  "eerste-atjehstraat-162-h-1094-kx": {
-   "stage": "scheduled",
-   "note": "📅 Confirmed: 25 September 2026, 10:30 — Keizerskroon Makelaars (info@keizerskroonmakelaars.nl)",
-   "ts": 1789981655323
-  },
   "govert-flinckstraat-347-2-1074-cc": {
    "stage": "disliked",
    "verdicts": {
     "Eduard": "disliked"
    },
    "ts": 1789915304921
-  },
-  "da-costakade-29-1-1052-sg": {
-   "stage": "disliked",
-   "verdicts": {
-    "Eduard": "disliked"
-   },
-   "ts": 1789915312720
-  },
-  "pieter-de-hoochstraat-67-c-1071-ed": {
-   "stage": "disliked",
-   "verdicts": {
-    "Eduard": "disliked"
-   },
-   "ts": 1789915321822
-  },
-  "camperstraat-20-s-1091-ag": {
-   "stage": "viewed",
-   "verdicts": {
-    "Eduard": "viewed"
-   },
-   "ts": 1789915377786
   },
   "albert-cuypstraat-156-c-1073-bk": {
    "stage": "disliked",
@@ -241,26 +197,12 @@
    },
    "ts": 1789915482868
   },
-  "leimuidenstraat-10-2-1059-eh": {
-   "stage": "disliked",
-   "verdicts": {
-    "Eduard": "disliked"
-   },
-   "ts": 1789915588920
-  },
   "meerhuizenplein-28-f-1078-td": {
    "stage": "disliked",
    "verdicts": {
     "Eduard": "disliked"
    },
    "ts": 1789915846505
-  },
-  "ijsselmeerstraat-66-a-1024-ml": {
-   "stage": "disliked",
-   "verdicts": {
-    "Eduard": "disliked"
-   },
-   "ts": 1789916014324
   },
   "j-h-hisgenpad-1060-1025-wk": {
    "stage": "archived",
@@ -269,10 +211,6 @@
   "danie-theronstraat-22-b-1091-xz": {
    "stage": "archived",
    "ts": 1789916161376
-  },
-  "conny-stuartstraat-10-1031-hz": {
-   "stage": "archived",
-   "ts": 1789978609950
   },
   "koninginneweg-155-3-1075-cn": {
    "stage": "archived",
@@ -340,10 +278,6 @@
   "pieter-aertszstraat-125-3-1074-vr": {
    "stage": "archived",
    "ts": 1789980471875
-  },
-  "lia-doranastraat-44-1031-hk": {
-   "stage": "archived",
-   "ts": 1789999985340
   }
  },
  "colors": {
@@ -354,9 +288,5 @@
   "backlog": "#7cb4f8",
   "scheduled": "#df08e2"
  },
- "colorsTs": 1789585707790,
- "sorts": {
-  "backlog": "m2-desc"
- },
- "sortsTs": 1789979734517
+ "colorsTs": 1789585707790
 }
