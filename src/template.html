@@ -1114,12 +1114,15 @@ function syncMarkers(visible){
   const pts = [];
   visible.forEach(l => {
     const c = coordsFor(l); if (!c) return;
-    const st = stageOf(l.id), r = st === 'archived' ? 5 : 7;
+    // archived pins are half the size and half the outline of a live one: they
+    // should read as background texture, not as something to look at
+    const st = stageOf(l.id), archived = st === 'archived';
+    const r = archived ? 2.5 : 7, w = archived ? 1 : 2;
     const m = L.circleMarker(c.ll, {
-      radius:r, color:'#fff', weight:2, opacity:.95,
-      fillColor:colorOf(st), fillOpacity: st === 'archived' ? .5 : .92
+      radius:r, color:'#fff', weight:w, opacity:.95,
+      fillColor:colorOf(st), fillOpacity: archived ? .5 : .92
     });
-    m._baseR = r;
+    m._baseR = r; m._baseW = w;
     const e = eff(l.id);
     m.bindPopup(`<div class="pop"><b>${esc(l.address)}${e.energy ? ` <span class="pop-energy">· ⚡${esc(e.energy)}</span>` : ''}</b>
       <span class="pm">${money(l.price)} · ${l.m2} m² · ${l.rooms}${l.bedrooms!=null?'/'+l.bedrooms:''}${e.garden?' 🌳':''}${e.terrace?' 🏖':''}</span>
@@ -1132,8 +1135,10 @@ function syncMarkers(visible){
 }
 function highlightMarker(id, on){
   const m = markers.get(id); if (!m) return;
-  const base = m._baseR || 7;
-  m.setStyle(on ? {radius:base + 4, weight:3} : {radius:base, weight:2});
+  const base = m._baseR || 7, weight = m._baseW || 2;
+  // restore the marker's OWN weight, not a fixed 2 — otherwise an archived pin
+  // stays fat after the first hover
+  m.setStyle(on ? {radius:base + 4, weight:3} : {radius:base, weight});
   if (on) m.bringToFront();
 }
 /* Scroll a card into view using only its OWN scroll containers (the column's
