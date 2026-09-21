@@ -125,7 +125,8 @@ The two-step flow it's watching for:
    with `<agency>`" email from `no-reply@move.nl`. The routine matches the
    address against `data/listings.json` and moves the card to Viewing
    Applied, noting which agency it went to.
-2. **The agency's reply lands as a separate thread** — its own subject, from
+2. **A confirmation can come from either side.** Usually the agency's reply,
+   which lands as a separate thread — its own subject, from
    its own domain, not a reply inside the move.nl thread — so matching is
    by address, never by thread ID. The routine reads that thread and only
    treats it as confirmed once there's a specific date and time **both
@@ -134,6 +135,18 @@ The two-step flow it's watching for:
    moves to Viewing Scheduled with a note carrying the date, time and the
    agency's email — written into the existing free-text `note` field
    (`📅 Confirmed: ...`), so no new schema or UI was needed for this.
+   But often nothing arrives from the agency at all: one of us phones them
+   or books online and then just mails the other ("Viewing scheduled on this
+   Friday, 10am"). The routine therefore reads our own mail to each other as
+   a confirmation source too, and resolves a relative weekday against the
+   **send date of that message** — Pythagorasstraat 8 3 was booked that way
+   and would otherwise have sat in Viewing Applied indefinitely.
+
+   Two traps it is told about explicitly: the `Voorkeursmomenten` in a
+   move.nl request are *preferred* slots, never a booking (that listing asked
+   for Mon 21 Sep and was actually seen Fri 25 Sep), and an ambiguous
+   relative date is never guessed — the card stays in Viewing Applied and a
+   human is asked.
 
 It writes to `board.json` through `src/board_patch.py`, never by hand: the
 script fetches the `board` branch's current head, merges the patch in, and
