@@ -5451,5 +5451,30 @@
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2071-05-15",
   "enriched": "2026-09-21"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwOTM0NnxjNWIwMTRlMGRjNDNlNDdhNDhiNzk5MTg4ZjcxZjY3NjE0OGYxMTJiN2E1OTlmODU2NTAwMWNiYmQ1ZTdhNThlMDk0ZmNmN2JmYTg4MmM1MmYwMDRlZGIwZDIxNDI2NzY3MTA5ZjQ5MmY2ZDE4NWQwZTYwMmI3NzAwYjZlZjRhN3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MjIyNTkyODV8Njc0M2RlZWQ1YzQwZWNjZjhiMjgxMTUzODYyMmFjNjRjMGYyMzBiNjdlM2I0NzdkOTAxNWM3ODMwOWE4NmQwZjc1MGIzNzJhYTcyYTQ4ODIxYzgyY2EzODFiN2VlYjllNjcwZjAwMjAyYmUxYTQwZjMxOTQ3YWIwZTMxNWZlZTk",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2899370309.jpg?height=290&check=sha256%3Ae454cc28fdebcf8ba8504b6a9440c02d595418da5407f5c2d2409f82052a2313&width=435&resize=5",
+  "address": "Retiefstraat 10 B",
+  "postcode": "1092 XC",
+  "city": "Amsterdam",
+  "match": 99,
+  "price": 600000,
+  "price_label": "Vraagprijs",
+  "type": "Bovenwoning",
+  "m2": 68,
+  "rooms": 3,
+  "bedrooms": 2,
+  "id": "retiefstraat-10-b-1092-xc",
+  "first_seen": "2026-09-21",
+  "last_seen": "2026-09-21",
+  "energy": "A",
+  "garden": false,
+  "terrace": true,
+  "status": "Beschikbaar",
+  "listed": "2026-09-21",
+  "tenure": "Eigendom belast met erfpacht",
+  "erfpacht_until": "2068-07-31",
+  "enriched": "2026-09-21"
  }
 ]
