@@ -65,7 +65,8 @@ listing. An edit pushes within half a second rather than waiting out the interva
 `localStorage` keeps a local copy, so the board works offline and catches up later.
 
 Each column's sort order (`sorts`) and the column colours (`colors`) ride along
-in the same file, each with a single timestamp for the whole set — they change rarely, so newest-wins for the whole map is enough).
+in the same file, each with a single timestamp for the whole set: they change
+rarely, so newest-wins across the whole map is enough.
 Clicking a column's dot opens a colour picker and recolours that column on both
 boards; the header, card stripes and map pins all read the same CSS variable, so
 a custom colour applies in light and dark alike. "Reset colours" in the Sync
