@@ -5,8 +5,8 @@
   "summary": "0 new requests (13/13 already processed); checked 3 tracked listings, no new agency confirmations — nothing moved"
  },
  "listing_refresh": {
-  "at": "2026-09-21T05:16:38Z",
+  "at": "2026-09-21T06:19:02Z",
   "ok": true,
-  "summary": "no new digests; 215 listings, 0 status changes (last full re-enrich yesterday)"
+  "summary": "no new digests (Sep-20 20:55 already processed); re-enrich done yesterday; 215 listings, 0 status changes"
  }
 }
