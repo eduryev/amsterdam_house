@@ -168,7 +168,7 @@ button,select,input{font:inherit;color:inherit}
 }
 .col.drop{border-color:var(--brick); background:color-mix(in srgb, var(--brick) 6%, var(--surface-2))}
 .col-head{
-  display:flex; align-items:center; gap:7px; padding:9px 11px;
+  display:flex; align-items:center; gap:7px; row-gap:6px; flex-wrap:wrap; padding:9px 11px;
   border-bottom:1px solid var(--line); position:sticky; top:0;
   background:var(--surface-2); border-radius:12px 12px 0 0; z-index:2;
 }
@@ -184,6 +184,15 @@ button,select,input{font:inherit;color:inherit}
 .col-dot:hover{border-color:var(--ink-3)}
 .col-dot:focus-visible{outline:2px solid var(--canal); outline-offset:2px}
 .col-name{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase}
+/* the sort picker takes a row of its own: "VIEWING SCHEDULED" plus a count
+   plus a dropdown does not fit a 300px column on one line */
+.col-sort{
+  flex:1 0 100%; font-size:11px; font-family:var(--ui); cursor:pointer; outline:none;
+  border:1px solid var(--line); border-radius:6px; background:var(--surface);
+  color:var(--ink-3); padding:2px 5px;
+}
+.col-sort:hover{border-color:var(--ink-3); color:var(--ink)}
+.col-sort:focus-visible{outline:2px solid var(--canal); outline-offset:1px}
 .col-n{margin-left:auto; font-family:var(--mono); font-size:11.5px; font-weight:600;
   color:var(--ink-3); font-variant-numeric:tabular-nums;
   background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:1px 7px}
@@ -576,6 +585,56 @@ function applyColors(){
   }
 }
 
+/* Each column sorts itself, and that choice is shared the same way the colours
+   are — if one of us decides Backlog is best read cheapest-first, the other
+   shouldn't have to redo it. One timestamp for the whole map, as with colours. */
+const SORTS = [
+  {id:'listed-desc', label:'Newest first'},
+  {id:'listed-asc',  label:'Oldest first'},
+  {id:'price-asc',   label:'Price: low to high'},
+  {id:'price-desc',  label:'Price: high to low'},
+  {id:'ppm-asc',     label:'€/m²: low to high'},
+  {id:'m2-desc',     label:'Size: big to small'},
+  {id:'m2-asc',      label:'Size: small to big'},
+  {id:'beds-desc',   label:'Most bedrooms'},
+  {id:'energy-asc',  label:'Energy: best first'},
+  {id:'area',        label:'Area A–Z'},
+  {id:'garden',      label:'🌳 Garden first'},
+  {id:'terrace',     label:'🏖 Terrace first'},
+];
+const DEFAULT_SORT = 'listed-desc';
+const sortOf = stage => (state.sorts || {})[stage] || DEFAULT_SORT;
+
+function setColumnSort(stage, id){
+  state.sorts = Object.assign({}, state.sorts, {[stage]: id});
+  state.sortsTs = Date.now();
+}
+
+/* Ties fall back to the default order, so a column sorted by something coarse
+   (garden, area) still reads newest-first within each group. */
+function cmpFor(id){
+  const newest = (a, b) => listedDate(b).localeCompare(listedDate(a)) || a.address.localeCompare(b.address);
+  const by = (f, dir) => (a, b) => (f(a) - f(b)) * dir || newest(a, b);
+  const energyRank = l => {
+    const i = ENERGY_ORDER.indexOf(eff(l.id).energy);
+    return i < 0 ? 99 : i;            // unknown class sorts last, never first
+  };
+  switch (id){
+    case 'listed-asc': return (a, b) => listedDate(a).localeCompare(listedDate(b)) || a.address.localeCompare(b.address);
+    case 'price-asc':  return by(l => l.price, 1);
+    case 'price-desc': return by(l => l.price, -1);
+    case 'ppm-asc':    return by(l => l.price / l.m2, 1);
+    case 'm2-desc':    return by(l => l.m2, -1);
+    case 'm2-asc':     return by(l => l.m2, 1);
+    case 'beds-desc':  return by(l => l.bedrooms == null ? -1 : l.bedrooms, -1);
+    case 'energy-asc': return by(energyRank, 1);
+    case 'area':       return (a, b) => hoodOf(a).localeCompare(hoodOf(b)) || newest(a, b);
+    case 'garden':     return by(l => eff(l.id).garden ? 0 : 1, 1);
+    case 'terrace':    return by(l => eff(l.id).terrace ? 0 : 1, 1);
+    default:           return newest;
+  }
+}
+
 function setColumnColor(stage, hex){
   state.colors = Object.assign({}, state.colors, {[stage]: hex});
   state.colorsTs = Date.now();
@@ -800,8 +859,8 @@ function render(){
   const groups = {};
   STAGES.forEach(s => groups[s.id] = []);
   visible.forEach(l => groups[stageOf(l.id)].push(l));
-  // most recently listed first inside every column
-  Object.values(groups).forEach(g => g.sort((a,b) => listedDate(b).localeCompare(listedDate(a)) || a.address.localeCompare(b.address)));
+  // each column carries its own order, shared via board.json
+  Object.entries(groups).forEach(([stage, g]) => g.sort(cmpFor(sortOf(stage))));
 
   board.innerHTML = STAGES.map(s => `
     <section class="col" data-stage="${s.id}">
@@ -810,6 +869,10 @@ function render(){
                aria-label="Colour for ${s.name}" title="Pick a colour for ${s.name} — Katia's board gets it too">
         <span class="col-name" style="color:${s.color}">${s.name}</span>
         <span class="col-n">${groups[s.id].length}</span>
+        <select class="col-sort" data-sort="${s.id}" aria-label="Sort ${s.name}"
+                title="Sort this column — Katia's board gets it too">
+          ${SORTS.map(o => `<option value="${o.id}"${o.id === sortOf(s.id) ? ' selected' : ''}>${o.label}</option>`).join('')}
+        </select>
       </header>
       <div class="col-body" data-stage="${s.id}">
         ${groups[s.id].length ? groups[s.id].map(cardHTML).join('')
@@ -897,6 +960,14 @@ board.addEventListener('change', e => {
   if (swatch){
     // picker closed: now it's worth saving, re-rendering (map pins) and pushing
     setColumnColor(swatch.dataset.color, swatch.value);
+    save(LS_STATE, state);
+    render();
+    if (typeof syncTick === 'function') setTimeout(syncTick, 300);
+    return;
+  }
+  const sorter = e.target.closest('[data-sort]');
+  if (sorter){
+    setColumnSort(sorter.dataset.sort, sorter.value);
     save(LS_STATE, state);
     render();
     if (typeof syncTick === 'function') setTimeout(syncTick, 300);
@@ -1155,7 +1226,8 @@ function canon(st){
     items[id] = {};
     for (const k of Object.keys(v).sort()) if (v[k] !== undefined) items[id][k] = v[k];
   }
-  return JSON.stringify({items, colors: st.colors || null, colorsTs: st.colorsTs || 0});
+  return JSON.stringify({items, colors: st.colors || null, colorsTs: st.colorsTs || 0,
+                        sorts: st.sorts || null, sortsTs: st.sortsTs || 0});
 }
 
 function setSync(kind, text){
@@ -1207,6 +1279,11 @@ async function ghPut(body){
 
 function mergeInto(other){
   let changed = false;
+  if ((other.sortsTs || 0) > (state.sortsTs || 0)){
+    if (other.sorts) state.sorts = other.sorts; else delete state.sorts;
+    state.sortsTs = other.sortsTs;
+    changed = true;
+  }
   if ((other.colorsTs || 0) > (state.colorsTs || 0)){
     if (other.colors) state.colors = other.colors; else delete state.colors;
     state.colorsTs = other.colorsTs;

@@ -64,12 +64,19 @@ timestamp, so the most recent edit to a given listing wins, and only for that
 listing. An edit pushes within half a second rather than waiting out the interval.
 `localStorage` keeps a local copy, so the board works offline and catches up later.
 
-Column colours ride along in the same file (`colors`, with one `colorsTs` for
-the set — they change rarely, so newest-wins for the whole map is enough).
+Each column's sort order (`sorts`) and the column colours (`colors`) ride along
+in the same file, each with a single timestamp for the whole set — they change rarely, so newest-wins for the whole map is enough).
 Clicking a column's dot opens a colour picker and recolours that column on both
 boards; the header, card stripes and map pins all read the same CSS variable, so
 a custom colour applies in light and dark alike. "Reset colours" in the Sync
 panel puts every column back to its theme-aware default.
+
+The sort picker under each column heading offers price, €/m², size, bedrooms,
+energy class, area and garden/terrace-first, defaulting to newest-listed. Each
+column is independent, ties fall back to newest-first so a coarse sort still
+reads sensibly within a group, and a listing with no energy class sorts last
+rather than first. Energy, garden and terrace read the *effective* value, so a
+figure corrected by hand in the Edit panel is what sorting uses.
 
 It sits on its own branch deliberately: `main` serves GitHub Pages, and a commit
 every time someone moves a card would rebuild the site and hit the ~10 builds/hour
