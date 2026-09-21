@@ -5476,5 +5476,29 @@
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2068-07-31",
   "enriched": "2026-09-21"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwOTU1MXw4YTBlMmZjMjI3MTgwMWM1OWRlMzZlMmM2Yzc0ZGI1MWRjMjg1MDYwZjZiOWRlYTk0MWVjODI5N2UzODBjOWJhMjI2YjdkNmZmMmEzOWJiMjFjZWQ1ZDk2ZGI1YWE2NWRiOWFmZTQ1ODZlZTgyODZkNjBkOWNkNDY2NzJhZDViMHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MjI0MjUxNjd8MzlhMjNmYmYzYTYyNmY4OTg3ZTE1NjRkNTY2YTkxYjNhZTQzNGZmYzIwNTcxODZmODU0MjRkYmMzZTg0OGQ2OWQzNDY3MDU1MWNmMDBmYjM4MmM5MGVkNGU4NDQzOWVjYWM1OWRlOTk4NjE0YTFhZGZiMjkyZDI5ODA1MjA2YzY",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2899391499.jpg?height=290&check=sha256%3Af9ce4108c28b3003a4e97ef4b7814155480dbe9435b0bc7c48faaf77914cc5ef&width=435&resize=5",
+  "address": "Valeriusstraat 218 2",
+  "postcode": "1075 GK",
+  "city": "Amsterdam",
+  "match": 98,
+  "price": 600000,
+  "price_label": "Vraagprijs",
+  "type": "Tussenverdieping",
+  "m2": 63,
+  "rooms": 3,
+  "bedrooms": 1,
+  "id": "valeriusstraat-218-2-1075-gk",
+  "first_seen": "2026-09-21",
+  "last_seen": "2026-09-21",
+  "energy": "B",
+  "garden": false,
+  "terrace": false,
+  "status": "Beschikbaar",
+  "listed": "2026-09-21",
+  "tenure": "Volle eigendom",
+  "enriched": "2026-09-21"
  }
 ]
