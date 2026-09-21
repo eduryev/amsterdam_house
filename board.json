@@ -282,11 +282,11 @@
  },
  "colors": {
   "viewed": "#fd4444",
-  "archived": "#dcdad5",
+  "archived": "#2a2928",
   "disliked": "#55574c",
   "visited": "#14f53a",
   "backlog": "#7cb4f8",
   "scheduled": "#df08e2"
  },
- "colorsTs": 1789585707790
+ "colorsTs": 1790015113594
 }
