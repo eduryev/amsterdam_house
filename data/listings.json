@@ -21,7 +21,7 @@
   "status": "Verkocht onder voorbehoud",
   "vve": "€ 284,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27",
   "erfpacht_until": "2041-01-31"
  },
@@ -47,7 +47,7 @@
   "status": "Beschikbaar",
   "vve": "€ 200,45",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -73,7 +73,7 @@
   "status": "Verkocht onder voorbehoud",
   "vve": "€ 116,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "garden_size": "14 m²",
   "listed": "2026-08-27",
   "erfpacht_until": "Eeuwigdure"
@@ -98,10 +98,10 @@
   "garden": true,
   "garden_size": "11 m²",
   "terrace": false,
-  "status": "Beschikbaar",
+  "status": "Onder bod",
   "vve": "€ 230,00",
-  "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "tenure": "Erfpacht",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -125,7 +125,7 @@
   "garden": false,
   "terrace": true,
   "status": "Beschikbaar",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27"
  },
  {
@@ -150,7 +150,7 @@
   "status": "Onder bod",
   "vve": "€ 233,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27"
  },
  {
@@ -176,7 +176,7 @@
   "status": "Onder bod",
   "vve": "€ 59,68",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27"
  },
  {
@@ -200,7 +200,7 @@
   "terrace": true,
   "status": "Onder bod",
   "vve": "€ 166,23",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27"
  },
  {
@@ -225,7 +225,7 @@
   "status": "Beschikbaar",
   "vve": "€ 181,18",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27"
  },
  {
@@ -251,7 +251,7 @@
   "status": "Beschikbaar",
   "vve": "€ 173,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27"
  },
  {
@@ -276,7 +276,7 @@
   "status": "Beschikbaar",
   "vve": "€ 125,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-27"
  },
  {
@@ -302,7 +302,7 @@
   "status": "Onder bod",
   "vve": "€ 179,35",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-28"
  },
  {
@@ -327,7 +327,7 @@
   "status": "Beschikbaar",
   "vve": "€ 246,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-28",
   "erfpacht_until": "2052-09-30"
  },
@@ -353,7 +353,7 @@
   "status": "Ingetrokken",
   "vve": "€ 183,50",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg3ODY5OHw1YWE1MzhlOGIwNTEwYjU3MmIzZGQwZWIyNzM3MDI1NGMyMjA1MDkxNWVmNTQwYTJiMzUxMDBmZTRjNWNkNjUzNmRhMzcwMmQ5YjMxODUzZGFmYzUzZTljMjIxNThiOGVjODllMTZiNzM0MTRlNzNkZDAwOWY0MTY4MmY4OTRiNHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDIzODc2MTQ0MzN8MDdhY2MxZWUwZWYyYjg0MDc2YWJkNmQyMjBiMmUzNzg2YTg1MzgxMzU5MmJjOTIyMmUwMDBhMjk0NjJmMTVkZTYwYjczNmM0YzBjN2EyZjcxNTVhYzFlY2FhODhjMmJkNzIwNTNjYjE1ZDMyNzQ0OTRiMjAwOGI2YjRlY2NmNDQ",
@@ -377,7 +377,7 @@
   "status": "Ingetrokken",
   "vve": "€ 389,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "erfpacht_until": "2057-07-11"
  },
  {
@@ -401,7 +401,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-28"
  },
  {
@@ -426,7 +426,7 @@
   "status": "Beschikbaar",
   "vve": "€ 149,70",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-28"
  },
  {
@@ -451,7 +451,7 @@
   "status": "Beschikbaar",
   "vve": "€ 107,49",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-28"
  },
  {
@@ -476,7 +476,7 @@
   "status": "Verkocht onder voorbehoud",
   "vve": "€ 100,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-28"
  },
  {
@@ -501,7 +501,7 @@
   "status": "Beschikbaar",
   "vve": "€ 150,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-28"
  },
  {
@@ -525,7 +525,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-29"
  },
  {
@@ -550,7 +550,7 @@
   "status": "Beschikbaar",
   "vve": "€ 253,18",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31",
   "erfpacht_until": "2056-12-30"
  },
@@ -576,7 +576,7 @@
   "status": "Beschikbaar",
   "vve": "€ 200,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31"
  },
  {
@@ -600,7 +600,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31"
  },
  {
@@ -625,7 +625,7 @@
   "status": "Beschikbaar",
   "vve": "€ 101,96",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31"
  },
  {
@@ -650,7 +650,7 @@
   "status": "Beschikbaar",
   "vve": "€ 274,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -676,7 +676,7 @@
   "status": "Beschikbaar",
   "vve": "€ 274,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -703,7 +703,7 @@
   "status": "Onder bod",
   "vve": "€ 216,38",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31"
  },
  {
@@ -728,7 +728,7 @@
   "status": "Beschikbaar",
   "vve": "€ 237,28",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31"
  },
  {
@@ -754,7 +754,7 @@
   "terrace": false,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31"
  },
  {
@@ -779,7 +779,7 @@
   "status": "Beschikbaar",
   "vve": "€ 130,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-08-31",
   "erfpacht_until": "2055-05-15"
  },
@@ -805,7 +805,7 @@
   "status": "Beschikbaar",
   "vve": "€ 116,55",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -830,7 +830,7 @@
   "status": "Beschikbaar",
   "vve": "€ 150,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -852,10 +852,10 @@
   "energy": "B",
   "garden": false,
   "terrace": true,
-  "status": "Beschikbaar",
+  "status": "Onder bod",
   "vve": "€ 230,15",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01",
   "erfpacht_until": "2050-12-01"
  },
@@ -881,7 +881,7 @@
   "status": "Beschikbaar",
   "vve": "€ 219,00",
   "tenure": "Opstal",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -905,7 +905,7 @@
   "terrace": false,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -929,7 +929,7 @@
   "terrace": false,
   "status": "Beschikbaar",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -954,7 +954,7 @@
   "status": "Beschikbaar",
   "vve": "€ 290,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01",
   "erfpacht_until": "2066-02-28"
  },
@@ -980,7 +980,7 @@
   "status": "Onder bod",
   "vve": "€ 148,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1005,7 +1005,7 @@
   "status": "Onder bod",
   "vve": "€ 93,50",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1027,10 +1027,10 @@
   "energy": "C",
   "garden": false,
   "terrace": true,
-  "status": "Beschikbaar",
+  "status": "Onder bod",
   "vve": "€ 186,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1055,7 +1055,7 @@
   "status": "Beschikbaar",
   "vve": "€ 167,04",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1077,10 +1077,10 @@
   "energy": "D",
   "garden": false,
   "terrace": true,
-  "status": "Beschikbaar",
+  "status": "Onder bod",
   "vve": "€ 243,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1105,7 +1105,7 @@
   "status": "Beschikbaar",
   "vve": "€ 150,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1129,7 +1129,7 @@
   "terrace": false,
   "status": "Onder bod",
   "vve": "€ 145,00",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1154,7 +1154,7 @@
   "status": "Beschikbaar",
   "vve": "€ 200,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1179,7 +1179,7 @@
   "status": "Beschikbaar",
   "vve": "€ 335,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01",
   "erfpacht_until": "2054-06-16"
  },
@@ -1204,7 +1204,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1229,7 +1229,7 @@
   "status": "Beschikbaar",
   "vve": "€ 168,33",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -1255,7 +1255,7 @@
   "status": "Onder bod",
   "vve": "€ 99,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1277,10 +1277,10 @@
   "energy": "C",
   "garden": false,
   "terrace": false,
-  "status": "Onder bod",
+  "status": "Beschikbaar",
   "vve": "€ 210,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-01"
  },
  {
@@ -1305,7 +1305,7 @@
   "status": "Beschikbaar",
   "vve": "€ 162,09",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -1331,7 +1331,7 @@
   "status": "Beschikbaar",
   "vve": "€ 246,04",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02",
   "erfpacht_until": "2051-11-30"
  },
@@ -1354,10 +1354,10 @@
   "energy": "C",
   "garden": false,
   "terrace": false,
-  "status": "Beschikbaar",
+  "status": "Onder bod",
   "vve": "€ 166,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -1383,7 +1383,7 @@
   "status": "Onder bod",
   "vve": "€ 106,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02"
  },
  {
@@ -1409,7 +1409,7 @@
   "status": "Beschikbaar",
   "vve": "€ 158,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02",
   "erfpacht_until": "2064-06-30"
  },
@@ -1434,7 +1434,7 @@
   "terrace": true,
   "status": "Onder bod",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02"
  },
  {
@@ -1459,7 +1459,7 @@
   "status": "Beschikbaar",
   "vve": "€ 139,71",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02",
   "erfpacht_until": "2045-12-31"
  },
@@ -1485,7 +1485,7 @@
   "status": "Beschikbaar",
   "vve": "€ 440,87",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02"
  },
  {
@@ -1510,7 +1510,7 @@
   "status": "Beschikbaar",
   "vve": "€ 355,20",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02"
  },
  {
@@ -1536,7 +1536,7 @@
   "status": "Onder bod",
   "vve": "€ 149,18",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02"
  },
  {
@@ -1561,7 +1561,7 @@
   "status": "Beschikbaar",
   "vve": "€ 180,35",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02"
  },
  {
@@ -1586,7 +1586,7 @@
   "status": "Onder bod",
   "vve": "€ 150,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02"
  },
  {
@@ -1611,7 +1611,7 @@
   "status": "Beschikbaar",
   "vve": "€ 100,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02",
   "erfpacht_until": "2064-01-16"
  },
@@ -1637,7 +1637,7 @@
   "status": "Beschikbaar",
   "vve": "€ 125,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-02"
  },
  {
@@ -1662,7 +1662,7 @@
   "status": "Beschikbaar",
   "vve": "€ 182,17",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03",
   "erfpacht_until": "2040-01-15"
  },
@@ -1688,7 +1688,7 @@
   "status": "Beschikbaar",
   "vve": "€ 262,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03",
   "erfpacht_until": "2045-10-31"
  },
@@ -1714,7 +1714,7 @@
   "status": "Beschikbaar",
   "vve": "€ 136,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03",
   "erfpacht_until": "2044-07-15"
  },
@@ -1740,7 +1740,7 @@
   "status": "Beschikbaar",
   "vve": "€ 107,68",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -1766,7 +1766,7 @@
   "status": "Onder bod",
   "vve": "€ 221,35",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03",
   "erfpacht_until": "2057-07-31"
  },
@@ -1793,7 +1793,7 @@
   "garden_size": "18 m²",
   "status": "Beschikbaar",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03",
   "erfpacht_until": "2047-03-31"
  },
@@ -1819,7 +1819,7 @@
   "status": "Beschikbaar",
   "vve": "€ 303,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "erfpacht_until": "2056-11-30"
  },
  {
@@ -1844,7 +1844,7 @@
   "status": "Beschikbaar",
   "vve": "€ 130,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -1869,7 +1869,7 @@
   "status": "Beschikbaar",
   "vve": "€ 170,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -1894,7 +1894,7 @@
   "status": "Beschikbaar",
   "vve": "€ 190,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10"
  },
  {
@@ -1919,7 +1919,7 @@
   "status": "Beschikbaar",
   "vve": "€ 292,16",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -1944,7 +1944,7 @@
   "status": "Beschikbaar",
   "vve": "€ 100,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -1969,7 +1969,7 @@
   "status": "Beschikbaar",
   "vve": "€ 208,90",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -1994,7 +1994,7 @@
   "status": "Beschikbaar",
   "vve": "€ 229,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -2019,7 +2019,7 @@
   "status": "Beschikbaar",
   "vve": "€ 208,22",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -2045,7 +2045,7 @@
   "status": "Beschikbaar",
   "vve": "€ 150,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -2067,10 +2067,10 @@
   "energy": "C",
   "garden": false,
   "terrace": true,
-  "status": "Beschikbaar",
+  "status": "Onder bod",
   "vve": "€ 243,61",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -2095,7 +2095,7 @@
   "status": "Beschikbaar",
   "vve": "€ 75,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -2120,7 +2120,7 @@
   "status": "Onder bod",
   "vve": "€ 164,92",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -2145,7 +2145,7 @@
   "status": "Onder bod",
   "vve": "€ 152,50",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03"
  },
  {
@@ -2170,7 +2170,7 @@
   "status": "Beschikbaar",
   "vve": "€ 234,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04",
   "erfpacht_until": "2067-12-01"
  },
@@ -2196,7 +2196,7 @@
   "status": "Onder bod",
   "vve": "€ 146,28",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04",
   "erfpacht_until": "2042-12-01"
  },
@@ -2223,7 +2223,7 @@
   "status": "Onder bod",
   "vve": "€ 108,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04"
  },
  {
@@ -2248,7 +2248,7 @@
   "status": "Beschikbaar",
   "vve": "€ 120,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04"
  },
  {
@@ -2273,7 +2273,7 @@
   "status": "Beschikbaar",
   "vve": "€ 179,34",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04"
  },
  {
@@ -2299,7 +2299,7 @@
   "status": "Onder bod",
   "vve": "€ 149,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-03",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -2325,7 +2325,7 @@
   "status": "Onder bod",
   "vve": "€ 142,50",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04"
  },
  {
@@ -2349,7 +2349,7 @@
   "terrace": true,
   "status": "Ingetrokken",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg4NjkzOHxmYTQxZTQyMGIwMDZkYmQ4YzFmMGI1NTU0ZDNmYTI1YjM2ZTBhN2Q2ZmYzMzRmZDZiNzUyNTUzM2IyNjM2OThlNThmZDY4MTA1NmRkMDdiNmUxM2NiZTVmYjBjMjdlY2I0OGZmNzAwNGE2NjFjYjFkMTY4ZWIwY2M4YzE1ZWMzN3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDIzOTcyMjIyOTV8OTk3ZjZmODJiOTUyZDZjN2ViMmM4NWE5ZjIxNjJmNDNkYzlhZDBiNTk1NGIyYTc1ZGI4ZThmYzM3ODMyNWUzMzYxMTdlOWNiYjhhNGU0ZTA0NGE4ZDlmZTZiYmQ5ZjNiMWU5N2U2ZjRkMWRlMjE1MzY2Yzk2NGY0YjQxNDc0MTA",
@@ -2373,7 +2373,7 @@
   "status": "Beschikbaar",
   "vve": "€ 322,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04"
  },
  {
@@ -2399,7 +2399,7 @@
   "status": "Beschikbaar",
   "vve": "€ 141,46",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04"
  },
  {
@@ -2425,7 +2425,7 @@
   "status": "Onder bod",
   "vve": "€ 156,45",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-04"
  },
  {
@@ -2450,7 +2450,7 @@
   "status": "Beschikbaar",
   "vve": "€ 245,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-05"
  },
  {
@@ -2475,7 +2475,7 @@
   "status": "Beschikbaar",
   "vve": "€ 415,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-06",
   "erfpacht_until": "2057-08-01"
  },
@@ -2501,7 +2501,7 @@
   "status": "Beschikbaar",
   "vve": "€ 408,45",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-07",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -2528,7 +2528,7 @@
   "status": "Onder bod",
   "vve": "€ 100,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-07",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -2554,7 +2554,7 @@
   "status": "Beschikbaar",
   "vve": "€ 118,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-07"
  },
  {
@@ -2578,7 +2578,7 @@
   "terrace": true,
   "status": "Onder bod",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-07"
  },
  {
@@ -2603,7 +2603,7 @@
   "status": "Beschikbaar",
   "vve": "€ 127,82",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-07",
   "erfpacht_until": "2069-10-15"
  },
@@ -2628,7 +2628,7 @@
   "terrace": true,
   "status": "Onder bod",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-07"
  },
  {
@@ -2650,10 +2650,10 @@
   "energy": "A",
   "garden": true,
   "terrace": true,
-  "status": "Beschikbaar",
+  "status": "Onder bod",
   "vve": "€ 198,59",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-07",
   "erfpacht_until": "2045-01-31"
  },
@@ -2678,7 +2678,7 @@
   "terrace": false,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-08"
  },
  {
@@ -2703,7 +2703,7 @@
   "status": "Beschikbaar",
   "vve": "€ 159,33",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-08"
  },
  {
@@ -2728,7 +2728,7 @@
   "garden_size": "9 m²",
   "status": "Beschikbaar",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5MjI3N3wzZTE4MmUwMDM5ZDc4YmY0MDBlZmExNmM3NWMxY2JiNzYyMjkzMWU0NzQ1ZjgwNDUyNmUxMDUzNzkzNDVhMGRlYjFjMjdlZmU4ODhiZWQ2NDc5ZDVjMjdkNjQzZGFhMzQzNDcxMGJlZTFkZmVjZTNhZmJkYTdhNjQ2NWMyMWU4Nnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MDMxMTUxOTN8ZmY3YTA4ZTE1YjBiYjJkMjBmMTZmNDBkYzY5NmNhZTdkMmUwNzdkYWRiYzI0NWRhZTE4YWIwNjc5NzdkYzZjODljNDhjYjczMTEyNzI4MGVjMGQzZmE2MTM1MzY0Yzk1YzU2OGI3MzhkM2JjYjA1NWJkMjIzMDdlNDI4Y2YyNDI",
@@ -2752,7 +2752,7 @@
   "status": "Beschikbaar",
   "vve": "€ 220,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-08"
  },
  {
@@ -2778,7 +2778,7 @@
   "status": "Beschikbaar",
   "vve": "€ 226,15",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-08"
  },
  {
@@ -2803,7 +2803,7 @@
   "status": "Beschikbaar",
   "vve": "€ 218,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-08"
  },
  {
@@ -2828,7 +2828,7 @@
   "status": "Beschikbaar",
   "vve": "€ 173,31",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -2853,7 +2853,7 @@
   "status": "Beschikbaar",
   "vve": "€ 208,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09",
   "erfpacht_until": "2067-02-16"
  },
@@ -2879,7 +2879,7 @@
   "status": "Beschikbaar",
   "vve": "€ 125,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -2904,7 +2904,7 @@
   "status": "Onder bod",
   "vve": "€ 110,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-08"
  },
  {
@@ -2928,7 +2928,7 @@
   "terrace": false,
   "status": "Beschikbaar",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -2952,7 +2952,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -2977,7 +2977,7 @@
   "status": "Beschikbaar",
   "vve": "€ 130,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -2999,10 +2999,10 @@
   "energy": "A",
   "garden": false,
   "terrace": false,
-  "status": "Beschikbaar",
+  "status": "Onder bod",
   "vve": "€ 199,35",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -3027,7 +3027,7 @@
   "status": "Beschikbaar",
   "vve": "€ 149,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-08"
  },
  {
@@ -3052,7 +3052,7 @@
   "status": "Beschikbaar",
   "vve": "€ 153,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09",
   "erfpacht_until": "2038-03-31"
  },
@@ -3078,7 +3078,7 @@
   "status": "Beschikbaar",
   "vve": "€ 112,50",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5MzkwN3w3YjZjYWYwNDkzMDA1N2M3OWM5OGUwN2JmNWFhMGM0MDI5OGFkMjVmZDA2NTVlOWIwZTUxYjlhNTFjMDlmNDI0Njg1ODY4NTNjMTE0ZDc2NjlkZDUyY2MyNmU3YTAwOGFiYzBjMTFmMDI4YjI2ZGJhMGNmYjVlNjkyMTFkOTI4MHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MDQ4NDg0MDl8ZjkxZDhkOTRlZDMyNTMzMjRkYTg0MGYzZGQ4YzMyYWFiZTg2YzMwMmYxZTRiZmI5NzkyZThkYmNhY2ViZmMxYTg3NjczNTBjNzAwODMxMGQwYzk0YTNkZDJkYzE3MTNlZGM1NmQ5ZDg1ZjlkMTBhNWZkZjdjNGIxZTY5ZTA5MWQ",
@@ -3102,7 +3102,7 @@
   "status": "Beschikbaar",
   "vve": "€ 219,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -3127,7 +3127,7 @@
   "status": "Beschikbaar",
   "vve": "€ 310,50",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -3152,7 +3152,7 @@
   "status": "Beschikbaar",
   "vve": "€ 99,75",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -3177,7 +3177,7 @@
   "status": "Beschikbaar",
   "vve": "€ 156,51",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09",
   "erfpacht_until": "2057-04-30"
  },
@@ -3202,7 +3202,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09"
  },
  {
@@ -3227,7 +3227,7 @@
   "status": "Ingetrokken",
   "vve": "€ 91,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5NTUyNXxmNzI0MjlmYWVkZDhkMGU3MzlkZjc2NWRjOTJlYjQ4MzhjNDY5Y2QyMmIyODJkZWZmNDc1MTM1MzQ4NDQwMzM2NWRjM2ZiZTZkMDc1ZmU1N2MwYTY5NDJiM2Q4OTJjN2EyMDU2NzA0NDEzYTcwOWM1Y2NiMTdmYzE4MzJmZTUyOHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MDY1NjcwNTV8Y2NhZjdiMDQ1ZDJlZjQyYmFkYTI4N2M2YWEzYTlhMGY2ZWYxN2MwNDIxNDE0ODgxNzUzNGEzMjc3YTBkZDM1ZmE2MTZjMWI5NTcxMWM0MGJlNjJkNzJjYmMwNmJiOGVhYzhhYzkzZTQxOGUxMWQwOTk3ZGVmY2VjOTYyMzk2MDY",
@@ -3251,7 +3251,7 @@
   "status": "Beschikbaar",
   "vve": "€ 105,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09",
   "erfpacht_until": "2046-05-31"
  },
@@ -3276,7 +3276,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10"
  },
  {
@@ -3301,7 +3301,7 @@
   "status": "Onder bod",
   "vve": "€ 100,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10"
  },
  {
@@ -3325,7 +3325,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10"
  },
  {
@@ -3350,7 +3350,7 @@
   "status": "Beschikbaar",
   "vve": "€ 229,38",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10",
   "erfpacht_until": "2055-09-30"
  },
@@ -3376,7 +3376,7 @@
   "status": "Beschikbaar",
   "vve": "€ 203,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -3403,7 +3403,7 @@
   "garden_size": "50 m²",
   "status": "Beschikbaar",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10"
  },
  {
@@ -3428,7 +3428,7 @@
   "status": "Beschikbaar",
   "vve": "€ 125,14",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10"
  },
  {
@@ -3452,7 +3452,7 @@
   "terrace": false,
   "status": "Beschikbaar",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10",
   "erfpacht_until": "2068-02-28"
  },
@@ -3478,7 +3478,7 @@
   "status": "Beschikbaar",
   "vve": "€ 187,11",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11",
   "erfpacht_until": "2056-09-15"
  },
@@ -3504,7 +3504,7 @@
   "status": "Beschikbaar",
   "vve": "€ 255,42",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11"
  },
  {
@@ -3529,7 +3529,7 @@
   "status": "Beschikbaar",
   "vve": "€ 172,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -3555,7 +3555,7 @@
   "status": "Beschikbaar",
   "vve": "€ 159,33",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-09",
   "erfpacht_until": "2057-12-15"
  },
@@ -3581,7 +3581,7 @@
   "status": "Beschikbaar",
   "vve": "€ 225,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11",
   "erfpacht_until": "2058-10-30"
  },
@@ -3607,7 +3607,7 @@
   "status": "Beschikbaar",
   "vve": "€ 100,00",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -3632,7 +3632,7 @@
   "terrace": false,
   "status": "Beschikbaar",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11"
  },
  {
@@ -3658,7 +3658,7 @@
   "garden_size": "45 m²",
   "status": "Beschikbaar",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -3684,7 +3684,7 @@
   "status": "Beschikbaar",
   "vve": "€ 235,83",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11"
  },
  {
@@ -3709,7 +3709,7 @@
   "status": "Ingetrokken",
   "vve": "€ 163,15",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -3735,7 +3735,7 @@
   "status": "Beschikbaar",
   "vve": "€ 195,00",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11",
   "erfpacht_until": "2054-12-31"
  },
@@ -3761,7 +3761,7 @@
   "status": "Beschikbaar",
   "vve": "€ 197,80",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11",
   "erfpacht_until": "Eeuwigdure"
  },
@@ -3787,7 +3787,7 @@
   "status": "Beschikbaar",
   "vve": "€ 140,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-10"
  },
  {
@@ -3812,7 +3812,7 @@
   "status": "Beschikbaar",
   "vve": "€ 200,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11"
  },
  {
@@ -3837,7 +3837,7 @@
   "status": "Beschikbaar",
   "vve": "€ 220,00",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11"
  },
  {
@@ -3861,7 +3861,7 @@
   "terrace": true,
   "status": "Beschikbaar",
   "vve": "€ 200,00",
-  "enriched": "2026-09-20",
+  "enriched": "2026-09-21",
   "listed": "2026-09-11",
   "tenure": "Volle eigendom"
  },
@@ -3889,7 +3889,7 @@
   "listed": "2026-09-13",
   "tenure": "Erfpacht",
   "erfpacht_until": "2068-08-31",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5OTEzMHxjM2QxM2RlNzJjOTFlMTk2ZGI0ZGFjZWMxY2Y3ZmNhZDIzNGU2NzE2ZWU4MTNjZjUyYzAxMDA5Y2I5MTY2NjNkM2U4YjYxNjJmNTBjNTI4NjMzM2ExYmI1ODU4Nzk1NzQ1OGZlNDcwN2YxZThkNTBmMmZjYTQ0MDYyMzAxMGIzZHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTA4NjYxMDV8MGQ4OGRmOWI4NjQzY2QyZDk5MGRjNmJhMTg4NDQ1MDdhNjE4ZGVlN2U1ZWVmODE1YWQzOTM5YTMyZmU4MzgwZmQ0YTg3YWIyYTBkNzFiNmVhNmU3ZjI4MzBjZTI0YWY1Y2MyNTM4ZjAxYmI3YmYxNWE0YzQ5MWJhZWJmZTFkNGM",
@@ -3914,7 +3914,7 @@
   "vve": "€ 193,44",
   "listed": "2026-09-06",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njc3MjEzOXxkOTUzM2U3ZDlmYjQ0ZWVkZTc1MzFjZmYwOGI3ZDczOWUxZjRiOTljYjZkZDFmYzQ4MDZhM2QyMjI1N2IxZDk0NTVlOTQzN2MxOGJmZjgwYzQ5MWVkM2VmYjkwNmRhNGU5ODNjMThhMGZkZDE4MWVjZDE4NzZmMTdhY2Q3NDFhZHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTA4NzcyMTl8ZWU0Yjg0NzI0NWMxYzQ1OGFkOTNhNWVmYmQxYzMyZDc0Yzg2MWI1MGUxYjAxMmFkNWVjNjdhOTNiNDRjNTEzYzQ0ZjFiZGQxNWEwNzNiODA0YTJhMTcwNDlhYmMyYTgwY2MzZTI1ZWU5ZmY4ZmViOWIwM2Q3MjMyYmQ0OGZkNTY",
@@ -3938,7 +3938,7 @@
   "status": "Beschikbaar",
   "vve": "€ 223,31",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5OTEzM3w1NzUxZjZkZTYzNWMzNTUxOGI2MDk2OTg3MmQ4ZWM5ODUyZDI1MzQ2ZThjNmM0OGNmZWRjZDljMTg3ZDVhZDdiZWJmNjY5MzAxNTY0MTgyYjgyNjA1MTBmYTBkNDhiZTA0MWM3ZGNmYWE3MDA5MzE3M2M5MzQzMGZiMGZhOGQwMnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTA4NzAyMTl8M2U3YjY4ZjdjYjNiNjlhYTE0MWViOGI2MTIyZGI3N2RlZGU0NjdhOGY3OTQyYzZiNWZjNmViZDhlMWQ1NGM5ZTU0NzUwOGYxN2M1OWY1NmJhOWRjODBkNDJmNGYzYjZkY2IzOTI4MzkwYmEzMGU0NGVjZGFiMDk2YjAwODRmNWY",
@@ -3963,7 +3963,7 @@
   "vve": "€ 100,00",
   "listed": "2026-09-13",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5OTIxOXxlMmE5ZmRjNzk5NWQzNWUwMTU2MjY2YTUwMGJlOTY3YzdiNDg0MWE0ZDY5YWY0YmNkN2YwODJjMGZhZmFjYTI5MjY1YzIxMDBhNDBhZWY2NTA5NDNmMzdmMjI2Mjg4MTgxZDg1YmZhY2Q2MzhlMjA5NDA1MmU1ZjQyYmJjNjZlZnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTEyMjA0MTF8OGI1NDBkZTUxN2Q3MDJiYzQ4YmQyZWU2YmJhNzg3MzE1NDk3NjYwMWY3MjhlYmM0ODBkMDNhNjQ2Y2MxMjJjZGFmZWVjYjZmYzJlOTg0MTI0MjIxNDA0MzVmMzE2NGQxOTVhNDZmZDhiMjFkNDM3ZGRhOThhN2Y2M2I2NTRlYTM",
@@ -3989,7 +3989,7 @@
   "vve": "€ 280,00",
   "listed": "2026-09-14",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDY5MnxkYTBlYWRiMjMwYmNjZTE4ZDBmNGUwM2U0MzVlZTBlMTViYjlmOGRkYTdkZWFiYjdkNjUzNTQ5YWFhNTY1Zjk0Nzc4YzA3NmYwYTM2ZGMzMDIyM2NlZWExODdiOTZmZDNhOGUzYmQxYzMyYWMyYTZhMjJlZGY1MTFhNWNmNzA5YXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTIzNjg1Njd8ZmMyZWU2ZGNlOWYxNWU1Y2VkOTE0ZjU2ZjQ4Y2UyZGE5YWQyODU1OWQ1MjA1YmYyYjZhNWRjZGRiYmZkZGYwM2QyNmFhNzc0Zjk4ODE4OTdhYjM5MWM3YmRjMjkxOTIwYWJhZmU1ZmY0ZjcwMjNmMjA1NTVhMDkyMzMzZTdjYjA",
@@ -4015,7 +4015,7 @@
   "listed": "2026-09-14",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2040-01-15",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDgzMnxlNTZlZmYyMTlhN2FiMzg5YjRkMjU5MjY4OGM2NzhkODU0NmVhMmQ5ZjYwNzJlMGMyNzY3ZmVmMGYzZTUzNzQ3YTA5NjViNGE5MWU2OWI1MDQ5M2IzODlmZjQwMWQ2ZDJmODQ1YTg3YWYwZGRmODQ1MWUwYTU2NTdkYzk4NzQ2Y3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTI3MDgzODV8MWY2MDNhZGE2MDNlMmNkZGY3MWYxYjViZGNjMGU5ODQxNjZkZDNiMTRkOTlmOTdlZjMzZTQ0MzIzMGVkODYzZDdmZDQ4MjUyOGJjOGNkNDRmODBiNDMwY2VjNTMxNTgzMWMxOGU2NDkwZWM2YjdjZjZiM2M1ZjVlMjVlNjQ1YmM",
@@ -4041,7 +4041,7 @@
   "listed": "2026-09-14",
   "tenure": "Erfpacht",
   "erfpacht_until": "2051-11-30",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDg3NXxlMjIzN2IyYjBhNzcwZjYzYWFjNDlkYWIwYmNjN2E3NDgzNThkNzFkYWM4MDJlNmE0MzZlYjg5NTNkY2E5NWQ4ZDIzZTczMzFhMjVmYzY4ZTQ3M2QyNWMyY2MwYjFlMGExYTYzZDJhY2Q2ZmNlYTJkMjk2ZDYyYTUyNGE2ZDAwYXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTI3NDI2ODF8YzVmNWQ2NGI2NDc4NWFiNDY0OWE1ZmMzZWY4Y2U0ODgwMGVlNTFiYmJkNmUwYTc4ZDgyZTZiYTUxNzZlOTZjYjkzYjM3Zjc2ZDcyYzE3NmEyMmU2ZWE2OGQ0ZDMzODJlMTE2NzgxOGVjMzEzMGFlOGIwYTY3NGVjOTE4MTdjZGQ",
@@ -4066,7 +4066,7 @@
   "vve": "€ 168,22",
   "listed": "2026-09-14",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5OTU2MXw2MWJiNjY5NzFlM2Y0NDU0NDExNjFlMzMxZTQxODEzYWIwNDMzNDM1YzgzMTIzYTcyODM1YjhmNzRkYzVlYWZmOTQzMTMyODQ5NmI0NjMwYTkyOWQ4Nzk1MDNhOGY4NzYyOWNjMzMwMDM4NjMyMTNlNDBkNjk5NGVkMGQ5OTYyNHw5MDczNTk/overzicht",
@@ -4091,7 +4091,7 @@
   "vve": "€ 254,00",
   "listed": "2026-09-14",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDg5OHxlMTA4MTYyYWNiMDYxZmIyMzFhZWU2YTlmNzhiM2MxZmIxOGQ5ZWIyN2Q4N2Q1MDgxZDBkZmIzZDk0NzVhNzE3YWMwMTFkYWYyY2M1MGJjM2YyNzljZjMwYzJmNzIzNWYxYWU4MTRkYmJhYjgyMmE2ZjEzYjM4MDViYzY0MzcyNnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTI3NjA0OTl8YTYyOWYwOWFmMzVlNTY2OTI0ZGJjMzZiNmRmNjgxYjU1MTk0OTdiNzNhNjkzYzg5MDU3ODg2NTNjYjdiNzliMThkYmEyNDNjZTE0YWE0ZWUwNzNkNTYxMzZjZGRjZDY5MTRjYmIyNzgwNzI2YTdmM2NlOGVmZTc5ZGYwZjBmMTY",
@@ -4116,7 +4116,7 @@
   "vve": "€ 214,12",
   "listed": "2026-09-14",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5OTc1MXxlYzBjZTQzYjA2ZDY3ZGJmNWY4Njg0MzhhMTNjMjU2ZGY2NTU3OWFkMWI0ZGFhNGM4YWVhNTIxMmMzNjZiNGFlYWI3NDg4N2NmMGJjYzkwNzVjNjdiODQyOTEwNzAyZjkwYjIxZmFjNDkzMDM2MzJjMjVmMGRiZmM4OGVkOTI2OXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTE2NTUwMDN8NzFhODFkYzQ3ZGIxYWZmOGYwNTY3YzFlNWM2Yjc2M2Y2NjI3NGE2YTdjZTQ5YzlhZDhmODZkYzMxZTQ2YzVjZTM1YjViYjcyN2NlZDU0OWI2ZTRkMTg2MzNhNWI4ZjBmNmNhYmQzMjZjN2Y5NmI1NmU4NDViN2YwZDVlN2Y4OWI",
@@ -4141,7 +4141,7 @@
   "vve": "€ 234,46",
   "listed": "2026-09-14",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg5OTQzMXxmMzFiNmQ5NzA5YWQ5YjMxMWJjYjY5OGJkNGJmNTE5ZTMzMDUzZjZmY2RlM2Y5N2JhNmJjZWI0ZjNjZjM5YTFhNjIyNGI4ZmQ0ZTc2MjE4NDI4ZDY4YWI2N2M5MDE5YjAwNjYzZTAyMzdhMzdiNzk4NWMxMWY3Y2MwMWFiMzBhNnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTE0MTExMTd8NTQzMzNjMmExYmM5YjUzNjMwM2EzOGY2NTJjMTJiMGJlYjlmNGIyMjk0ZTU2ZDRhYWI2YTZlNGNkMzI5YjJhZTMyNzczNjQ4YWFmODBiNjczYmNmOTNhM2M3MWI4Nzg4YjdmODA1YWQzZjc5NTQ5ZmIxY2E5MjA2MTQ5MTBjMDQ",
@@ -4167,7 +4167,7 @@
   "listed": "2026-09-14",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDEwMXwyNGMyOTE0OGUyOWExMmQyOWQyMmMwNzQxYzQ5NTYwMmMwMTRkNjljOWIzNDUwODU2MjA4ZjE3NGNmYmJkNjQ4YWU0Y2I5YzliNzk3ZGI4ZjIwNjgzZWRiZjU3MTEyZjM4YzhlYzljYThiNTFiYmZlNjRlZjA1YzQxNWI3Yzg0MHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTE4NDk3OTV8ODdmNGUzNjU3NWVkNjg4ZGU0ZDA2YjQ0YzBiYjMxNGNlZDdkMWVmODVhNTc5MDgyODBjZWEzZGEzM2UyMzlhNTU1ZWVlZTNhOWVlMTI3Zjk0NGU0N2FjODdkNTlhYmY0MjQyOGY4OTM5MjFlMjliZDkxYzkyOWFiNDIxZGI5OTM",
@@ -4191,7 +4191,7 @@
   "status": "Beschikbaar",
   "listed": "2026-09-14",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDU5MXw4ZWJmMjNhN2Q3NWFiMzIxNmI5MDkxY2JmMTFjY2RjMWNmZGNiNTljNjI4YjkxZDgyYTI4ZjU4N2ZiZTRjMzAzY2FjMTUzM2FhYTRmMGRmYmMzZWQ5ZDUwYWFlNWMyNGI3MjdkYjg4OGE2MTdkYWQ5YjI3NzdjZjM3NGU1M2JiNnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTIzMjcwMTd8YmEzZjU3OTQ3ODI3YjE2YzQ4NWIyZDk2ZTNmYzRlNWU3YmJmYzBkZDg1MmI0M2JjNjkzZjQ4NjRmMGM1YzZiZDQ2MDMwNTYyOTQ0MmJlODU5Mjg4MWE5ZjBlZjE3ZTc2YmE0NjU3NDEyZjgwYjQyYjIyZGU2YzI3NjJmNjM2MjU",
@@ -4216,7 +4216,7 @@
   "listed": "2026-09-14",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDI1Nnw4ZjNmMDg3MWU0ZmIyOGY0ZDhjMzlmNDAwYWYzYzc4NjllMjQyMDk0ZTZhZGQzM2FjNTY0OWI2ZWE4MDE3YWU2N2ExMWU1OWFlZmJkODRlZWJhZmI3ZDM4NTViZTczYThkYWJkYTZmMzRmZTkwZjQ1MWMzYWE0MTBhM2UwYjk2ZHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTE5NjAyMjV8OWYxYWRmNTk2ZjRmNTY5MmRjZTA0N2Y1ZWNmMTM4N2RiZGZlYzdjYTQ0NTJlNGFmYzcxMjM5OWYxNjQyZWFjZWEyYjc5YjdhY2QxNWQ3YmRmYjQ1ZTM4ZjA5ZTUzYzI2N2JlZDRlNTU1ZGFkNzZkNzNmNjZiNzY4MDQ5MDhkMDQ",
@@ -4241,7 +4241,7 @@
   "vve": "€ 100,00",
   "listed": "2026-09-14",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMzIzNHw4NGY1N2NlM2VhNzQxZTRkM2U0Njc3YzJlYjA0MzcxY2FkYWEwZTU5OGI3NzRlMDVlNTBjNDk4MjM1MTczZjQ3M2QwMTY2OGQ4ODgyODg3MTY3M2Q1ZDRhOTkzMGM4NWI3Yzg1ZjdkYTcyZTQ3NjFkOTg0MjZlN2JkMzAwOTE5Mnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTUwMjA3OTd8MTZkZjg4MDcyNzE0OWM1NTIzMGU5OWFhY2IyYzRiYzlmMWU2MGRjOWUwZmQ0Zjk0ZWJhMDc4YTI2YTE2ZTRhMjMwYzM4ZGJjZTJiNmQ3MjRiOTlhMWY0MGIwZGM5ZWVhYzczMzVlYjkxYzFjNzYwODY0NjgyYWM4OWYwMWJiODU",
@@ -4267,7 +4267,7 @@
   "listed": "2026-09-15",
   "tenure": "Erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMjQ0OXw1NzgwYjY2NzM1OGQ4M2E1ZWI3MThkMTI5ZTQ4ZDc2MGIyN2MyYmQ1OGQxZGY0ZGM2YmNkNWUwMDZhMWJkMjYwYmJhMGUxYjdjY2IzNTNhN2Y0ZDA2M2YxYWE1MmUzNzU2NGE1YjE4Yjk3MWY0YzA1MzUzMTEwZDE0MWVhNWFmMnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTQwNjMwOTl8NTQ4OGNhMDFiNDdiZTI1ZTkzYzFiYjg1ZGY4N2E0NzNmNzdlM2IzNjc4YTA1OGJhNTFiOTY4ZDJhOTM0MzZlYTI3NzJhMDQxY2QwMDA0NWE2ZDg2YWEwYjEzMDJjMTBkMmY1MjE4MGJlYmZlNGZlYTUyMWFmOTg2ODRlMDQ0Y2I",
@@ -4293,7 +4293,7 @@
   "listed": "2026-09-15",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2051-08-31",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMzI2MXwzZjczNDU2MDllZTk0NjcwNzM1NTc1ODdhNTc3MzBlNmNiZDA1NGQ2Mzk3NGU2ZGEzZTVkZmVjOTE4Y2MxOTM2ODU1Mjg0YWNiZDRiMzk5NTdlMjA5YTJjMTZmY2ZmY2M4ZTUyMDlkOWFmZDYyM2RjNzAzMWY5N2U2ZjFhYTdhNnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTUwNDEyMjV8YTg1ZDBmOGU0MmRlYmRmNTM2ZDQ5YThhYmQwYzRlNTYzMzM2N2M1YTg4YjU3Y2ZmMzRiOTg0MzU0OGFmZGM0ZjZlODgxYzEwNTY1NDY0MjgxZmRjZjExZTM4N2QyNTljN2VjY2Q4OTQ0YjM1Y2MwNWQzNzliOGE5MWQyZGYxYjM",
@@ -4318,7 +4318,7 @@
   "vve": "€ 137,50",
   "listed": "2026-09-15",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMjcxM3xlNmMzNTZlMzVmZTE2ZTE0MDk5NDZhZTliZTNkOGJjY2I1NTRkZjA1OTVjMjA1OTJlZmViN2Y1ZmI2ODI2ZWY2NzU1NzBhZGE2NWQ0OTM2MDg2NWM0NTRlYWU0YjQzYTk4ODFhYjBlOTg5YzQ2MmMxMjRjM2Y2ZTljMmJjNDQ1Mnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTQyMjM0Nzl8ODE5NTVmMzVjOGY3ZGQyYjA0NjJiNjQ3MzdjZmY4NDQ5ZWY2ZGZmZmQ0OGEyZWFkZGE3NDFkNGVhZmJlNjJjNTRiZmY2Zjk4Njc0ZDY5NzNiM2UyMmE1YTFkMDYxMWQyYjA1ZWU5MTU4ZGRmMDg4NDkxMjQ2NzNmOTkxNDZjYTA",
@@ -4343,7 +4343,7 @@
   "vve": "€ 140,00",
   "listed": "2026-09-15",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMTAzNXwwMzQ2YjljOGYxMWE1ZGViZDM2OThhZmViZmU5ZTBmOTA2MzFlODYxYTI1YzA5ZTU4MGExYWNkMzUxNjgwODc1Y2NiMGU2YjI2YTJkNzg0ZWNiMWExYTlmZGM1OTc0Mzg5MWQ3OTYxMTM5ZGZkZjQyMDgzNTJmYWJmNGUzYWQ2N3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTMxNDcyNDV8NWY4Zjk0ZjE4MjZjMDRiMWU4NDMwNWQxYzU3ZDM3MWJiNzk0MjA3OTdjMjc4N2Q3Yzg0YjE4ZWM1NWJkODM2MTNlNDhkMDJmMzAwODFhMWRlZjA0YzZiNGEwYmFlNmM1NWU3ODcxMTU3YjQ0YzFkZDI0YzVkMTNjMTBhZWYzYTY",
@@ -4368,7 +4368,7 @@
   "vve": "€ 115,76",
   "listed": "2026-09-15",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMjE2MXxmNjA4Y2IyZTI0Y2E4MTI1NDliODAyZWVhM2IzYjFlZjJjOTZhMTNlZDNhNTU4ZWU4NDhmNDExNDcwZWFkMjdkMWNiMDM0Y2UyZjYwNjEyMzA2MDM3MjE2ODQ5MjY0ZWFiMWFjMDdhZWE4ZDEzMmZmNzBiODgwN2YyYTM1YWQyMHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTM4OTYwMDN8ODkxNzNhYmVlZTNiODA4NzJlYzI5MGIzYTJkN2QwN2Y5NjM0YWQyNjE1NzkyNDNmOGU1NTE2NWJhM2JlYWI2YmZmODA0MDE0NWEzNDI5NGI2YjkxNjQ4MmQ3OGFiNWE0NDZkZWVhNzQ3NjE4YjQ4ZTliYWY3MDUwMGVkZDM4OTI",
@@ -4393,7 +4393,7 @@
   "vve": "€ 158,40",
   "listed": "2026-09-15",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMDk1MHxlMjkwM2E0Y2RiMzY2Nzk0MDM3MDJhNTVjYzMyM2Q5M2EzYzBkNzY3MWRiODZlODA4YWM0ODBhZjZmZGZhMzQ5ODc5ZDQ1NTMzYTQ0MzJjMGExOWYyMjg0NGE1YjZkNjJmNDRhODJiODFkNzdiZTU2YWQ3ZTIwN2U1YjY2ZjZmMXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTMwODM0Njl8Mzk2N2ZmYWFhM2RjZDRiZmQwZTc0NmU0MDYzY2IyNTg3Zjg4NjMyMDljYzE1Yjk3NTJkYTVhODRlMjIxMmY1NTBkZTRmODVlOGYyNTRiOWRiM2EwM2UwMWY5OTZiZTMzMzFmN2U4NjFjMTk1ZmQwMDdmMjg5ZTQ3OGRlMTIyNjQ",
@@ -4418,7 +4418,7 @@
   "vve": "€ 174,72",
   "listed": "2026-09-15",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMTU4MHw1MTcwMTFkNzM0ODY0NTU2MGVjNWRkNmVlZWNiN2Q5MTkwN2YyZGRiODNlNWY5ZmUxNmU1MGQwNjgxZmEzOWUxZDJlODYwYjMyMDI4ZDQ3YThjN2EyYzY0MzcxM2VhMzEzY2ZmZDU1NDQ2MmQ3YzMxNTFhMjk1MTAzYTQwMzg4Y3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTM1MTQyMDl8Njg4NzA3YWJiNTIzYjQ2MDMwOTNmNGIzMGVkMThhYzA3NzdjN2M2OWVmZGY4OWQzYjdmNjA2Mzg2NWMwNGFmM2Q1MWZhYWI2NzE0MGE0MWYwMDhkMTcxNTI5YmZiNjIyZTc0YmQyMWRjNTY0NmY0Mjg4NjYyMTUxNDIyMmM5NjM",
@@ -4443,7 +4443,7 @@
   "vve": "€ 204,28",
   "listed": "2026-09-15",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMTQ1M3w1MDY3MGYzYzMxMzMxMTgzMDE3NmRmZDc0Mzk2YjM5MmNhMzRmOGQzMmI2YjRhODM1OTE1MDJmY2Y2MzgwNDE0ZTliMzVhMGMxNGYwZTZhZDZiZDU2NDI3MTJiY2VjZWMyOWM3OGE2YmRiMjdjNzNmNGM0NzdlMGM3YmY2ZDc2M3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTM0MzE0MjN8NjFmMTIyZWFmOGNiNmI5N2FiZWQ0ZTVjYzAzM2QxMDQ3MTZiMTA0N2Y2YzdkODQ0OTI2ODQxNjg1MzhjODM3ZjEzZGQ1ODE4NDU0ZGQ5MTc5NDI4YjMyMjZjNDM5YmUwMmQzOGExM2IxZTdmNDFiMWI4YTc2MWNiYzM5ZWEyZmQ",
@@ -4468,7 +4468,7 @@
   "vve": "€ 161,18",
   "listed": "2026-09-15",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMjM1NXxjNWZhOGJiZmRiYWM5NmMyYTVhOWFjNjk5NTEyNGY0MWFhMzIyMzNmMGNjNDc0YmI5NjdlMDdhODY3MGVlNzkyNTAwOTIxN2ZjMDdlNzcyZGE4ZDhiYTg1YmRkMjEyMTA5MmE3NmEyYWVlNDVmNzM3NGVhZjE0NzVlZjNmZmE3Nnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTQwMTEzODl8OWM0M2E2MDAwMWM4YmMwNjg0NDE2Mzc1OTFjY2M4ZjA0OTNkZmU2OGNhZjRiOWExZGMyZmI1OTYyNzkwNTc1Y2FkYjYyNWZhZjk2OGUxZDVjNTcwNTY4NWZhNDE1OGExMzhiMGE5NmJmZWUwODYwNmE0MGRiMTVhNmU0YTc5Zjc",
@@ -4494,7 +4494,7 @@
   "listed": "2026-09-15",
   "tenure": "Erfpacht",
   "erfpacht_until": "2071-05-31",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMjQyMHxlYjIxNTM2N2EzZmIwYmQ0NWRlZTI0MzA5Y2E0NTAxOGQxYjJlMDkwNjExMjBlMTM5ZDQ1YzY3ZTExNzkxMTQ0ZDIwMjBlM2QyMjA0ODZlMzM1OGQ3YzU4MzMwODIxNjk1ZWE2NDg5ZDVmYWE2YjVhODc0MjRlYmY4OWI3ZWNjNnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTQwNDgwMDN8NWE0ZWU2ZWI1NmMyOWI2MmVhZTRmNWRjZGEzNDdmOGQwZDNmODNmNDUxM2RlZDRmYTU4YWZlY2FhYmJmOTdmNTdhYjYyMDgxMGI1NmZlNzU5NWUzZmQ4MGIwNjEyMDFlZmMzZGEwMGVhN2FlZGUzZmI1Y2MyMzg2MWVlNGI2MzM",
@@ -4520,7 +4520,7 @@
   "listed": "2026-09-15",
   "tenure": "Erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDE3MnxlYzZiMThkZGU0OWMxMmNmZmYwODZlYWNiMThjMmU2YzNiNzc0ZTg3MzUyOTQ2ZTgzZjQ3NWNlOTA4MGM2NDZlYjcwNzg4MzBjMmQ3ODE0ZjM4NDlmN2JjYWFmZjhmNzM4ZTQ5YWJhMTU1ZGZjYzQ3MTZiYTQ1ZjIyMDgyMWY4MHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTU5NjQ5NDF8ZDY4YzVjZDRjZjVjOTI5OWIyZjkyZDZjNmFiYzBiNGIwMWE3NmVhNWIwODJiYmFiMDU4NWE0NDc5YzgzNjcwNmFjYTQ5MTMzMDhjMzUyOTJmYzJlYWZmMDEwN2MwZDE3ZWM4MzA5MzlkODNmZDk5NTc2MWQwZDViMGU2MDBlMzA",
@@ -4545,7 +4545,7 @@
   "vve": "€ 30,00",
   "listed": "2026-09-16",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMzcyMHwzOTZjNjI2Y2Q4Y2UwYmJkNmNiYTZiNmJlMDQ1Yjk0YjZhMDM1NGEyMjM4ZjkzNjAyZWNlN2MyNmFmOGE2OGRiMDZiZjRjNmRmYWY2ZGM1OTVlNGE5NzZlYzYxNjYxYWRlYzAzZjVhM2U1ZDNlYjc4NTZkZWJiYzNkYmMxMTY0NXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTU2MzcyNTd8YzM5ODA5OGU0M2RiYjk1ZmVmMDU1ODNmZDMzYmZmMTUyNjI5YmM1NjExMjBiYjI3OTYyZmY3OTRmNTc2ODEwMjNlY2ZjODJhM2MwMDc3MjY5ZGI5YTQ2YzQ0MzY5ODExMTViNDQ5MmE2ZThkNzdhZWNhZmEyOWIzYWZkYjU1MzI=",
@@ -4570,7 +4570,7 @@
   "vve": "€ 90,75",
   "listed": "2026-09-16",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMzM5NHw1NDg1ZTg0ZmM5NmQ5NzE0ODk5YTBkOWQ1MWU5YjAyM2M0ZTJhN2VkODg4YWYzYzgxZTc1MGZmODBmOWQ4NDBkZTIyMDQ2YTRiZDJkM2Q3ODhlNTM1OTJkZDNkMWY5MGI1ZjAyZWFlNWYwOWRlNjE1YTZhNGQ3Zjk0YTg2ZDBkNXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTY1MzM5MDN8YmE4M2IxOTQzNjYzMzE1YjM2YTBhMzg0N2VhODZhMzQ3M2JkNWZkMWUzN2MzNjQ4OWQwYjExYzEzZDczNzRiZDY0NjFmZDhhMDI1MGZjNWFlNjMzYjM5MTQwN2IzZjAwOWQ0NGE1YWMxN2ZlODkwMzY3NmMwNWVjN2FlZWZiZWU",
@@ -4595,7 +4595,7 @@
   "vve": "€ 152,50",
   "listed": "2026-09-15",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDU5N3w4NzNmZTJmYWJhMjg0ZTJiMzVhM2U5MTY5N2I4NmZmODQ3YTQ5NTAxNTk4ZTE2MGZjNGMzOTNiYTZkMmViODZkYTEzMTYwZGI4Yjg3NjEzZjQwY2NmYTMwMWQ0MjI4NmMwNzlkZTJlNjYzMjY5M2E4ODVhNWM0Njk1OGFmYWNiMHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTYzNjg2NTN8OTRkOGYxNDMzYjBlNTQxNDM0NzAxZGZhYzI5MGZiMmRlOTUyMjY1MDEyYmUwZmE4NjhjNjI1MjEyN2JjNmFmZGYwNzlkY2IwMTQ0YThjMmI0ZmU1NTBlY2FmNjYyMjc4Yjc0NTY4ZGUyN2IxNGY0Njk0MDU3MmQzNmQ2MzQ2OTU",
@@ -4620,7 +4620,7 @@
   "vve": "€ 83,33",
   "listed": "2026-09-16",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDUyOHxlYzVhNmYxNzE5ZGFjNGI2YmNjZTgxZmRkZTc3YjM2MjUwZjgyYTQ0YWY4YWMwMTQwZDA3NDhiNTMyNTA0ZDlkYmVmMmE4NGFjOTZiZmI3M2RmNmI2ZGU1ZWQ0MDk2M2MyZmRhNTA1MzE0M2ViN2IzYTI0MmI3N2E2ZjZkMjM0YXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTYzMzExNjV8MzNmYjRlYzg5MzM0ODZmZDg4NjA2ZWYzOGE1NDk1NzMwYWQ4ZTExNjBmYWQ5ZGIxZmRjM2MyNzZlOTBmMjRlMmQ5Yzg0M2IyNDU0YmY1MDNiNzdhZDZiNjhkOWI4ZTE1NmY1NTI5MDJjMDA1Y2M2MTg5YzM3NjFlM2ZhNjRmNTM",
@@ -4645,7 +4645,7 @@
   "status": "Beschikbaar",
   "listed": "2026-09-16",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwMzgwMXw1ODc2MDFhNmEyNTdlMDZjNjI0MzFhMWY5MWNjZWY4Yzg1ZjJiNTY5ZjkxNDJmMjAwMjE5ZDdkNzM4NGRlMjI2YTM5MTYwMzcxM2VlNjA3OWU4NWI5NjQwM2IzYmJlMmJiNGQ2YjFmNmUyYTYwOGE2YWZmOTIyMzI0OTUyNGI0N3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTU2OTY3ODd8YjVkMzAwZDcwMDE1YTgwZTAyZjY3MzY3Y2FlYWY2NTliN2RmYTUzYjEyY2I0OGViZDYzMDdlOGU5NjdlYmU2MzQ0OWE0MjMzMWM3MDIzMjdhNWIzNzBjYjAxNjk1OTBiNjE0NzdjNTg4YmIyYmIzM2UwY2MzNjA3YmNlNzA0OTc=",
@@ -4671,7 +4671,7 @@
   "listed": "2026-09-16",
   "tenure": "Erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDE1NnxjY2NjOGJiNTU3ZGUxNjE1ZTFmNTZjYTY5ZWE4YzBmNzRkMDE1NTEzMzQ2MTRlODYyN2ZkODU4NTYyYjIxYzNiYmYxNTE1Mjg0NmIxODg4N2ViZmMyZDlmN2I3NTM5NmZhZGUzMDYyMWIyZGVhMzM5YTRiYmJiOGI4NjQ1MzA5NHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTU5NTUyMzV8NzYxYTcxYzQzY2ZlOTRlYWNmNDE3NzcyZTZlNzY3MmFlODUzM2YzNmQ3NTIzYzkyOTI3NjE3ODg0N2Q0YjE5ODE2YTdhOGM5ZWMzMGU0NzliZjJhMzZjNmRlZDUxZmFhYmVhMDJkN2NlZmJhZDg2YmJjZDE3NmI0ZDkzNzMxOGE",
@@ -4696,7 +4696,7 @@
   "vve": "€ 108,00",
   "listed": "2026-09-16",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDAwNXw4MDAwYmVhMTUyN2I4ZDU1NjIwMTZkOWZlMzNiMDI3MDM2Mjk0OWEzYzU5NWE3NjBkZDYwZGQ1YjhkMDQ4N2Q0YzEwNWEyZDZmMTI3Y2I0NmFkMDg4NTQwMTQ2N2I2OThjZmU3ZmZjZGU5NTlmNzVlNTgxN2RhZmE2Zjc5NGFmMHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTU4NTY0OTd8NDE1MjM3ODk3OGZiM2YwMGM3M2QyNDFiZDMyYWIxOTgxYTdjYzlkZjRiNWYzMGUxZTBmYjc5MDM0OTI0YWFmMjE5OTY4ODc4OTYyNmRmMTQ0NjViMTQ5OWM4NjZmMWJhNmI4OWMzOWE5ZmJhNzRkMjY1ZWEzMzk0NGE1MGZiNWY",
@@ -4720,7 +4720,7 @@
   "status": "Beschikbaar",
   "listed": "2026-09-16",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDUyM3wwYjhiOWNmOTM2YzNiMzAwMTZhNmJkNjViZjJlYmMzZDNhY2ViN2FmMTM1YmRkZmYxZTk4MDgyYjJkZTFkMTI1ODljMjhjNjU5ZTg4NTBhY2I3NjkzOGIwNDZjYTQxMjE2NmQxMWUzOGI4NjlkYzI0ZTkwZTUyNmZjZGI4OTdkOXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTYzMjkwMzN8MDA0YTIzMmRmM2Y1NTRlMjYxYzdkODdiN2JmNjUwNzZmYmRiODdhMWVhM2MzYjQ4MTExMWY1ZmJjOWQzY2Y3YzU5MzI2MWUzYzJkYTY4NjY5YmYwNDllNDg5MDgyOWFhMWZkZGM5ZDk4MjRiMzE0ZGE3ZjNjMjkyYTczOWE3YmU",
@@ -4746,7 +4746,7 @@
   "listed": "2026-09-16",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2063-09-15",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDU4NHw1YzE5ODEyZmU5NDJjZGI4NTA5NTRiYTFiZDE3NTc0YmE4ZDY2ZTNiY2ViNzRjYzhhMDY0NjRmMWViNzViN2E4NmU3Nzc5NzNiMWE0YjQ4NDczMjMwMWZlYjI3Njc3NDY2MGNlOGFiYWU1Zjk5Y2QyN2U0NjIxYjg0OWI2YzIzM3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTYzNTY2Mzd8NzM2ZmI1Y2ZkMjQ4ZjQxODIzODgzYzA0NDA1ODY0NzA3YzgzNGM3YmM2Mjk0ZTljNmE1ZTc3MTEwMDg2MmMyYWE4ODI3N2JkNTMyZDdiNDAyZDE1NGJlYjllMDY1NmEwNzYzZDMwYTgxMzU0M2E5MzM1MjNkZGZhNDJiOTk4Mjc",
@@ -4771,7 +4771,7 @@
   "vve": "€ 152,11",
   "listed": "2026-09-16",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNTQ0N3w0MzY1OGQzNmI2MDUyYWM4ZWI0YTRhYjExNzIwYTY2ZTQ4MjIyOWY2NzdhZGRiOTg4YjlmMjI1YjBjNDRjNjI5ZTRmNzIxMmUxNTFlZDFlNDljZTM3ZDNmMzU2ZDQ1YzI0YmZhNTU0N2RmOGVmOTNmNGUwOTNmN2M5YmJhZGIxMnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTc0MDU3ODN8OTJiYzFkZTE3MjY2YWJlNTRlYzY2NTk2NzI0YzFlNTMzZmFkY2QyYmFkY2QwMjUxMWNjNmJlZTM1NmIzMDhmN2ZhY2FmYzMxZTc2ZTdhYTZmMjkxMjg3MjU3YTgyMWZiZjNjZGFiZDg1Y2U0MDFlZDQ1MTg4MDYxY2MyZjEzNDY",
@@ -4796,7 +4796,7 @@
   "vve": "€ 125,00",
   "listed": "2026-09-17",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNTk5NHxlMTNhY2EzMTc1M2I4ZmNlNWRkNWUxZTQ1YTBjNjVjOTM1ZTgxNjJjM2Q4ZmViMDdhMmYwY2VjYzViODlkOTljODU2NzljNTI0NjNhYmQzZDgxMDU3MzZmNGQ1MDI5ZTYyNjI2MTA3NWEzYTI5NjkwMzNlNTg3NmNhYTNjNTgyMnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTc4Mzg5MDl8MmEzNDkwYWUwNmZjZWFhZjNkNTg5MGNmMzFkNjk0MWVjYzQwMDJlMjE4NGJhODU5ZGRjOTM0NTI3OGI4OWQ2MjY3OWVlM2VkYjEyZGY0YTc1YTZjMzc0NWMxZGRhNTE5YzI1YjcyZTQ5NWUxMTNmYmViZDM4ODJhNTkzMTkyYzU",
@@ -4820,7 +4820,7 @@
   "status": "Beschikbaar",
   "listed": "2026-09-17",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNTY5NXw2NGJmYWNiZWM5NDBiOWJhYjc2MGEwOTA1YTllZTk2NzE3NzdlYzhmNTk0MDI4NGJjOWFiZDIxODg1YjczMTIyNzNhYmNmYmJhYjIzY2Q0Y2FiNTYwYjQzNDk1ZDg5NDI2ZjkxNTY2NWNmZGZmN2JmMjYzYmEyZTllYTk3OWZiY3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTc1NTgwNTd8Njg2ZjUwN2U0ZWIzNGEzOTE4NTE0NDgzZjQ5Y2NiZGMyODM2YzljNTc2YzRlNmMxMmJjZTYyYjg4MzMzN2RiNmI5ZjVlZWVlNTBjNGVkZTY2NTk1NWNiMmU2MWQyNzIyYWIxOGZhNWI3MzE5NGM2M2ViNDY0NDZmYWJlNzI0ZTM",
@@ -4845,7 +4845,7 @@
   "vve": "€ 144,78",
   "listed": "2026-09-17",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNTY1OXw3YjVlMzIyOTU5OTJjNTM2MmZlNGE4Yjg2ODJiOTUxNTc2ZTRiOGExZmQ2NmJjM2RhODA1ZmNmMTIzODExZDMwOTIxY2FlZWU0OTBjNTU1NGIzY2ZlYzVkOWY5MjMyMTA4MDdlOTBiZDZmM2I3YzU3YjZkZGNiZjZkZjM0MDI0NXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTc1MzkxNDN8NjI5MGY2YTM2OGNlOWNjMjdiMDQwMmYyMWVlZjNmZDRiZmNkODk3YTgzNTE2MTBmNTQ0ZTlhYWQ3MjU2Y2E4NjhkNTNmNDQ3OWJkODQwZGE1YmViNzNjZDFkOTlhZmUxODZlNjlkNWZkZTcyOGFmYzVkMmMzYWUzNmYwNWQzZjg",
@@ -4869,7 +4869,7 @@
   "status": "Beschikbaar",
   "listed": "2026-09-17",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNTM2OHxkYjk4Nzc3NzYzZTZjMDkwYTM5MWU4MjM3MzQyMjNiZGVmZTk0ZjQ1ZTY3Zjc0MDRlOTRjMTc5MTQ0ZGVjYzg5M2QzNjdjYmM2NzlmNjc2NjhmNzk3MmUxNDQxMzA4NWVmN2Y1MGYxMGYxNDE3MmQzZjVhZDA4ZGQ0NGZmMGNjMnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTczNDYyMzV8M2UyMDA2ZGYzZDJmYjhlZjUxZDY0NDFlMWZmNTM4M2FjZjMxZDM1MGYyZWY4Zjk5YzlhOTI3NmZjZGIxNTFlMTI1NjJhYmYxOWM3MzVmZTUzMGZjYmFlNjUyODc4ZjQ1YzM1ZTYwZTk0MjgzZTZmZThlNWZiZTVkYTdlOWQ2YzU",
@@ -4896,7 +4896,7 @@
   "listed": "2026-09-17",
   "tenure": "Erfpacht",
   "erfpacht_until": "2047-12-31",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNjMzOHw1ODlmNTYxZTE0NmQ4ZWU1ZTM2NjkwNGJhNzZkOWE0NjJmYTE4MjM3ZjQwMmRhOGU0NTc1MWFiYzJkMjJiOWExYzhiMzMxOTVhZTNmYTE0MzgwNDk0NDExYjlhMmJmODAzYWNlYTFjNDQyOTZlY2UxMDMzMzgyMjViMzRjNDU2NXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTgyMDM5Nzd8MGU1ZDliMTA0OTBmNzY0ODQ2ZDUzZTY3MzIzNmI5MzQ5YWI1YzAzOTUwNzEwNjczYTUxMjcxZWJhZjBkYjgzNWJjNWMxZTFjMWQyODMxNmIwZDQyMDc0N2M5NmQzZTVhZmQxZGMwODdmNWE3NDY1YWE1OGFmODc0M2M2MWM0YmI",
@@ -4921,7 +4921,7 @@
   "vve": "€ 200,00",
   "listed": "2026-09-17",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNTQyNXxiODI2ZmQxZGZkZDNiYWE0ZTE1NjIxODgwMzJlZmI1N2ZhNjgzNGQwODQyMWJhMDI2MjI2OTRjZDAxY2U0OTkzMGQ3YWI1ZDVhMDMwYTQxMzdhNjEwNzkzMjc4MDk2YWNjODc0NmUxMWRiOTQ5YjMxZWJlMTJlZmI1YTg1YWM0OXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTczOTMzNzV8NjY1MTIzYjQ0Mjc4MDJjMjJhNjZiY2U5MTVjZjI1ODhjMDA2ZTZlNTk2MGEyMDdjOTQ2ZjNmMDc1M2ViZjFlNTJhMzIwNzQ5ZTdkNWM1NjAwNmQwMjQ0MWZmNjRiNmZiNWI0MzA0MDExMmUyMmQ3ZGQ4MGFjZjUzOWM0YWM0ZTM",
@@ -4946,7 +4946,7 @@
   "vve": "€ 198,73",
   "listed": "2026-09-17",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNjMzNHw2MzQzZjNlMDY0NTEzZDRlNzNiNDY1YjcyYWJjMjcwNWNmYTEwZmI3MmRlYmEzZWU0ZTQ5Y2E1ZWRkOTFmMDRmMjZmNTg4OWI1OGVjYWJjYzhmNThjZmNhZGIyNmIyZjc4NDdjMTU3OGZjZDg1NWM5ZTM3OTUyZTZhZmFkMGI5ZHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTgyMDI4Mjd8ZjRiN2FkYzg5MTNiN2M2MDI2YWM0ZmZjNDA0MTEwMDVmZWE5NmQzOWMwNTdkNzM2YTRkZWM0MGE4NGIzN2RmZGQ2N2RmYTAwOWY5MmQ0MzEwZmUzZDkzZTIzNGE0MjBkNzhiZWM2MGQ1MjAxOWM5YmQ2NjRiMzY5NTQxODc5NmI",
@@ -4971,7 +4971,7 @@
   "vve": "€ 160,00",
   "listed": "2026-09-17",
   "tenure": "Erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNDkzMXxiNzBlZjU3MWExMmU0Y2Y1YTViMWYxNDA1MzYwYmViYjBmODkzYWE2YTA1ZWM4YjYwY2NlZDk1MjEzNzI3OTVmM2E5MjdkMmE2OGQ4MzY0YThkMDNiN2VlNmUxZjc5ZjM5NTM3YzFlNjBiZTk5M2ViOTY1MmIyZGEwZDEyYjY1OHw5MDczNTk/overzicht",
@@ -4997,7 +4997,7 @@
   "listed": "2026-09-17",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNTY4MXw0MDQyMzQxM2FjZjQ3YWI2YmQ4Y2ZmMTNhNDY5ZGEyNTMwNzAzY2ZjYjAwMzhlMmU0ZWU1NTNlMzZkOTViZGU0YTdiZjI4YTVlODM0OTM3NDQ2ODZhNTFkMWYzMzUwNGUwYmU0NjY1YmJhMDIyNzk1Zjc3YzZkMzJhODE0ZjBjYXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTc1NDk5Mzd8ZDQ0YjBlN2VmNDRlYjJmZDY1ZGVjYTBlMTY5N2U3OWE0OTcyMjlkZGE3ZTYyNDUwNjdhNGNlZGE0MjZjNWFmMTMxMDJjMGIyZWUzNjNkNGJiNDc5ODJmYTRiYzhkMTdiYjVjMjI4NzRmYzI2NWU3ZDMyMWI2MWE3OWM3NjQxYTk",
@@ -5023,7 +5023,7 @@
   "listed": "2026-09-17",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6Njg4MTEwNnwzZDc1NmJkNWE5M2I4NjJjNmU2ZjE5MjgyYTg5M2FjMzE0NjM3NjJkMTliODEyZTljOTQ3NThlZTgxMTQyYWVjYWVlYTFhMDY4NTlhYzNhMGNkZDI2ZjU3YzM4ZWZmMzdjOWQ2NTg1MzRmNzEyYjI5M2VmNTBmYmFjYWE5NzIzN3w5MDczNTk/overzicht",
@@ -5048,7 +5048,7 @@
   "vve": "€ 120,00",
   "listed": "2026-08-31",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzE2NHxjMjczNzY1Zjc4YjhkYzFmYjZlZDA4ZTcyNjMwNTI2N2Y2NmI1MTFkY2NlMmJjZTkwM2MyZDgxYzk5Yzk5YzUxNjIyNGIzMmVjYjE5MjAyMzI0ZWRlZWY3YTQ4N2RmYWY3MTVjODFmZTE2ZTcwMjkwOWZjZWJmYmNkMWRjYzJlOXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTkxMzEyMTN8MWUyM2YwYWFlNGZjODE3NmI1NDdhZmE0YmFmYmFkZjUwYmNkOWI4MzE5ZGIzZWY4OTQ5ZGQ4MGQ1ZDg4MWEzYzdhNWI3MDQyZDNmMWZkZjZhZjIwNWZmMjg3ZWZhODMxYTliNzY4ZDUyNzc2N2ZmYjEwZTZiMDlkZmQ3MjUxYjg",
@@ -5073,7 +5073,7 @@
   "vve": "€ 207,92",
   "listed": "2026-09-18",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzk1M3xmYWJhOWI0NTNiNWIyMThlNzAyODQ3ZjRiZGEzY2FkMThiNmQ5YWQ5ZTM5MDI3ZWU3MGZiY2JiZTkyZDcyODgwZjgwNjc5YjhjMDgzNjM2NjY4ZTlhMzg1MmIyOGFlOWY3Y2E3OGRkMWExYWU0NDMyZWM2MGMyMDU4YjYzYmFiM3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTk2NzE1NTl8ZDc3NjllNDM2ZDgyMTg2M2NhMmQ4YmE5MzM0M2M3ZDk1MDdkNGJkMTljNTU4OGMwMDc2ZjQwYTgyODhjMWJmYjg4YTgzMzRiZGU3MTVjYzc3NjEwOWVmNGUyMjNjNmExMjFkOWExNWViNjljOTc0M2UxNDVhODczODhmMGQzOGU",
@@ -5098,7 +5098,7 @@
   "vve": "€ 100,00",
   "listed": "2026-09-18",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzI3MHxjNWNiNTVlZWVjMDkyMWMzYzEzY2UyZDFhY2ZmZTZhODFiYTg5OGIwMWJkZTZhNjZkZWQzNjIzYzExMjYxODMzMTNhODE2ZmU4OWUzNDAzMGRhMGRiOTZiYzZiYzgyMzcxZTJhN2UwYTExNDc3ZmYxM2Y3Mzg0ODVmOGY3MTIxMXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTkyMDk0ODV8ZDQyYjc4MjYzYTViZTBkMjYzYzFhODEzMTdiZDU1NTQyNDJkNjkzNDBlNTYzNmM1ZGM4Mzk4NGZhYjQ2MWJiZmNjMWI2NWI1YjQ1NjEyZmY0ZTY1MTgzYTZlNWFhMDc1MjNhMmNlNDFkODYzM2JmZDFmNWVhYjE4YzM3ODhhZWY",
@@ -5123,7 +5123,7 @@
   "listed": "2026-09-18",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2057-12-15",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzYwNnxhOTc2OGEzZTAzNWFkODBkMWExNWFlNjJhNTMyODM5NmQ2ZDI2NTg4ZTFlY2Y0NWM5ZDNhYjEzMGY2MWIzMmEzODk0Yzk2YjNkOWEyYmQ4NDY3MjcyMWFiYjBhYWFhYmNlMzBlNDA0MzhlYjIwYzcyNmQ0NzM1NjU2ZThkYWQ2OXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTk0MjUzOTd8OTM1NTRmZjY4MTQ4ZWM4ZTVhNjU3YjY3ZDBhNTMxZDNkZGJmOTM1YzZmYmY5MzNmMTU0YjlmOGRmOGIwYmI1NTIzMjAzN2I2ODNkZWFhOTk1YmZkNmYxYjU5ODlkZDEyYWNiMWMyMWE2YzM4NGI5ZDU2NzRiOWZkYTExYzA0Zjg",
@@ -5148,7 +5148,7 @@
   "listed": "2026-09-18",
   "tenure": "Erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzQ3MHw3NjA0ZDA5MDFlYjg0ZWY4ZGYzZGUwZDZmOWFkYTYwZDJkNTc0OTNiMTE4ZDlhM2E0OTYyNWRmN2EwOWFkNmUzMjhmM2U4MmI5ODg2NTMwNzdkODRlZGRmYWU5OTc5MjI2ODdlMTJlNzYyODk0Yzc3MmU2MmJjYzdmOTI2ZTNlN3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTkzNDIyNTV8MGVlYTc1ZmM3OWVjNjc4NTc0NGUzYmM3YTkwZDZjY2RjZmNjMWQ3ZDQyNjNmMzE4NzU2MjMxZmFkOWE1NTFjOTMzZjU1OTljNWM1NjFkZmYwNjFhZWUxMTBiYTVmMGM0NWQ4Y2JjZTNiOWZlNjc0MGQ2ZmRjZTE5OTQ3OTIzZWY",
@@ -5174,7 +5174,7 @@
   "listed": "2026-09-18",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2053-11-15",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwODA2M3wyZmViNzE0ZmNlN2U2YmJlNWVmNDFkY2QxODVkOTg0MmZmOGZmYWNkNTI4OTI4MmM0MGM4MDEwZjc4ZTZhMmVkZTI0MTlmYjQwNmFlZTczYThjZmJmZThjMjFjN2QzMjJmMzA5NjMwMDM1OWM0OGE1MGRiYTRhMjZlZWE5MzJiMnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTk4OTcyODl8MTIxMzY3MGM4MDQ4N2I5NWI5MzI3NDhkZDFjMDNjNGNjZTU5NWUzNzE3ZGQwNDEzNzljZWVhNGE3ZmYxYTIyZmMxZWIzYTQ4NjJjMGUyMDQ3NTljODRlMjY2YzE4M2Q4NDYzYWFhNmY3NjFjMTZkZjYwZWNjNzhiNWExNzgzOWM",
@@ -5199,7 +5199,7 @@
   "vve": "€ 101,33",
   "listed": "2026-09-18",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzU5OHw4NDBlYzUyMmFiMGQzZTJmZjY2YjEyZTk5NTc5ZTE2ZTY2ZTI4NWUwYmNiZDBmNDlhM2ZmNTA2NGJlM2ZhN2NmMjI4ODkzNWNjOWZjNTNmODI2ODVkNDliODUyNTQxOGQ0NTI4OWJkY2RiN2FiNDY2MGU4OGE0NDBlZDc4ZTY2Nnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTk0MzExMTV8MjhjODg3ODRlYzIzMDcyMjBlN2QxNjE2Yzk1MTNiYmE1YThlODA5Yjc0ZDhmMWIzMjk4NTdlNjZjODRmYmJkZDIxZmI1MGZhMjM3ZTMzZDEwZjFlOWZjMDQyMDM2OTkwNTk2ZjA2ODRhYmY2MWQ5MDdlNDFjYWM2YWEyNTAzZDE",
@@ -5223,7 +5223,7 @@
   "status": "Beschikbaar",
   "listed": "2026-09-18",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzI5OHwwMDUxOThlOGJmZGJhNTZmMjU4ZTIzYTU5YzExNDBkMGRlNjlmMzVhOTE0ZTJmY2MwODk4ODJlMzQ0ZDdjY2JlY2QwMmU2MzkxM2IwYjJlOGMzNjFlNWM3YzQ0Zjk4MGYxNDAwMjQzMGExNGYwNDFhYTRjYWY1NjI4MzlkZjE3Mnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTkyMjI0NjF8YmJmMjFmN2M0OWZmYjk1OTE4YzI4MDY4ZjEyOWRhOGQ0YTkxYjI4YThjMjUxZmIwYWEyODg1OWQ3ZDc0ZTcwNDE0OTIwNTBhZGUzN2Q5N2YxZjkyOGFkMGViMTNkNDc4MjUzZTRiYjlkOThjZTJlMjkwYzA4MWE2NDk1NjkyNDI",
@@ -5247,7 +5247,7 @@
   "status": "Beschikbaar",
   "listed": "2026-09-18",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzI1OHwyNmUyMzE4NDI3Y2I0NDcxODcwNDMzMGE2YjJlYTVjNjgzOGU2NDczNzhkZWNiYmI3Y2M2NjQ4OWUzOTU2NmJmNGViZDk2NDBlOTg3ZTZmZjhmMDQwZjE4NDM2Y2ZiNjBiMDdjYTNmM2NmZGVjY2FiMTZkMGQ2M2FlMjcwY2IyY3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTkxOTYxODF8NmVjOTQ1YThmZTMyOGEzODQxZjJmODUwYzlkYjA2MjBlZDZmZTAyNmVjY2M5ZjE4ZDA0ZmYyOGJhODFhNDlkMTljMWRkMzY0ZjA5NTBlYjY4NzQ3YTcwMzE5YzY2MGViYmM0ZTQ5Y2E1YjBkNGJlMTA0NGM4YTU1YjI2M2Q0MWE",
@@ -5273,7 +5273,7 @@
   "listed": "2026-09-18",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "Eeuwigdure",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwODM5MXw0N2UzNDM4OTM3ZTZlZDgzMTA4ZDI5ODAzNDYwMTk4ODJkODkxNGI4M2Q2ZTQyYzI5ZjRiOGFiYjU4OWFkMmRkNzQxNjIwYmM3MmMxM2ZmNzViODZlYjhlYzU1NWM5Y2Y2Mjg3ZmY5MGY4ZjU0NWZkYWY2ODQzNmY4ZmJiNDNkNXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MjAzNDgwMzd8MDY1MDlkNTJlMDhmOTY0ZmI4ZTkyZjc0Y2NjNTFkMjZkNWZiZjNlYzVkNTU4YWUyOGU4ODkwMmQyOWFlODI5YTliMWJmODc4MGMwZTUwMTRkN2MzY2NkOTRkOTVlNjM3NmU3ZTIxZDI2YTUxYTk1MDJlZTRmOWM1MmViMTIzNWI",
@@ -5298,7 +5298,7 @@
   "vve": "€ 138,12",
   "listed": "2026-09-18",
   "tenure": "Eigendom belast met erfpacht",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzM3MXw4NGI0MDdmZWNhNmU2MGI3NDI2OGI2NjE0ODQwZDgzYjJjMDY3YTIyNTVhOGEzMGUwZDU1M2U1OTFjYzBhMDg1NzY4ZjU2ODZhYjA0YTc4ZDExZTc2NGI4ZjU5MmRkOTZmYzZmM2JlODk0MTVmZjk0YWI3Y2MwNTAyMWQ5Y2UyYXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTkyNzM1MTV8NTZlMDgyYzE2YTZjODRiNDhmMzZjNGQ4MjMyNjY3OWE4YWM1ZGUzNGNmYzA2YzQ3N2RkYzQ2MzRhZWUxMzNhZDc3NmM5ODgwYzU3ZDU0NjEzNWFjZmJkODhjMDU3MmZkNDNkM2Q2ODQyNTc3ZmVhZjBkNGZiN2ViZDFiYTc5NjI",
@@ -5323,7 +5323,7 @@
   "vve": "€ 191,04",
   "listed": "2026-09-18",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwNzYxMHwzZTBjYjUwN2U3N2FkOTFhZDQyYTAxNmY0NTQwY2I0MDNkZmQwOTdiOWI4Y2NiZmE4OGUzMTk1MzIwZWI5NjhkYzk3ZDJjYTllZDVmNzBhZDlkYzMzN2U1ODkyZmI0ZTk5NDkzZDA1MDUyNzE4MzIxY2I5OWIxMGNmODZiNjNlOXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTk0MzIyNTd8MTViNGMzZDQwZjA1YmQ4OWU3MGM0NGU5Yzg0YzVmZWMzNWMxZTA2ZjdjNzFjNjY4MTdkZGRiMWZjNzJjOGJmMWViNjg2YzUzMGQ0OTQwZjIyYTk5Y2FhZmEwZTg5YzhkZDBhZGExZTNjN2IxODUwZGNkNDMyZjM5ZTI4YjUyOTM",
@@ -5349,7 +5349,7 @@
   "listed": "2026-09-18",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2052-09-15",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwODMxMHxjYjZmMDU2YmM4N2I3NTlkODVmYzg1NjZiMzZiYWNlNzZjOWZkOTlmNmNlNTVlODE2YzdhYjYxZDJlMDRhZDU4Y2EwNzY4ZDFmMGU2NzFhMTAxNjc2ZmMyMDc1NjYzZTgxYjBkMGY0YmE4NTI1M2E4OTkzMGQyMTE0NzE3YjBmNXw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MjAwNjcwMTV8ZGYyNmZhODU4NDM2YTQzOTk3ZTFlZThhZTQ1MmQwNDIyMTQzZmZlOTA0Y2ExYmRlYmM1YTc3YmE1ZTM1NTQxZmEyOGZmZTRiYjk0NmEyZjVlMDRmODliMWJmNjk2ZWQ2MzBhY2NkMDBiZTNlODgyNzJiYWM0NDRmNWMyOGQ2ODU",
@@ -5374,7 +5374,7 @@
   "vve": "€ 175,00",
   "listed": "2026-09-18",
   "tenure": "Volle eigendom",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwODA0Nnw2ZWEyZmQxNzViMDFhNzY3ZGEzMzg5MTQ4NWJmNzViMGFjZDk0ZDgxYjExNWUxZDFjN2IxYjcxOTMxNzQ1NWVjNTQzMzY1ZjQyOTg3MGQ2YTY2MDNiMGNjYzNhODFmNTM5ZjFhMjRhNGY5OGEyNzQwYzg2YWVkYmQ5MmJlZjdmM3w5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MTk4ODI5NzV8OWZkZWJiNjVmMjgwMDdmMTIyMjQ0YTU1YWZhM2MyYmMxYTI3ZWM3OWQyZjY2MDgwOTJiOGQyOWZmN2U5ODU3OTcxOTM5MjFhYTNkODEyNDRhYzQzNTRmNmM2NmFmYzdjOTQ0YjVlMzE3ZTI5MGJmZjI3YjJlODZiYzg3NTA1Mjg",
@@ -5398,7 +5398,7 @@
   "status": "Beschikbaar",
   "vve": "€ 234,39",
   "listed": "2026-09-18",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwODU5OXwzNWMxYWJkYWQ5NmIxODlmMDJjMWVhODJlN2VmOTBmY2YxZGI3YmQyODAzOTRmNjY1NDBiMzY0Y2IzNDIxYTIyOTExMmQ2ZmJjZGNkMWU2ODM0ZjYzNDY1NjJiZTA5YzNlYjEyNWQwNmIxZmJkOTg0YjQ4OTFhYWZkOTUxODJkMHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MjE2MTMyMjF8MTE5MjVmOGUzZDUwZDQ0MmFhNDU0MWQxYWVhYjkzNjJmOTMxODVmN2NmY2U5ZDRlNzcyOTlkMTZlMjRiZGJjMDFiYTg1MWIyZTQ0ZTI5MDM1NjEyZjIwYzM0YmViMGYyZDIyZmIwM2M0YjMxZjg4OGNiNDRjYTVmMWMyMWRhODU",
@@ -5424,7 +5424,7 @@
   "listed": "2026-09-20",
   "tenure": "Eigendom belast met erfpacht",
   "erfpacht_until": "2072-01-31",
-  "enriched": "2026-09-20"
+  "enriched": "2026-09-21"
  },
  {
   "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkwOTc1OXxhMjIyNDliNzE1YTI2ZDU5MDcyNTBlZDQ5NTE3Njk3OGQxZGZjZWNmY2ZiOTU0ZDM2ZGM1MDhiZjYwOTAwYTY1NGE0NGUzYjczYjY3NDNkMDY1M2RkZjA2OTQ1ZWE4OTUzMWQ1MzEyZjU3MWUyNTNmNDkzMDUyY2IwNmY0YzIyZHw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MjI3MDI5Mjl8ODUyNDE0Nzk2NzUwNTRjYWEwMzI4Y2YxMzIzZjY4NDgzYWQwYmY3NWZiNDYxM2IzZThmZmFiMjY5NzhjOGJiOWE1ZGU3NzNjOTdiNmUwN2M3ODU4ZTYxYWE0NGZlMDg2ZjBkNjE3ODc2OTQ1NzI2NTA1NGMzMWQyZjYzMWU4MWY",
