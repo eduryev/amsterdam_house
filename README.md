@@ -39,12 +39,18 @@ Three constants in `src/build.py` decide what starts in Archived:
 | `CUTOFF` | `2026-09-10` | first seen earlier → Archived |
 | `MIN_M2` | `70` | under 70 m² → Archived |
 | `MIN_BEDROOMS` | `2` | one bedroom or fewer → Archived |
+| `WITHDRAWN` | `Ingetrokken` | pulled off the market → Archived |
 
 They set the **default** stage only. A card either of us has actually moved
 carries its own stage in `board.json` and keeps it, so a 64 m² flat we liked
 anyway stays liked — which is why archiving is done by rebuilding rather than
 by writing to the board. An *unknown* bedroom count counts as unknown, not as
 too small: a parsing miss leaves a flat in Backlog rather than hiding it.
+
+Because `status` is refreshed by `enrich.py`, the withdrawn rule also catches a
+listing pulled *after* it reached Backlog — the next rebuild drops it out.
+Sold and under-offer are deliberately not archived: those still get struck
+through on the card, but they stay where they are.
 
 ## Where the fields come from
 

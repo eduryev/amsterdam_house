@@ -892,7 +892,7 @@ function render(){
   document.getElementById('summary').innerHTML =
     `<b>${total}</b> listings from AVT <span class="sep">|</span> <b>${active}</b> live, <b>${total-active}</b> archived` +
     (shown !== total ? ` <span class="sep">|</span> <b>${shown}</b> match your filters` : '') +
-    ` <span class="sep">|</span> <span title="Cards start in Archived if they predate ${CUTOFF}, are under ${MIN_M2} m², or have one bedroom. Moving a card yourself always wins.">auto-archived: before ${CUTOFF}, under ${MIN_M2} m², or 1 bedroom</span>` +
+    ` <span class="sep">|</span> <span title="Cards start in Archived if they predate ${CUTOFF}, are under ${MIN_M2} m², have one bedroom, or have been withdrawn from the market. Moving a card yourself always wins.">auto-archived: before ${CUTOFF}, under ${MIN_M2} m², 1 bed, or withdrawn</span>` +
     ` <span class="sep">|</span> built ${BUILT}` +
     ` <span class="sep">|</span> <button class="who-btn" id="who-btn" type="button" title="Cards you like or dislike are signed with this">` +
     (who ? `you: <b>${esc(who)}</b>` : 'sign your verdicts') + `</button>` +

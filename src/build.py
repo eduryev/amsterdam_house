@@ -12,11 +12,18 @@ CUTOFF = '2026-09-10'          # anything first seen before this lands in Archiv
 MIN_M2 = 70                    # below this, or with one bedroom, it isn't worth a look
 MIN_BEDROOMS = 2
 
-def too_small(r):
-    """Whether a listing starts in Archived on size alone.
+WITHDRAWN = 'Ingetrokken'      # move.nl's word for a listing pulled off the market
 
-    An unknown bedroom count is NOT a reason to hide a flat — that would bury
-    listings we merely failed to parse, which is the opposite of useful."""
+def auto_archived(r):
+    """Whether a listing starts in Archived rather than Backlog.
+
+    Only ever the DEFAULT — a card that's been moved keeps its own stage from
+    board.json. An unknown bedroom count is NOT a reason to hide a flat: that
+    would bury listings we merely failed to parse, the opposite of useful."""
+    if r['first_seen'] < CUTOFF:
+        return True
+    if r.get('status') == WITHDRAWN:
+        return True
     if r['m2'] < MIN_M2:
         return True
     beds = r.get('bedrooms')
@@ -49,9 +56,7 @@ def main():
             'enriched': r.get('enriched'),
             'listed': r.get('listed'),
             'erfpacht_until': r.get('erfpacht_until'),
-            # only the DEFAULT: a card either of them has moved keeps its own
-            # stage from board.json, so a small flat they liked anyway stays liked
-            'defaultStage': 'backlog' if r['first_seen'] >= CUTOFF and not too_small(r) else 'archived',
+            'defaultStage': 'archived' if auto_archived(r) else 'backlog',
         })
     slim.sort(key=lambda r: (r['first_seen'], r['address']))
 
