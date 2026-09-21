@@ -20,11 +20,6 @@
    "address": "Molukkenstraat 37 3",
    "requested_at": "2026-09-18"
   },
-  "pythagorasstraat-8-3-1098-gb": {
-   "agency_name": "La Maison Makelaars & Taxateurs",
-   "address": "Pythagorasstraat 8 3",
-   "requested_at": "2026-09-18"
-  },
   "eerste-atjehstraat-162-h-1094-kx": {
    "agency_name": "Keizerskroon Makelaars",
    "address": "Eerste Atjehstraat 162 H",
@@ -36,10 +31,16 @@
    "event_id": "dfblre8plt1qke5k57feek6vlk",
    "start": "2026-09-15T10:00:00+02:00",
    "summary": "Apt Viewing: Achillesstraat 109 H"
+  },
+  "pythagorasstraat-8-3-1098-gb": {
+   "event_id": "8vipk2jsg211rkia0s65kp501c",
+   "start": "2026-09-25T10:00:00+02:00",
+   "summary": "Apt Viewing: Pythagorasstraat 8 3"
   }
  },
  "forwarded_message_ids": [
   "1a09f8d2a997a994",
-  "1a0b5007e33f1277"
+  "1a0b5007e33f1277",
+  "1a0b8de631c14726"
  ]
 }
