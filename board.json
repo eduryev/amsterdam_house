@@ -317,6 +317,13 @@
   "marco-polostraat-114-1-1057-wx": {
    "stage": "archived",
    "ts": 1789979724467
+  },
+  "meeuwenlaan-167-b-1021-jc": {
+   "stage": "disliked",
+   "verdicts": {
+    "Eduard": "disliked"
+   },
+   "ts": 1789979806005
   }
  },
  "colors": {
