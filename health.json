@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; Marjoleinstraat 199 still awaiting confirmation, no update"
  },
  "listing_refresh": {
-  "at": "2026-09-22T20:17:55Z",
+  "at": "2026-09-22T21:16:50Z",
   "ok": true,
-  "summary": "no new digests since the 22 Sep 16:55 one; 277 listings, all enriched, 0 status changes (full refresh already done this hour)"
+  "summary": "no new digests; 277 listings, enrichment already fresh from earlier run today, 0 changes"
  }
 }
