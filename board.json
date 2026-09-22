@@ -433,6 +433,13 @@
   "bosrankstraat-58-1032-lh": {
    "stage": "archived",
    "ts": 1790113731266
+  },
+  "davisstraat-40-2-1057-tl": {
+   "stage": "viewed",
+   "verdicts": {
+    "Eduard": "viewed"
+   },
+   "ts": 1790113865789
   }
  },
  "colors": {
