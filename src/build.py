@@ -87,5 +87,14 @@ def main():
     print(f'{out}: {len(slim)} listings ({live} backlog / {len(slim)-live} archived), '
           f'{withE} with energy class, {os.path.getsize(out)//1024} KB')
 
+    # A postcode with no pc4.json entry still builds, but its cards show a bare
+    # number instead of a neighbourhood and get no pin until that browser has
+    # geocoded them. Easy to miss, so say it loudly rather than not at all.
+    missing = sorted({r['postcode'][:4] for r in slim} - set(pc4))
+    if missing:
+        print(f'  WARNING: {len(missing)} postcode area(s) missing from data/pc4.json: '
+              f'{", ".join(missing)}')
+        print('  Add each as "<pc4>": ["<neighbourhood>", <lat>, <lng>] and rebuild.')
+
 if __name__ == '__main__':
     main()

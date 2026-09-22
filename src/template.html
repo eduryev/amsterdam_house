@@ -764,7 +764,13 @@ function patch(id, changes){
 /* ====== formatting ====== */
 const eur = new Intl.NumberFormat('nl-NL', {style:'currency', currency:'EUR', maximumFractionDigits:0});
 const money = n => eur.format(n).replace(/ /g,' ');
-const hoodOf = l => (PC4[l.postcode.slice(0,4)] || [l.postcode.slice(0,4)])[0];
+/* Falls back to "Amsterdam 1013" rather than a bare "1013" when a postcode
+   isn't in pc4.json yet — it still reads as a place in the Area filter, and it
+   is obvious that the real name is missing. */
+const hoodOf = l => {
+  const pc4 = l.postcode.slice(0, 4);
+  return PC4[pc4] ? PC4[pc4][0] : `Amsterdam ${pc4}`;
+};
 /* move.nl's own "listed since" date is the authoritative one; until a
    listing is enriched we fall back to the date AVT's digest first mentioned
    it, which can lag the real listing date by a day or two. */

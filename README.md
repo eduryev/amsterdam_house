@@ -20,7 +20,7 @@ move.nl listing pages ──enrich.py─────────┘
 | `src/build.py` | Inlines the data into one self-contained page. |
 | `src/template.html` | The page. `__LISTINGS__`, `__PC4__`, `__BUILT__`, `__CUTOFF__` are substituted at build time. |
 | `data/listings.json` | The listings. |
-| `data/pc4.json` | Amsterdam PC4 → neighbourhood + approximate centroid, used to place pins instantly before geocoding resolves. |
+| `data/pc4.json` | Amsterdam PC4 → neighbourhood + approximate centroid, used to place pins instantly before geocoding resolves. Grows as new postcodes appear; `build.py` warns when one is missing. |
 | `docs/index.html` | The built page. **GitHub Pages serves `main` → `/docs`.** |
 | `board.json` | Shared board state — **lives on the `board` branch**, not here. |
 
@@ -51,6 +51,20 @@ Because `status` is refreshed by `enrich.py`, the withdrawn rule also catches a
 listing pulled *after* it reached Backlog — the next rebuild drops it out.
 Sold and under-offer are deliberately not archived: those still get struck
 through on the card, but they stay where they are.
+
+### Postcode areas
+
+Widening the neighbourhood selection on move.nl needs no code change: the
+pipeline reacts to whatever postcodes turn up in the listings, not to what's
+selected. The one manual step is `data/pc4.json`, which supplies the
+neighbourhood *name* — there's no other source for it — and an approximate
+centroid used to place a pin before the browser geocodes the exact address.
+
+`build.py` prints a `WARNING: N postcode area(s) missing from data/pc4.json`
+when a listing's PC4 has no entry, and the refresh routine is told to clear it
+before committing. Without an entry a listing still builds and still lands in
+the right column; its cards just read "Amsterdam 1013" instead of a
+neighbourhood, and it has no pin until that browser geocodes it.
 
 ## Where the fields come from
 
