@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 1 tracked (Marjoleinstraat 199, awaiting confirmation)"
  },
  "listing_refresh": {
-  "at": "2026-09-22T17:18:07Z",
+  "at": "2026-09-22T18:16:40Z",
   "ok": true,
-  "summary": "added 1 from the 22 Sep 16:55 digest (Bosrankstraat 58); 277 listings, 0 status changes, no new postcode areas"
+  "summary": "no new digests since 22 Sep 16:55; 277 listings, already enriched, 0 status changes"
  }
 }
