@@ -356,6 +356,13 @@
   "kazernestraat-24-h-1018-cd": {
    "stage": "archived",
    "ts": 1790058289574
+  },
+  "newtonstraat-64-h-1098-he": {
+   "stage": "disliked",
+   "verdicts": {
+    "Eduard": "disliked"
+   },
+   "ts": 1790058858592
   }
  },
  "colors": {
