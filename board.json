@@ -400,6 +400,13 @@
   "carolina-macgillavrylaan-25-1098-xa": {
    "stage": "archived",
    "ts": 1790112579987
+  },
+  "nieuwe-keizersgracht-21-h-1018-va": {
+   "stage": "disliked",
+   "verdicts": {
+    "Eduard": "disliked"
+   },
+   "ts": 1790112837487
   }
  },
  "colors": {
