@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked"
  },
  "listing_refresh": {
-  "at": "2026-09-22T04:19:00Z",
+  "at": "2026-09-22T05:16:17Z",
   "ok": true,
-  "summary": "added 42 from 22 Sep 04:03 digest; 6 auto-archived as too small/1-bed; 7 new PC4 areas added; 264 listings total"
+  "summary": "no new digests since the 22 Sep 04:03 AVT digest (already on main); full re-enrich ran 2h ago with no changes; 264 listings"
  }
 }
