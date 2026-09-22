@@ -1,4 +1,29 @@
 {
+ "1013": [
+  "Houthavens / Westelijke Eilanden",
+  52.386,
+  4.885
+ ],
+ "1014": [
+  "Houthavens",
+  52.392,
+  4.878
+ ],
+ "1015": [
+  "Jordaan",
+  52.375,
+  4.882
+ ],
+ "1016": [
+  "Jordaan-zuid / Grachtengordel-West",
+  52.368,
+  4.883
+ ],
+ "1019": [
+  "Czaar Peterbuurt / Oostelijke Eilanden",
+  52.366,
+  4.937
+ ],
  "1017": [
   "Grachtengordel-Zuid",
   52.3633,
@@ -44,6 +69,11 @@
   52.41,
   4.883
  ],
+ "1035": [
+  "Noord – Tuindorp Nieuwendam",
+  52.4,
+  4.917
+ ],
  "1052": [
   "Frederik Hendrikbuurt",
   52.379,
@@ -58,6 +88,11 @@
   "Oud-West – Helmersbuurt",
   52.364,
   4.873
+ ],
+ "1055": [
+  "Bos en Lommer",
+  52.373,
+  4.848
  ],
  "1057": [
   "Chassébuurt / Postjesweg",
