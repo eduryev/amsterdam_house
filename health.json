@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; Postjeskade 155 H still awaiting confirmation, nothing new"
  },
  "listing_refresh": {
-  "at": "2026-09-22T22:16:47Z",
+  "at": "2026-09-22T23:17:47Z",
   "ok": true,
-  "summary": "no new digests since 16:55 AVT (all already processed); 277 listings, already enriched today, no status changes"
+  "summary": "no new digests since 16:55; 277 listings, full status refresh already done earlier today"
  }
 }
