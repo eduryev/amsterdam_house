@@ -861,7 +861,30 @@ function cardHTML(l){
   </article>`;
 }
 
+/* Where you are looking, so a re-render doesn't throw it away.
+   render() replaces the whole board's HTML, which resets every column's
+   scrollTop to 0 — so disliking a card 30 rows down used to fling the column
+   back to the top. Capture before, restore after. */
+function viewport(){
+  const cols = {};
+  document.querySelectorAll('.col-body').forEach(b => { cols[b.dataset.stage] = b.scrollTop; });
+  const bs = document.querySelector('.board-scroll');
+  return {cols, left: bs ? bs.scrollLeft : 0, win: window.scrollY};
+}
+
+function restoreViewport(v, withWindow){
+  if (!v) return;
+  document.querySelectorAll('.col-body').forEach(b => {
+    const y = v.cols[b.dataset.stage];
+    if (y) b.scrollTop = y;          // the browser clamps if the column shrank
+  });
+  const bs = document.querySelector('.board-scroll');
+  if (bs && v.left) bs.scrollLeft = v.left;
+  if (withWindow && v.win) window.scrollTo(0, v.win);
+}
+
 function render(){
+  const keep = viewport();
   const visible = LISTINGS.filter(passes);
   const groups = {};
   STAGES.forEach(s => groups[s.id] = []);
@@ -905,6 +928,8 @@ function render(){
     healthHTML();
 
   syncMarkers(visible);
+  restoreViewport(keep, false);   // window scroll is the user's, never ours to move
+  rememberViewport();
 }
 
 /* ====== drag & drop ====== */
@@ -1427,6 +1452,36 @@ function setMapHeight(px, persist){
   });
 })();
 
+/* ====== come back within 5 minutes, land where you left ======
+   Per browser, not shared: where Eduard is looking is not where Katia is.
+   Older than 5 minutes and it's a fresh visit, so start at the top. */
+const LS_SCROLL = 'avt-house-hunt/scroll/v1';
+const SCROLL_TTL = 5 * 60 * 1000;
+let scrollSaveTimer = null;
+
+function rememberViewport(){
+  clearTimeout(scrollSaveTimer);
+  scrollSaveTimer = setTimeout(() => {
+    save(LS_SCROLL, Object.assign(viewport(), {at: Date.now()}));
+  }, 400);
+}
+
+function restoreRememberedViewport(){
+  const v = load(LS_SCROLL, null);
+  if (!v || Date.now() - (v.at || 0) > SCROLL_TTL) return;
+  restoreViewport(v, true);
+  // images and the geocoder settle after first paint; re-apply once they have
+  requestAnimationFrame(() => restoreViewport(v, true));
+  setTimeout(() => restoreViewport(v, true), 400);
+}
+
+/* Save on the way out too — a debounce can still be pending when the tab hides. */
+addEventListener('pagehide', () => save(LS_SCROLL, Object.assign(viewport(), {at: Date.now()})));
+addEventListener('visibilitychange', () => {
+  if (document.hidden) save(LS_SCROLL, Object.assign(viewport(), {at: Date.now()}));
+});
+addEventListener('scroll', rememberViewport, {passive:true});
+
 /* ====== has this tab gone stale? ======
    LISTINGS is baked in at build time, and the board sync deliberately ignores
    ids it doesn't recognise — so a tab open since before a listing was added
@@ -1604,6 +1659,9 @@ render();
 startSync();
 fetchHealth();
 setInterval(fetchHealth, 5 * 60 * 1000);
+document.querySelector('.board-scroll').addEventListener('scroll', rememberViewport, {passive:true});
+board.addEventListener('scroll', rememberViewport, {passive:true, capture:true});
+restoreRememberedViewport();
 document.getElementById('stale-reload').onclick = () => location.reload();
 checkBuild();
 setInterval(checkBuild, 2 * 60 * 1000);

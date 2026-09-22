@@ -111,6 +111,12 @@ reads sensibly within a group, and a listing with no energy class sorts last
 rather than first. Energy, garden and terrace read the *effective* value, so a
 figure corrected by hand in the Edit panel is what sorting uses.
 
+Scroll position is deliberately *not* shared — where Eduard is looking isn't
+where Katia is. Each browser keeps its own column positions in `localStorage`,
+restores them if you come back within five minutes, and preserves them across
+every re-render, so changing a card's status no longer flings the column back
+to the top.
+
 It sits on its own branch deliberately: `main` serves GitHub Pages, and a commit
 every time someone moves a card would rebuild the site and hit the ~10 builds/hour
 limit.
