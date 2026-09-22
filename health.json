@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 2 tracked (Lanseloetstraat 14 H, Marjoleinstraat 199), no confirmation yet"
  },
  "listing_refresh": {
-  "at": "2026-09-22T07:17:47Z",
+  "at": "2026-09-22T08:17:21Z",
   "ok": true,
-  "summary": "no new digests since the 22 Sep 04:03 AVT one; 264 listings, 0 status changes"
+  "summary": "no new digests since 22 Sep 04:03 (already processed); 264 listings, already enriched and rebuilt today"
  }
 }
