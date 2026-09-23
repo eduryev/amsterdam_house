@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-23T09:08:12Z",
+  "at": "2026-09-23T10:09:34Z",
   "ok": true,
-  "summary": "no new viewing requests; Postjeskade 155 H still applied — agency declined viewing (bidding in progress), no date"
+  "summary": "no new viewing requests; Postjeskade still applied (agency: no viewing, bidding in progress); mistakenly re-forwarded an already-forwarded agency reply"
  },
  "listing_refresh": {
   "at": "2026-09-23T09:19:02Z",
