@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked, nothing to check"
  },
  "listing_refresh": {
-  "at": "2026-09-23T22:40:52Z",
+  "at": "2026-09-23T23:17:14Z",
   "ok": true,
-  "summary": "no new digests; 293 listings, 3 status changes (Rietwijkerstraat 13 2 sold, Derde Oosterparkstraat 68 5 sold onder voorbehoud, Van Ostadestraat 76 H back to available)"
+  "summary": "no new digests since 18:00; 293 listings, statuses already refreshed 36min prior"
  }
 }
