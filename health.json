@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 1 tracked (Postjeskade 155 H) — no confirmation yet"
  },
  "listing_refresh": {
-  "at": "2026-09-23T03:17:14Z",
+  "at": "2026-09-23T04:16:28Z",
   "ok": true,
-  "summary": "no new digests; 277 listings, 0 status changes (full refresh already done yesterday)"
+  "summary": "no new digests since 22 Sep 16:55; 277 listings, all enriched, no status changes"
  }
 }
