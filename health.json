@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-23T06:08:16Z",
+  "at": "2026-09-23T07:09:09Z",
   "ok": true,
-  "summary": "no new viewing requests; Postjeskade 155 H unchanged since last run (already forwarded, still applied); 1 tracked"
+  "summary": "no new viewing requests; Postjeskade 155 H still applied, no new update (accidentally re-forwarded an already-forwarded agency reply)"
  },
  "listing_refresh": {
   "at": "2026-09-23T06:17:40Z",
