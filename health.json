@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; tracking empty, nothing to check"
  },
  "listing_refresh": {
-  "at": "2026-09-24T06:17:35Z",
+  "at": "2026-09-24T07:17:22Z",
   "ok": true,
-  "summary": "no new digests since 23 Sep 18:00; 293 listings, all enriched yesterday, 0 status changes"
+  "summary": "no new digests since the 23 Sep 18:00 AVT email; 293 listings, 0 status changes (full refresh already done last run)"
  }
 }
