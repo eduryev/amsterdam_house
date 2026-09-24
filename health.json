@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; 0 tracked; Step D re-checked 4 upcoming viewings, all already in sync with latest emails (prior run already handled the Achillesstraat reschedule and Molukkenstraat 2nd viewing)"
  },
  "listing_refresh": {
-  "at": "2026-09-24T13:18:48Z",
+  "at": "2026-09-24T14:17:44Z",
   "ok": true,
-  "summary": "added 1 from the 24 Sep digests (Krugerstraat 25 C, not auto-archived)"
+  "summary": "added 1 from the 24 Sep AVT digests (Jozef Israelskade 10 A); no status changes, no new postcode areas"
  }
 }
