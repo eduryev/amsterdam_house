@@ -69,8 +69,11 @@
   },
   "achillesstraat-109-h-1076-ra": {
    "stage": "visited",
-   "note": "📅 Confirmed: 24 September 2026, 17:15 — B.V. Deltam Makelaardij o.g (info@deltam.nl) — rescheduled from 15 Sep",
-   "ts": 1790277256748
+   "note": "No.  To small, two rooms in garden house. For old people.\n\n📅 Confirmed: 24 September 2026, 17:15 — B.V. Deltam Makelaardij o.g (info@deltam.nl) — rescheduled from 15 Sep",
+   "ts": 1790277283439,
+   "energy": "D",
+   "garden": true,
+   "terrace": false
   },
   "bertrand-russellstraat-90-1097-hl": {
    "stage": "archived",
