@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-24T21:08:56Z",
+  "at": "2026-09-24T22:10:38Z",
   "ok": true,
-  "summary": "no new viewing requests (16/16 already processed); tracking empty; Step D re-checked 4 upcoming/recent viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) — all times and forwards already up to date, nothing to change"
+  "summary": "no new viewing requests (17 already processed); 0 in tracking; re-checked 4 upcoming/recent viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) via Step D — all times still match latest mail, nothing to move; all agency mail already forwarded except one Sep15 Deltam reply"
  },
  "listing_refresh": {
   "at": "2026-09-24T21:17:11Z",
