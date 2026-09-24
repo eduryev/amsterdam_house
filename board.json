@@ -40,8 +40,8 @@
   },
   "achillesstraat-109-h-1076-ra": {
    "stage": "scheduled",
-   "note": "📅 Confirmed: 15 September 2026, 10:00 AM — B.V. Deltam Makelaardij o.g (info@deltam.nl)",
-   "ts": 1789384180845
+   "note": "📅 Confirmed: 24 September 2026, 17:15 — B.V. Deltam Makelaardij o.g (info@deltam.nl) — rescheduled from 15 Sep",
+   "ts": 1790253534628
   },
   "bertrand-russellstraat-90-1097-hl": {
    "stage": "archived",
@@ -164,8 +164,8 @@
   },
   "molukkenstraat-37-3-1095-at": {
    "stage": "visited",
-   "note": "Amazing apartment, poor neighborhood.\n\n📅 Confirmed: 22 September 2026, 16:00 — Van Huis Uit Makelaars (info@vanhuisuit-makelaars.nl)",
-   "ts": 1790088582385,
+   "note": "📅 Confirmed: 25 September 2026, 10:50 — Van Huis Uit Makelaars (info@vanhuisuit-makelaars.nl) — 2nd viewing (Eduard); Katia saw it 22 Sep\nAmazing apartment, poor neighborhood.",
+   "ts": 1790253534628,
    "energy": "C",
    "garden": false,
    "terrace": true
