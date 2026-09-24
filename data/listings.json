@@ -7636,5 +7636,31 @@
   "listed": "2026-09-24",
   "tenure": "Volle eigendom",
   "enriched": "2026-09-24"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkxNDAyMXwwNWM2ZDljNmQ5MDAxOTM3Nzg2MzhhNWQwMTQwODE2MmQ3MmMyZjg0MzlhYmQ3M2Y0MDFmOGVkNDE2ZjI1ZGU4NjhlZDI4NjU3NjFhYjg0YWRhM2U2MzdmNzhmYjBkMmQ5MTQxNGVjOGViYTU5ZTljODRhYmU3Yzg3YWVjMmE4Nnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0Mjc1NTMwNTN8ZDhkZTVhM2QxOGUxNDRiMjAxZWY1ZDgxNmM4OGE2ZTNhMTI3YzNlZGI2MGFkY2NiN2IzNDU2NDIwMjk0YjkxYjZiMzg3YmQ2NzBlMWM3Y2I0ZGZjYzE2YzM1YzNhM2NhZjdiNTgzMmM3OTIwZjAzOGZhOTBkNDdlZjYyMGUzMTM",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2899793241.jpg?height=290&check=sha256%3A98b2251136633769645d09a6b03207cdc80a9b8f82783f3c2a5af7ff111d5850&width=435&resize=5",
+  "address": "Wijsmullerstraat 53 H",
+  "postcode": "1058 JH",
+  "city": "Amsterdam",
+  "match": 95,
+  "price": 835000,
+  "price_label": "Vraagprijs",
+  "type": "Benedenwoning",
+  "m2": 90,
+  "rooms": 3,
+  "bedrooms": 2,
+  "id": "wijsmullerstraat-53-h-1058-jh",
+  "first_seen": "2026-09-24",
+  "last_seen": "2026-09-24",
+  "energy": "C",
+  "garden": true,
+  "terrace": false,
+  "garden_size": "55 m²",
+  "status": "Beschikbaar",
+  "vve": "€ 112,50",
+  "listed": "2026-09-24",
+  "tenure": "Volle eigendom",
+  "enriched": "2026-09-24"
  }
 ]
