@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-24T17:09:14Z",
+  "at": "2026-09-24T18:09:06Z",
   "ok": true,
-  "summary": "no new viewing requests; tracking empty; Step D re-checked 4 upcoming viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat x2, Eerste Atjehstraat) — all times and forwards still match, nothing changed"
+  "summary": "no new viewing requests (16 seen, all processed); 4 upcoming viewings unchanged, all forwards already sent"
  },
  "listing_refresh": {
   "at": "2026-09-24T17:17:05Z",
