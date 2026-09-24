@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16/16 already processed); tracking empty; Step D re-checked 4 upcoming/recent viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) — all times and forwards already up to date, nothing to change"
  },
  "listing_refresh": {
-  "at": "2026-09-24T20:31:29Z",
+  "at": "2026-09-24T21:17:11Z",
   "ok": true,
-  "summary": "no new digests; 305 listings, 2 to Verkocht onder voorbehoud, 4 to Onder bod, Blasiusstraat 108 4 withdrawn (now archived)"
+  "summary": "no new digests; 305 listings, 0 status changes since last run's refresh"
  }
 }
