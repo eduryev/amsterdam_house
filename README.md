@@ -228,6 +228,23 @@ routine treats a refused mark-as-read as a note, never a failed run.
 `calendar_events` in `data/viewing_tracker_state.json` maps listing id → event
 id, which is what stops an hourly routine from creating the same event over and
 over; it must be committed in the same push as the move that created the event.
-If the agency later moves the appointment, the stored event is updated rather
-than duplicated. The account attaches a Google Meet link to new events by
-itself and the API won't remove it — harmless here, and ignored.
+The account attaches a Google Meet link to new events by itself and the API
+won't remove it — harmless here, and ignored.
+
+#### Booking a viewing isn't the end of it
+
+A confirmed appointment used to be treated as finished: the listing left
+`tracking` and nothing looked at it again. Two viewings then moved by email and
+the calendar went on showing the old times for days — one renegotiated in a
+plain thread between Eduard and the agent, one through the agency's booking
+system. Neither was exotic; the routine simply wasn't looking.
+
+So every run now re-checks each entry in `calendar_events` whose viewing is
+still ahead (or was in the last three days) against the mail for that address,
+whatever column the card is in — a *second* viewing shows up precisely on a card
+a human has already moved to Visited. A time that moved updates the existing
+event in place and rewrites the note; a genuinely separate later viewing gets
+its own event, with the earlier one left alone as a record of what happened and
+its id kept in `past_event_ids`; a cancellation deletes the event and sends the
+card back to Viewing Applied. As everywhere else here, an ambiguous change
+changes nothing and asks instead.
