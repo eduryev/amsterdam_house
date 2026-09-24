@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-24T14:09:20Z",
+  "at": "2026-09-24T15:09:57Z",
   "ok": true,
-  "summary": "no new viewing requests; 0 tracked; Step D re-checked 4 upcoming viewings, all already in sync with latest emails (prior run already handled the Achillesstraat reschedule and Molukkenstraat 2nd viewing)"
+  "summary": "no new viewing requests; 0 tracked; 4 upcoming/recent viewings checked, all times and forwards already up to date"
  },
  "listing_refresh": {
   "at": "2026-09-24T14:17:44Z",
