@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; tracking empty; 4 scheduled viewings re-checked against mail, all times and forwards unchanged"
  },
  "listing_refresh": {
-  "at": "2026-09-25T14:18:33Z",
+  "at": "2026-09-25T15:19:00Z",
   "ok": true,
-  "summary": "added 2 from the 25 Sep digest (1 auto-archived); 0 status changes"
+  "summary": "no new digests since last hourly run; 378 listings, all enriched, 0 status changes"
  }
 }
