@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; tracking empty; 4 scheduled/visited viewings re-checked, all times and forwards already up to date"
  },
  "listing_refresh": {
-  "at": "2026-09-25T05:20:17Z",
+  "at": "2026-09-25T06:18:25Z",
   "ok": true,
-  "summary": "added 40 from the 25 Sep digest (29 auto-archived), 0 new postcode areas"
+  "summary": "no new digests since the 25 Sep 05:13 AVT email (already in board); 345 listings, all enriched today, no status changes"
  }
 }
