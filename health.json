@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; tracking empty; 4 calendar events re-checked, all unchanged; forwarded 1 previously-missed Deltam reply"
  },
  "listing_refresh": {
-  "at": "2026-09-25T01:16:51Z",
+  "at": "2026-09-25T02:30:18Z",
   "ok": true,
-  "summary": "no new AVT digests since 24 Sep; full status refresh already done yesterday; 305 listings unchanged"
+  "summary": "no new digests; 305 listings, 0 status changes"
  }
 }
