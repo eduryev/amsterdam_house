@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; tracking empty; 4 calendar events (Achilles/Pythagoras/Molukken/Eerste Atjeh, all today or yesterday) re-checked, times unchanged, all agency mail already forwarded"
  },
  "listing_refresh": {
-  "at": "2026-09-25T03:17:38Z",
+  "at": "2026-09-25T04:17:09Z",
   "ok": true,
-  "summary": "no new digests since the 24 Sep run; 305 listings, full re-enrich already done at 02:30 today with 0 changes"
+  "summary": "no new digests since 24 Sep 18:05; 305 listings, statuses already refreshed 2h ago, no changes"
  }
 }
