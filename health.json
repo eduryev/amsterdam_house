@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-25T14:09:14Z",
+  "at": "2026-09-25T15:09:29Z",
   "ok": true,
-  "summary": "no new viewing requests; 4 tracked appointments re-verified via Step D, all unchanged and already forwarded"
+  "summary": "no new viewing requests; tracking empty; 4 scheduled viewings re-checked against mail, all times and forwards unchanged"
  },
  "listing_refresh": {
   "at": "2026-09-25T14:18:33Z",
