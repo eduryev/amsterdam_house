@@ -191,8 +191,11 @@
   },
   "eerste-atjehstraat-162-h-1094-kx": {
    "stage": "scheduled",
-   "note": "📅 Confirmed: 25 September 2026, 10:30 — Keizerskroon Makelaars (info@keizerskroonmakelaars.nl)",
-   "ts": 1789981655323
+   "note": "cool space. cool garden. too small((\n\n📅 Confirmed: 25 September 2026, 10:30 — Keizerskroon Makelaars (info@keizerskroonmakelaars.nl)",
+   "ts": 1790336643065,
+   "energy": "B",
+   "garden": true,
+   "terrace": false
   },
   "govert-flinckstraat-347-2-1074-cc": {
    "stage": "disliked",
