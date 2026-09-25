@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (17 checked, all already processed); tracking empty; Step D re-checked 4 upcoming/recent viewings (Achillesstraat 109 H, Pythagorasstraat 8 3, Molukkenstraat 37 3, Eerste Atjehstraat 162 H) — all confirmed times unchanged"
  },
  "listing_refresh": {
-  "at": "2026-09-25T04:17:09Z",
+  "at": "2026-09-25T05:20:17Z",
   "ok": true,
-  "summary": "no new digests since 24 Sep 18:05; 305 listings, statuses already refreshed 2h ago, no changes"
+  "summary": "added 40 from the 25 Sep digest (29 auto-archived), 0 new postcode areas"
  }
 }
