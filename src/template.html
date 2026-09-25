@@ -251,6 +251,11 @@ button,select,input{font:inherit;color:inherit}
 .thumb.on{filter:none; opacity:1}
 .thumb.on.up{background:color-mix(in srgb, var(--s-viewed) 16%, transparent); border-color:var(--s-viewed)}
 .thumb.on.down{background:color-mix(in srgb, var(--s-disliked) 18%, transparent); border-color:var(--s-disliked)}
+/* Archive sits with the thumbs because it's the same kind of decision — a verdict
+   on the flat — but it's the destructive-feeling one, so it's pushed a little
+   clear of them rather than sitting flush against Dislike. */
+.thumb.arch{margin-left:2px}
+.thumb.on.arch{background:color-mix(in srgb, var(--s-archived) 20%, transparent); border-color:var(--s-archived)}
 .chip.listed{font-family:var(--mono); letter-spacing:0; color:var(--ink-3); text-transform:none}
 .chip.sold{color:var(--brick); border-color:color-mix(in srgb, var(--brick) 45%, var(--line)); text-transform:none}
 .sheet-head #ed-src{margin-top:3px; font-family:var(--ui); font-size:11px; color:var(--ink-3)}
@@ -852,6 +857,9 @@ function cardHTML(l){
           return `<button class="thumb${mine ? ' on ' + dir : ''}" data-verdict="${v}" data-vid="${l.id}"
             type="button" aria-pressed="${mine}" title="${word}${mine ? ' (click again to undo yours)' : ''}">${icon}</button>`;
         }).join('')}
+        <button class="thumb arch${st === 'archived' ? ' on' : ''}" data-arch="${l.id}" type="button"
+          aria-pressed="${st === 'archived'}"
+          title="${st === 'archived' ? 'Archived — click to put it back in Backlog' : 'Archive'}">🗑</button>
         <select class="mv" data-mv="${l.id}" aria-label="Move ${esc(l.address)} to another column">
           ${STAGES.map(s => `<option value="${s.id}"${s.id===st?' selected':''}>${s.name}</option>`).join('')}
         </select>
@@ -1024,6 +1032,15 @@ board.addEventListener('click', e => {
     // leaving no way to undo a mis-click
     if (mineIs(id, want)) clearVerdict(id);
     else moveTo(id, want);
+    return;
+  }
+  const arch = e.target.closest('[data-arch]');
+  if (arch){
+    const id = arch.dataset.arch;
+    // Unarchiving goes to Backlog, not back to defaultStage: a flat auto-archived
+    // for being 64 m² has defaultStage 'archived', so restoring it there would
+    // look like the button did nothing.
+    moveTo(id, stageOf(id) === 'archived' ? 'backlog' : 'archived');
     return;
   }
   const btn = e.target.closest('[data-edit]');

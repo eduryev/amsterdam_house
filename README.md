@@ -99,6 +99,13 @@ listing. An edit pushes within half a second rather than waiting out the interva
 Each column's sort order (`sorts`) and the column colours (`colors`) ride along
 in the same file, each with a single timestamp for the whole set: they change
 rarely, so newest-wins across the whole map is enough.
+Each card's footer carries 👍 / 👎 / 🗑. Archive is the same kind of decision as
+the thumbs — a verdict on the flat — so it sits with them rather than behind the
+move dropdown, just nudged clear of 👎. Clicking it again puts the card back in
+**Backlog** rather than its `defaultStage`: a 64 m² flat is auto-archived by the
+rules, so restoring it to its default would look like the button did nothing.
+Unlike the thumbs it records no verdict and never asks who you are.
+
 Clicking a column's dot opens a colour picker and recolours that column on both
 boards; the header, card stripes and map pins all read the same CSS variable, so
 a custom colour applies in light and dark alike. "Reset colours" in the Sync
@@ -224,6 +231,34 @@ what stops the hourly routine re-forwarding the same mail.
 Marking as read needs the Gmail connector's `gmail.modify` scope, which the
 current authorisation does not include; the forward itself works, so the
 routine treats a refused mark-as-read as a note, never a failed run.
+
+##### Not forwarding the same mail twice
+
+`forwarded_message_ids` was the only guard, and it wasn't enough. One morning
+Eduard got the same Postjeskade mail three times: the id was committed on the
+05:08 run, and the 07:08 and 10:08 runs forwarded it again anyway. A list the
+routine has to remember to consult is a soft guard, and a state file that
+doesn't get pushed is no guard at all.
+
+There is also a **third routine** now — "agency thread chaser", which Eduard set
+up from his phone to cover the housapp/booking and own-domain traffic the
+tracker never sees. It runs 13× a day, has no repo checkout, and therefore
+cannot read `forwarded_message_ids` at all. Since the tracker gained its
+reschedule watch it re-reads exactly the threads the chaser reads, so the two
+now overlap on the mail most likely to be forwarded twice.
+
+So dedup is mechanical and shared rather than per-routine. Every forward either
+routine sends ends with a line `avtref<gmail message id>`, and before forwarding
+anything either one searches
+
+```
+in:sent to:katiazoritch@gmail.com avtref<id>
+```
+
+immediately before that individual forward. A hit means done, whichever routine
+did it; a search that errors means don't forward. `forwarded_message_ids` stays
+as the tracker's fast path, and the 21 ids forwarded before markers existed are
+pasted into the chaser's prompt, since the marker search can't see those.
 
 `calendar_events` in `data/viewing_tracker_state.json` maps listing id → event
 id, which is what stops an hourly routine from creating the same event over and

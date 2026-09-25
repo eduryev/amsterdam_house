@@ -79,16 +79,33 @@ Never invent a date, time, or agency email that isn't literally in the email tex
 
 The agencies only ever write to Eduard, so Katia never sees these unless they're forwarded. Do this for **every** message from an agency in those threads — a proposal, a confirmation, a reschedule, a "sorry, it's sold" — not just the confirmations. Skip anything Eduard or Katia wrote themselves.
 
-Skip any message whose id is already in `forwarded_message_ids`; that list is the only thing stopping an hourly routine from forwarding the same email again and again, so it must be committed in the same push as everything else this run.
+**Two routines forward this mail**: this one, and "Amsterdam house hunt — agency thread chaser", which covers the housapp/booking and own-domain traffic this one never sees. They share no state file, and Eduard has already received the same forward three times in one morning. A duplicate is the worst outcome of this step — worse than a forward that never goes — so dedup is mechanical, not a judgement call, and it does not rely on `forwarded_message_ids` alone.
+
+Before forwarding message `<id>`, **both** gates must be clear:
+
+1. `<id>` is not in `forwarded_message_ids`; and
+2. this search comes back empty:
+
+        in:sent to:katiazoritch@gmail.com avtref<id>
+
+Run that search immediately before each individual forward, never once at the top of the run. If either gate says already-sent, skip it silently. If the search itself errors, do **not** forward — leave it for next hour.
 
     mcp__Gmail__forward
-      messageId: <the agency message's id>
+      messageId: <id>
       to:  ["katiazoritch@gmail.com"]
       cc:  ["eduryev@gmail.com"]
       forwardText: one plain sentence of context — address, what the agency said,
                    and the date and time if there is one. No invented detail.
+                   Then a blank line, then a final line containing exactly:
 
-Then add the message id to `forwarded_message_ids`.
+                       avtref<id>
+
+                   That token is how the other routine knows this message is
+                   already done. It is one word — no spaces, no punctuation
+                   inside it — and `<id>` is the literal Gmail message id you
+                   passed as `messageId`. Never omit it, never reformat it.
+
+Then add `<id>` to `forwarded_message_ids`. That list is the fast path and it must be committed in the same push as everything else this run; the `avtref` marker is the backstop for when a commit doesn't land, which is exactly how the triple-forward happened.
 
 Afterwards mark both as read, so neither the agency's mail nor Eduard's own cc'd copy sits bold in his inbox:
 
