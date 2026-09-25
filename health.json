@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-25T10:09:49Z",
+  "at": "2026-09-25T11:09:19Z",
   "ok": true,
-  "summary": "no new viewing requests; 4 tracked viewings unchanged (Achilles/Pythagoras/Molukken/Eerste Atjeh), all confirmed times still match, nothing new to forward since the 09:11 run"
+  "summary": "no new viewing requests (16/16 already processed); tracking empty; 4 upcoming/recent calendar events re-checked against mail, all times and forwards already up to date"
  },
  "listing_refresh": {
   "at": "2026-09-25T10:18:09Z",
