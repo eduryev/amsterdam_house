@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16/16 already processed); 4 tracked calendar viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) all still match confirmed times; forwarded new agency data-room email for Molukkenstraat to Katia"
  },
  "listing_refresh": {
-  "at": "2026-09-25T15:19:00Z",
+  "at": "2026-09-25T16:19:57Z",
   "ok": true,
-  "summary": "no new digests since last hourly run; 378 listings, all enriched, 0 status changes"
+  "summary": "added 2 from the 25 Sep digest (Columbusplein 44 3, Orteliusstraat 181 3); no auto-archives, no new postcode areas, no status changes"
  }
 }
