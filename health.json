@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-25T16:09:32Z",
+  "at": "2026-09-25T17:09:21Z",
   "ok": true,
-  "summary": "no new viewing requests (16/16 already processed); 4 tracked calendar viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) all still match confirmed times; forwarded new agency data-room email for Molukkenstraat to Katia"
+  "summary": "no new viewing requests; 0 tracked; 4 scheduled unchanged (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat all confirmed times still match, no new agency mail to forward)"
  },
  "listing_refresh": {
   "at": "2026-09-25T16:19:57Z",
