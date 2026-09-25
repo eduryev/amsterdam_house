@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16 threads, all 17 messages already processed); tracking empty; Step D re-checked all 4 recent calendar events (Achillesstraat 109H, Pythagorasstraat 8-3, Molukkenstraat 37-3, Eerste Atjehstraat 162H) — all already visited with times matching stored start, no reschedule/canc"
  },
  "listing_refresh": {
-  "at": "2026-09-25T20:17:05Z",
+  "at": "2026-09-25T21:17:16Z",
   "ok": true,
-  "summary": "no new digests; 385 listings, statuses already refreshed 40 min ago by prior run"
+  "summary": "no new digests; 385 listings, 0 status changes (already refreshed by the 19:36 run today)"
  }
 }
