@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (17 already processed); 4 recent/upcoming viewings re-checked against email, all times still match the board — nothing to move"
  },
  "listing_refresh": {
-  "at": "2026-09-26T02:19:03Z",
+  "at": "2026-09-26T03:17:01Z",
   "ok": true,
-  "summary": "no new digests; 385 listings, 0 status changes (full refresh done 7h earlier)"
+  "summary": "no new digests; 385 listings, 0 status changes (full refresh already done yesterday)"
  }
 }
