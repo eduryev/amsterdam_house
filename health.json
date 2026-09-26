@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16/16 already processed); tracking empty; rechecked 4 recent/upcoming viewings (Achillesstraat 109 H, Pythagorasstraat 8 3, Molukkenstraat 37 3, Eerste Atjehstraat 162 H) — all times still match calendar, no reschedules; all agency mail already forwarded"
  },
  "listing_refresh": {
-  "at": "2026-09-26T09:18:00Z",
+  "at": "2026-09-26T10:18:14Z",
   "ok": true,
-  "summary": "no new digests; 386 listings, 0 status changes"
+  "summary": "no new digests since Kruislaan 204 H (26 Sep); all 386 listings already enriched, no status changes"
  }
 }
