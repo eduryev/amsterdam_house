@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16 already processed); 4 upcoming/recent viewings re-checked, all confirmed times unchanged, no reschedules or cancellations; all agency mail already forwarded"
  },
  "listing_refresh": {
-  "at": "2026-09-26T17:17:19Z",
+  "at": "2026-09-26T18:35:23Z",
   "ok": true,
-  "summary": "no new digests; 386 listings, skipped full status refresh (last one 6h ago found no changes)"
+  "summary": "no new digests; 386 listings, 0 status changes (3 transient enrich fetch failures, retryable)"
  }
 }
