@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-26T06:11:39Z",
+  "at": "2026-09-26T07:10:18Z",
   "ok": true,
-  "summary": "no new viewing requests (all 17 already processed); tracking empty; 4 scheduled viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) re-checked, all confirmed times unchanged, no reschedule/cancellation"
+  "summary": "no new requests (17/17 already processed); tracking empty; Step D re-checked 4 upcoming/recent viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) — all times unchanged; skipped forwarding one Eerlijk Bieden auto-login-link email (no viewing content, carried an auth token"
  },
  "listing_refresh": {
   "at": "2026-09-26T06:17:11Z",
