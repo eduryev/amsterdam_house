@@ -9679,5 +9679,31 @@
   "listed": "2026-09-18",
   "tenure": "Volle eigendom",
   "enriched": "2026-09-25"
+ },
+ {
+  "url": "https://move.nl/exchange-object/RXhjaGFuZ2VPYmplY3Q6NjkxNjMzMnxjMjY4OWE5NzBjYTEyNjVmMzliNWE2NGJjYjVjNDY1OTY4MWYxNDE1ZTllMjJlNWMzMjcyMjFkMTk3OWM3ZTFmNTU3Zjc2MjY0ODlhZmM4YzhkNDE3ZTVkZWYxZDhkNzJiODYxMjg2NTljZmMyYTgxZjA0ZmUxZWY2MDc4OGU5Mnw5MDczNTk/overzicht?searcherDossierId=U2VhcmNoZXJEb3NzaWVyOjI1MTQ1MjY5fDkwNTkxOXw1NjgzNDA1fDRkMGFhY2E0NWNlZTcxNWY0MGFhMjkxMDZmYjY0ZTMxZGEwMDNiYjI5YTRlODIzMzJmYzdlNzMzNzJkOWYxNjMxMWU2YzJjNzFiODZjOGNmOWFjNGVjMDI2NmRhZGQyYmNkNGRlYWJjMjYxYzA1ODkyOTdiY2VhYjc5MjM5Mjk1&publicSearcherId=UHVibGljU2VhcmNoZXI6NTY4MzQwNXw0YzBhZGQxMDE5MzAzYjVmNWZmZDFkYTI2ZmM2NTM4ZmEyNzI1MjczNzcyMTM1NjRhYWJjNzdjNzI2NjlmNThjYmVlYjZkMjQyMjIxZjRiMzVmZGRlZmMyYzYxMjJlNGE4ZWNkYjMwZjA3Y2JhZmQ1ZDY0ZTIxMDM5NzYxZDZkYXw5MDczNTk&searchObjectId=U2VhcmNoZXJPYmplY3Q6MjUxNDUyNjl8OTA1OTE5fDI0MzAxOTc5MzV8MTc0Y2NmM2VjNGNiN2FmODU2NjA4NDQ2YjY0ZGE5ODM5M2U1YWJhOTg3MDMwNzVjNjUxY2RlN2JjYWNjYzBjYzM1ZTEwNGI3Y2EwOTAyM2ExZDI1NWY4MjE3ODg5ZGQ0ZjA2MzFjYmQ4Nzk5YjJlNDcxNTViZjlhYTE3MjcwZTk",
+  "image": "https://images.realworks.nl/servlets/images/uitwisseling.objectmedia/2899994713.jpg?height=290&check=sha256%3Ac9202cd5ebbc54593b290017818ca9bfb5203d90496e877de883dba5a9fb2a33&width=435&resize=5",
+  "address": "Kruislaan 204 H",
+  "postcode": "1098 SK",
+  "city": "Amsterdam",
+  "match": 95,
+  "price": 750000,
+  "price_label": "Vraagprijs",
+  "id": "kruislaan-204-h-1098-sk",
+  "first_seen": "2026-09-26",
+  "last_seen": "2026-09-26",
+  "type": "Beneden + bovenwoning",
+  "m2": 107,
+  "rooms": 4,
+  "bedrooms": 3,
+  "energy": "C",
+  "garden": true,
+  "terrace": false,
+  "status": "Beschikbaar",
+  "vve": "€ 152,47",
+  "listed": "2026-09-25",
+  "tenure": "Eigendom belast met erfpacht",
+  "erfpacht_until": "2045-12-31",
+  "enriched": "2026-09-26"
  }
 ]

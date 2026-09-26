@@ -12,7 +12,7 @@ HREF_RE = re.compile(r'href="(https://move\.nl/exchange-object/[^"]+)"')
 IMG_RE = re.compile(r'<img[^>]*?src="([^"]+)"[^>]*?alt="([^"]*)"|<img[^>]*?alt="([^"]*)"[^>]*?src="([^"]+)"')
 MATCH_RE = re.compile(r'Match:\s*(?:<[^>]+>\s*)*?(\d+)%', re.S)
 PRICE_RE = re.compile(r'Vraagprijs:\s*&euro;|Vraagprijs:\s*€\s*([\d.]+)')
-DETAIL_RE = re.compile(r'>([A-Za-zÀ-ÿ\- ]+?)\s*\|\s*(\d+)\s*m²\s*(?:/\s*(\d+)\s*m²\s*)?\|\s*(\d+)\s*kamers?(?:\s*\((\d+)\s*slaapkamers?\))?</a>')
+DETAIL_RE = re.compile(r'>([A-Za-zÀ-ÿ+\- ]+?)\s*\|\s*(\d+)\s*m²\s*(?:/\s*(\d+)\s*m²\s*)?\|\s*(\d+)\s*kamers?(?:\s*\((\d+)\s*slaapkamers?\))?</a>')
 ADDR_ANCHOR_RE = re.compile(
     r'font-weight:bold"[^>]*>\s*(.*?)\s*<span[^>]*>\s*(\d{4}\s*[A-Z]{2})\s+([^<]+?)\s*</span>', re.S)
 
