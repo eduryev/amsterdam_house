@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16 already processed); tracking empty; 4 calendar events re-verified (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) — all confirmed times unchanged, all agency mail already forwarded; nothing to do"
  },
  "listing_refresh": {
-  "at": "2026-09-26T18:35:23Z",
+  "at": "2026-09-26T19:17:46Z",
   "ok": true,
-  "summary": "no new digests; 386 listings, 0 status changes (3 transient enrich fetch failures, retryable)"
+  "summary": "no new digests; 386 listings, 0 status changes (3 stale enrich_failed flags cleared after successful retry)"
  }
 }
