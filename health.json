@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16 threads, all already processed); tracking empty; checked 4 upcoming/recent viewings (Achilles­straat 109 H, Pythagorasstraat 8 3, Molukkenstraat 37 3, Eerste Atjehstraat 162 H) — all confirmed times unchanged; 1 new non-actionable Eerlijk Bieden login-link email read for "
  },
  "listing_refresh": {
-  "at": "2026-09-26T04:17:38Z",
+  "at": "2026-09-26T05:18:11Z",
   "ok": true,
-  "summary": "Added 1 listing (Kruislaan 204 H) from the 26 Sep AVT digest; fixed a parser regex for '+' in dwelling type; no status changes"
+  "summary": "no new digests since Kruislaan 204 H; 386 listings, already enriched, no status changes"
  }
 }
