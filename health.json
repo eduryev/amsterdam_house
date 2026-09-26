@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-26T20:09:13Z",
+  "at": "2026-09-26T21:09:06Z",
   "ok": true,
-  "summary": "no new viewing requests; 0 tracked applied; checked 4 upcoming/recent viewings (Achillesstraat 109H, Pythagorasstraat 8-3, Molukkenstraat 37-3, Eerste Atjehstraat 162H) — all confirmed times unchanged, no reschedules/cancellations"
+  "summary": "no new viewing requests (16 threads, all already processed); 0 tracked; Step D re-checked all 4 upcoming/recent calendar events (Achillesstraat 109 H, Pythagorasstraat 8 3, Molukkenstraat 37 3, Eerste Atjehstraat 162 H) — no time changes, no cancellations, all agency mail already forwarded"
  },
  "listing_refresh": {
   "at": "2026-09-26T20:17:22Z",
