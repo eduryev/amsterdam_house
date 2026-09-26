@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16 threads, all already processed); nothing in tracking; Step D re-checked 4 upcoming/recent viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) — all times unchanged, no reschedules/cancellations; one unrelated Eerlijk Bieden login-link email see"
  },
  "listing_refresh": {
-  "at": "2026-09-26T01:16:54Z",
+  "at": "2026-09-26T02:19:03Z",
   "ok": true,
-  "summary": "no new digests since 25 Sep; 385 listings, all enriched, 0 status changes"
+  "summary": "no new digests; 385 listings, 0 status changes (full refresh done 7h earlier)"
  }
 }
