@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-26T03:09:19Z",
+  "at": "2026-09-26T04:08:39Z",
   "ok": true,
-  "summary": "no new viewing requests (17 already processed); 4 recent/upcoming viewings re-checked against email, all times still match the board — nothing to move"
+  "summary": "no new viewing requests; tracking empty; 4 scheduled/visited viewings re-checked, all unchanged"
  },
  "listing_refresh": {
   "at": "2026-09-26T03:17:01Z",
