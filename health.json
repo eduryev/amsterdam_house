@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-26T01:08:56Z",
+  "at": "2026-09-26T02:10:11Z",
   "ok": true,
-  "summary": "no new viewing requests (17 already processed); tracking empty; re-checked 4 upcoming/recent viewings (Achillesstraat 109 H, Pythagorasstraat 8 3, Molukkenstraat 37 3, Eerste Atjehstraat 162 H) — all confirmed times unchanged, no reschedules/cancellations, no new agency mail to forward"
+  "summary": "no new viewing requests (16 threads, all already processed); nothing in tracking; Step D re-checked 4 upcoming/recent viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) — all times unchanged, no reschedules/cancellations; one unrelated Eerlijk Bieden login-link email see"
  },
  "listing_refresh": {
   "at": "2026-09-26T01:16:54Z",
