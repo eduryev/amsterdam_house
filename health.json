@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (16 already processed); tracking empty; 4 confirmed viewings (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat) rechecked, all unchanged and already visited"
  },
  "listing_refresh": {
-  "at": "2026-09-27T13:18:15Z",
+  "at": "2026-09-27T14:35:54Z",
   "ok": true,
-  "summary": "no new digests; 386 listings, 0 status changes (full re-enrich skipped, last one 42m ago found no changes)"
+  "summary": "no new digests; 386 listings, 0 status changes"
  }
 }
