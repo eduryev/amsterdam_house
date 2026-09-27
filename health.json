@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-27T15:16:34Z",
+  "at": "2026-09-27T16:09:20Z",
   "ok": true,
-  "summary": "no new requests/reschedules found; but this run duplicate-forwarded 4 already-forwarded agency emails to Katia after reading from a stale local main ref"
+  "summary": "no new viewing requests (17/17 already processed); tracking empty; Step D re-checked Achillesstraat 109 H, Pythagorasstraat 8 3, Molukkenstraat 37 3, Eerste Atjehstraat 162 H — all 4 confirmed times unchanged, nothing to update"
  },
  "listing_refresh": {
   "at": "2026-09-27T15:18:27Z",
