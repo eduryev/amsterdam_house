@@ -5,8 +5,8 @@
   "summary": "no new requests/reschedules found; but this run duplicate-forwarded 4 already-forwarded agency emails to Katia after reading from a stale local main ref"
  },
  "listing_refresh": {
-  "at": "2026-09-27T14:35:54Z",
+  "at": "2026-09-27T15:18:27Z",
   "ok": true,
-  "summary": "no new digests; 386 listings, 0 status changes"
+  "summary": "no new digests; 386 listings, 0 status changes (last full refresh 40 min prior found no changes)"
  }
 }
