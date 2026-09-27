@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-27T17:08:56Z",
+  "at": "2026-09-27T18:10:04Z",
   "ok": true,
-  "summary": "no new viewing requests; 4 scheduled viewings re-checked (Achillesstraat 109 H, Pythagorasstraat 8 3, Molukkenstraat 37 3, Eerste Atjehstraat 162 H), all still on their confirmed times, nothing to do"
+  "summary": "no new viewing requests; tracking empty; 4 scheduled viewings re-verified unchanged (Achillesstraat, Pythagorasstraat, Molukkenstraat, Eerste Atjehstraat)"
  },
  "listing_refresh": {
   "at": "2026-09-27T17:34:43Z",
