@@ -174,27 +174,27 @@ A second routine watches for viewing-related email and moves cards through
 already processed, which listings are awaiting a confirmation) lives in
 `data/viewing_tracker_state.json` on `main`.
 
-It runs **four times an hour**, at :06, :21, :36 and :51. Eduard books viewings
-by email and wants the card to move while he is still looking at it, but a
-Routine cannot be scheduled more often than hourly — so four offset copies are
-the only way to get the lag down to ~15 minutes. Each copy's stored prompt says
-only "read `viewing-routine.md` on `main` and follow it", so that file is the
-single source of truth and there are not four prompts to keep in step. (The
-live prompt drifted badly out of date the one time it was maintained
-separately.)
+It runs **hourly, at :06**, and its stored prompt is four lines: "read
+`viewing-routine.md` on `main` and follow it". That file is the single source
+of truth — the live prompt drifted badly out of date the one time it was
+maintained separately, which is how a whole move.nl email format went unhandled
+for two weeks.
 
-Two consequences of running it four times an hour:
+An hour is the floor: a Routine cannot be scheduled more often. Staggered
+copies at :21/:36/:51 would get that to ~15 minutes, and the file is written so
+that identical copies can run safely, but an hour's lag on a viewing is an
+accepted trade rather than a problem to solve. Two things make that safe and
+cheap either way:
 
-- **Most runs must be cheap.** Step 0 is a single Gmail search over the last two
-  hours; nothing new and nothing tracked means heartbeat and stop, without
-  reading the board at all. Step D only reacts to email, so there is nothing it
-  could find on a run with no mail.
-- **Runs can overlap**, so state goes through `src/state_save.py` rather than a
-  plain commit — it re-reads the branch head, unions the id lists, keeps the
-  newest `start` per calendar event, honours a listing the run removed from
-  `tracking`, and retries. A rejected push would otherwise discard the losing
-  run's record of forwards it had already sent, which is one more way the same
-  mail reaches Katia twice.
+- **A run with no mail costs almost nothing.** Step 0 is a single Gmail search
+  over the last two hours; nothing new and nothing tracked means heartbeat and
+  stop, without reading the board at all. Step D only reacts to email, so there
+  is nothing it could find on a run with no mail.
+- **State goes through `src/state_save.py`**, never a plain commit — it re-reads
+  the branch head, unions the id lists, keeps the newest `start` per calendar
+  event, honours a listing the run removed from `tracking`, and retries. A
+  rejected push would otherwise discard that run's record of forwards it had
+  already sent, which is one more way the same mail reaches Katia twice.
 
 The two-step flow it's watching for:
 

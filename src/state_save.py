@@ -4,12 +4,12 @@
     python3 src/state_save.py                      # push the working copy
     python3 src/state_save.py path/to/state.json   # or an explicit file
 
-The viewing tracker used to be the only writer of this file, so a plain commit
-was fine. It isn't any more: several offset copies of the tracker run through
-the hour to keep the board within ~15 minutes of the mail, and two of them can
-overlap. A plain push would then reject, and the loser's work — which forwards
-it already sent and events it already created — would be silently thrown away,
-which is exactly how a forward gets sent twice.
+A plain commit was fine while the viewing tracker was the only writer and
+nothing else pushed to main during its run. Neither holds reliably: the
+listing-refresh routine pushes too, a second house-hunt routine can be
+re-enabled, and staggered copies of the tracker are a supported setup. A
+rejected push would throw away that run's record of forwards it already sent
+and events it already created, which is exactly how a forward gets sent twice.
 
 So: re-read the branch's head, merge, commit, retry. The merge is a union, not
 a last-writer-wins, because every field here records something that HAS already

@@ -5,19 +5,19 @@ follow them, moves cards through Viewing Applied → Viewing Scheduled, puts
 confirmed viewings in Google Calendar, forwards agency mail to Katia, and
 keeps an already-scheduled viewing in step with the email when it moves.
 
-**This file is the single source of truth.** Four Routines run it — at :06,
-:21, :36 and :51 — and each one's stored prompt says only "read
-`viewing-routine.md` on `main` and follow it". Editing this file changes all
-four at once; there is nothing to keep in sync, which is how the live prompt
-came to drift badly out of date the first time round.
+**This file is the single source of truth.** The Routine that runs it stores
+only four lines: "read `viewing-routine.md` on `main` and follow it". Editing
+this file is how the routine changes; there is no second copy to keep in sync,
+which is how the live prompt came to drift badly out of date the first time
+round.
 
-Why four: a Routine cannot fire more often than hourly, so four offset copies
-are the only way to get the board within ~15 minutes of the email. Eduard
-schedules viewings by mail and wants the card to move while he's still looking
-at it. That makes overlapping runs possible, which is why state is written
-through `src/state_save.py` (merge, then push, then retry) rather than a plain
-commit, and why the `avtref` forward markers are checked against Gmail rather
-than only against a list a losing run might never have persisted.
+It runs **hourly, at :06**. A Routine cannot be scheduled more often than that,
+and an hour's lag on a viewing is a deliberate, accepted choice — so do not
+assume you are the only thing writing while you run, but do not expect a
+sibling either. State still goes through `src/state_save.py` (merge, push,
+retry) and forwards are still gated on the `avtref` markers in Gmail, because
+a second house-hunt routine can be re-enabled at any time and because a run
+whose state push never landed must not cause the next one to forward twice.
 
 **Needs the Gmail and Google Calendar connectors attached** — granted per
 routine: claude.ai → Routines → each copy → enable them.
@@ -47,8 +47,8 @@ Load `data/viewing_tracker_state.json`:
 
 ## Step 0 — the cheap exit
 
-You run four times an hour and almost every run has nothing to do, so find that
-out in one search rather than by working through every step:
+Almost every run has nothing to do, so find that out in one search rather than
+by working through every step:
 
     newer_than:2h (from:no-reply@move.nl OR bezichtiging OR viewing OR afspraak OR makelaar OR from:housapp.com OR from:housap.com) -from:info@avtmakelaars.nl -in:draft
 
@@ -259,10 +259,11 @@ If you read any email this run (new request, tracking check, or Step D), write y
 
     python3 src/state_save.py
 
-**Never plain-commit this file.** Three sibling copies of this routine run in the
-same hour and can overlap; a plain push would be rejected and the losing run's
-record of forwards it already sent and events it already created would vanish,
-which is precisely how the same mail gets forwarded twice. `state_save.py`
+**Never plain-commit this file.** A plain push loses a race: if anything else
+has touched `main` since your checkout — the listing-refresh routine, a human,
+a re-enabled sibling — the push is rejected and your record of forwards already
+sent and events already created vanishes, which is precisely how the same mail
+gets forwarded twice. `state_save.py`
 re-reads the branch head, unions the id lists, keeps the newest `start` per
 calendar event, honours a listing you removed from `tracking`, and retries.
 
