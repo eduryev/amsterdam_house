@@ -18,7 +18,13 @@
   "1a0c7c7067705d7e",
   "1a0cb010a8de449c",
   "1a0d9f9067061834",
-  "1a0e47418f18d39a"
+  "1a0e47418f18d39a",
+  "1a09f8d7ca0fecff",
+  "1a0d296f74b0d123",
+  "1a0c7f4b47b15eaf",
+  "1a0d4331adf3630c",
+  "1a0de73f81b2fe0e",
+  "1a0e4ab3b69ce9e9"
  ],
  "tracking": {},
  "calendar_events": {
@@ -49,6 +55,11 @@
    "event_id": "5edc29nker31rmmr3cqt0m1nd4",
    "start": "2026-10-02T11:15:00+02:00",
    "summary": "Apt Viewing: Insulindeweg 665"
+  },
+  "rookmelderstraat-25-1019-vs": {
+   "event_id": "5jtgc27gnieduvem96dkk6l7bk",
+   "start": "2026-10-05T10:00:00+02:00",
+   "summary": "Apt Viewing: Rookmelderstraat 25"
   }
  },
  "forwarded_message_ids": [
