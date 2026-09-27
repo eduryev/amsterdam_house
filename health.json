@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (17 already processed); 4 recent viewings re-checked, all times unchanged; nothing to move"
  },
  "listing_refresh": {
-  "at": "2026-09-27T02:36:03Z",
+  "at": "2026-09-27T03:33:49Z",
   "ok": true,
-  "summary": "no new digests; 386 listings, 0 status changes"
+  "summary": "no new digests; refreshed all 386 listings, no status changes"
  }
 }
