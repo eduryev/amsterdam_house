@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-27T01:09:49Z",
+  "at": "2026-09-27T02:09:33Z",
   "ok": true,
-  "summary": "No new viewing requests (16 seen, all processed); 4 confirmed viewings unchanged; mistakenly re-forwarded an already-forwarded Eerste Atjehstraat bidding email to Katia (dup)"
+  "summary": "no new viewing requests; tracking empty; 4 upcoming/recent viewings re-checked, all times unchanged, nothing to forward"
  },
  "listing_refresh": {
   "at": "2026-09-27T01:17:55Z",
