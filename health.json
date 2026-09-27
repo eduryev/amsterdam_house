@@ -5,8 +5,8 @@
   "summary": "No new viewing requests (16 seen, all processed); 4 confirmed viewings unchanged; mistakenly re-forwarded an already-forwarded Eerste Atjehstraat bidding email to Katia (dup)"
  },
  "listing_refresh": {
-  "at": "2026-09-27T00:45:03Z",
+  "at": "2026-09-27T01:17:55Z",
   "ok": true,
-  "summary": "no new digests; 386 listings, 0 status changes"
+  "summary": "no new digests (thread already fully processed); 386 listings; skipped full re-enrich, one just completed minutes earlier with no changes"
  }
 }
