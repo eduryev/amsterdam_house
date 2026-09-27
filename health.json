@@ -1,8 +1,8 @@
 {
  "viewing_tracker": {
-  "at": "2026-09-27T20:10:18Z",
+  "at": "2026-09-27T21:11:39Z",
   "ok": true,
-  "summary": "no new viewing requests; tracking empty; 4 scheduled/visited viewings re-checked (Achillesstraat, Pythagoras, Molukkenstraat, Eerste Atjehstraat), all times still match, mail already forwarded"
+  "summary": "Rookmelderstraat 25 confirmed Mon 5 Oct 10:00 via move.nl, moved to Scheduled, invite sent; 4 tracked viewings re-checked (Pythagoras, Molukkenstraat, Eerste Atjehstraat, Insulindeweg) unchanged; 5 old move.nl confirmation/reminder mails for Achilles/Eerste Atjehstraat found unprocessed and recorded"
  },
  "listing_refresh": {
   "at": "2026-09-27T20:34:38Z",
