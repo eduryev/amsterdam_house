@@ -22,6 +22,7 @@ move.nl listing pages ──enrich.py─────────┘
 | `data/listings.json` | The listings. |
 | `data/pc4.json` | Amsterdam PC4 → neighbourhood + approximate centroid, used to place pins instantly before geocoding resolves. Grows as new postcodes appear; `build.py` warns when one is missing. |
 | `docs/index.html` | The built page. **GitHub Pages serves `main` → `/docs`.** |
+| `src/state_save.py` | Merges and pushes `data/viewing_tracker_state.json`; the tracker's several copies can overlap, so a plain commit would lose one. |
 | `board.json` | Shared board state — **lives on the `board` branch**, not here. |
 
 ## Rebuilding
@@ -143,8 +144,10 @@ the race is rejected, and the next tick re-reads, merges and retries.
 
 ## Automation
 
-An hourly routine (:15) reads new AVT digests, enriches, rebuilds and pushes.
-Its prompt lives in `routine.md`.
+A routine reads new AVT digests, enriches, rebuilds and pushes, three times a
+day (07:15, 13:15, 19:15 Amsterdam). Its prompt lives in `routine.md`. New
+listings arriving within a few hours is fine; a *viewing* moving on the board
+is not, which is why the tracker below runs far more often than this does.
 
 ### Knowing the routines are alive
 
@@ -166,11 +169,32 @@ One such silent no-op cost a full day of debugging.
 
 ### Viewing tracker
 
-A second, hourly routine watches for viewing-related email and moves cards
-through **Viewing Applied → Viewing Scheduled** on its own. Its prompt lives
-in `viewing-routine.md`; state (which requests are already processed, which
-listings are awaiting a confirmation) lives in
+A second routine watches for viewing-related email and moves cards through
+**Viewing Applied / Viewing Scheduled** on its own. State (which requests are
+already processed, which listings are awaiting a confirmation) lives in
 `data/viewing_tracker_state.json` on `main`.
+
+It runs **four times an hour**, at :06, :21, :36 and :51. Eduard books viewings
+by email and wants the card to move while he is still looking at it, but a
+Routine cannot be scheduled more often than hourly — so four offset copies are
+the only way to get the lag down to ~15 minutes. Each copy's stored prompt says
+only "read `viewing-routine.md` on `main` and follow it", so that file is the
+single source of truth and there are not four prompts to keep in step. (The
+live prompt drifted badly out of date the one time it was maintained
+separately.)
+
+Two consequences of running it four times an hour:
+
+- **Most runs must be cheap.** Step 0 is a single Gmail search over the last two
+  hours; nothing new and nothing tracked means heartbeat and stop, without
+  reading the board at all. Step D only reacts to email, so there is nothing it
+  could find on a run with no mail.
+- **Runs can overlap**, so state goes through `src/state_save.py` rather than a
+  plain commit — it re-reads the branch head, unions the id lists, keeps the
+  newest `start` per calendar event, honours a listing the run removed from
+  `tracking`, and retries. A rejected push would otherwise discard the losing
+  run's record of forwards it had already sent, which is one more way the same
+  mail reaches Katia twice.
 
 The two-step flow it's watching for:
 

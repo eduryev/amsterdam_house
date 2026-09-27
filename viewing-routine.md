@@ -4,13 +4,23 @@ Watches for AVT/move.nl viewing-request emails and the agency replies that
 follow them, moves cards through Viewing Applied → Viewing Scheduled, puts
 confirmed viewings in Google Calendar, forwards agency mail to Katia, and
 keeps an already-scheduled viewing in step with the email when it moves.
-Runs hourly.
+
+**This file is the single source of truth.** Four Routines run it — at :06,
+:21, :36 and :51 — and each one's stored prompt says only "read
+`viewing-routine.md` on `main` and follow it". Editing this file changes all
+four at once; there is nothing to keep in sync, which is how the live prompt
+came to drift badly out of date the first time round.
+
+Why four: a Routine cannot fire more often than hourly, so four offset copies
+are the only way to get the board within ~15 minutes of the email. Eduard
+schedules viewings by mail and wants the card to move while he's still looking
+at it. That makes overlapping runs possible, which is why state is written
+through `src/state_save.py` (merge, then push, then retry) rather than a plain
+commit, and why the `avtref` forward markers are checked against Gmail rather
+than only against a list a losing run might never have persisted.
 
 **Needs the Gmail and Google Calendar connectors attached** — granted per
-routine: claude.ai → Routines → this routine → enable them.
-
-The prompt it runs is below, verbatim, and is the source of truth if it ever
-needs recreating. Keep this file and the live routine in sync.
+routine: claude.ai → Routines → each copy → enable them.
 
 ---
 
@@ -35,6 +45,28 @@ Load `data/viewing_tracker_state.json`:
 
 `calendar_events` and `forwarded_message_ids` may be missing on older state files — treat a missing one as empty. `past_event_ids` lists events for viewings of that listing that already happened and have been superseded by a later, separate appointment; never touch those events again.
 
+## Step 0 — the cheap exit
+
+You run four times an hour and almost every run has nothing to do, so find that
+out in one search rather than by working through every step:
+
+    newer_than:2h (from:no-reply@move.nl OR bezichtiging OR viewing OR afspraak OR makelaar OR from:housapp.com OR from:housap.com) -from:info@avtmakelaars.nl -in:draft
+
+**Never add `is:unread` to any search in this routine.** Whether Eduard has
+opened a mail says nothing about whether the board has caught up with it — he
+reads things on his phone constantly, and a viewing he read about at breakfast
+is exactly the one he expects to see on the board. Read and unread mail count
+the same everywhere here; `processed_request_ids`, `forwarded_message_ids` and
+the `avtref` markers are what stop repeat work, not the unread flag.
+
+If that returns nothing new since the last run **and** `tracking` is empty, there
+is nothing any later step could find — Step D only ever reacts to email too —
+so write the heartbeat and stop. Do not read the board, do not clone anything
+you don't need, do not notify.
+
+If anything comes back, do the whole thing properly. Never skip a step to save
+time once you know there is mail.
+
 ## Step A — new viewing requests
 
 Search `from:no-reply@move.nl subject:"Viewing Request"`. For each thread whose message id isn't already in `processed_request_ids`:
@@ -47,6 +79,57 @@ Search `from:no-reply@move.nl subject:"Viewing Request"`. For each thread whose 
 5. Add the message id to `processed_request_ids` regardless of outcome — matched-and-moved, matched-but-archived, and off-board all count as processed.
 
 **Never read a confirmed time out of the request itself.** The move.nl request quotes Eduard's *preferred* slots under "Voorkeursmomenten" (and in `agbegin=` inside its links). Those are wishes, not bookings — the agency very often books something else entirely. Pythagorasstraat 8 3 asked for Monday 21 Sep 10:00 and was actually viewed on Friday 25 Sep. A time is only confirmed via Step B.
+
+## Step A2 — move.nl's own confirmation, which is the best source there is
+
+**This step exists because the routine knew only one of move.nl's two email
+formats and silently ignored the other for two weeks.** Insulindeweg 665 was
+confirmed for Friday 2 October 11:15 and sat in Backlog; the same blind spot
+also let the Achillesstraat reschedule and the Eerste Atjehstraat booking go
+unnoticed, all three of which this format had stated plainly.
+
+Search:
+
+    from:no-reply@move.nl subject:"Information about viewing of"
+
+(also matches the `Reminder: Information about viewing of …` re-send). These are
+**not** the "Viewing Request" mails of Step A. They are sent when the agency puts
+a booked viewing into Eduard's move.nl account, and the body says, in as many
+words:
+
+    The appointment is scheduled on:
+    Friday, 2 October 2026 11:15
+
+That is an unambiguous confirmation from move.nl itself — a full date and time,
+no relative weekday to resolve, no proposal-versus-booking judgement to make. It
+is the strongest signal you will ever get, so **treat it as confirmed outright**
+and prefer it over anything you infer from an agency thread. The subject line
+carries the address (`Information about viewing of <ADDRESS> in AMSTERDAM`) and
+the body names the agency ("… because <AGENCY> has added the property at …").
+
+For each such message whose id isn't in `processed_request_ids`:
+
+1. Match the address against `data/listings.json` exactly, as in Step A.2. No
+   match → off-board list, and record the id.
+2. Read the current stage from `board.json`. Move it to `scheduled` from
+   `backlog`, `viewed` or `applied`. Do **not** move it from `visited`,
+   `disliked` or `archived` — but if the appointment is in the future and the
+   card is at `visited`, that's a repeat viewing, so still do Step C/Step D for
+   the event and say so.
+3. `python3 src/board_patch.py '{"<listing-id>": {"stage": "scheduled", "viewing_line": "📅 Confirmed: <date>, <time> — <Agency Name> (via move.nl)"}}'`
+4. Do **Step C** (calendar event). There is usually no phone or contact person
+   in these mails — leave those lines out rather than inventing them; the
+   agency's own thread for that address often has them, so use those if you
+   already read it this run.
+5. Drop the listing from `tracking` if it's there: this settles it.
+6. Record the message id in `processed_request_ids`.
+
+A reminder re-send for an appointment already in `calendar_events` at the same
+time is a no-op — record the id and move on silently. If it states a *different*
+time from the stored `start`, that is a reschedule: handle it through Step D.
+
+Do not forward these to Katia: they come from move.nl, not from an agency, and
+Step C already puts the viewing in her calendar.
 
 ## Step B — checking for confirmation
 
@@ -172,7 +255,21 @@ If a change is real but you cannot pin down the new time (the thread trails off,
 
 ## Finishing
 
-If you read any email this run (new request, tracking check, or Step D), save `data/viewing_tracker_state.json` and commit and push to `main` (plain git is fine here — this file isn't touched by anyone else, unlike board.json) — even when the outcome was "nothing to move." Only skip the commit when there was truly nothing new to look at at all. `calendar_events` and `forwarded_message_ids` must be committed in the same push as the actions that created them — if they aren't persisted, the next run duplicates the event and re-forwards the mail.
+If you read any email this run (new request, tracking check, or Step D), write your updated `data/viewing_tracker_state.json` and save it with
+
+    python3 src/state_save.py
+
+**Never plain-commit this file.** Three sibling copies of this routine run in the
+same hour and can overlap; a plain push would be rejected and the losing run's
+record of forwards it already sent and events it already created would vanish,
+which is precisely how the same mail gets forwarded twice. `state_save.py`
+re-reads the branch head, unions the id lists, keeps the newest `start` per
+calendar event, honours a listing you removed from `tracking`, and retries.
+
+Save even when the outcome was "nothing to move". `calendar_events` and
+`forwarded_message_ids` must be saved in the same run as the actions that
+created them — if they aren't persisted, a later run duplicates the event and
+re-forwards the mail.
 
 Notify whenever you read and processed anything: listings moved to Viewing Applied (address + agency), listings moved to **Viewing Scheduled** (address, the fully resolved date and time, how you resolved it if the source said something like "this Friday", agency, that the calendar invite went to Katia, and that the agency's mail was forwarded to her), **viewings rescheduled, cancelled or booked a second time (old time → new time)**, agency replies forwarded, off-board addresses found, requests found for a listing already disliked/archived/visited, or proposals awaiting confirmation. State plainly when the answer is "found N requests, all already archived, nothing to do" rather than staying quiet. Only stay fully silent when there was nothing new in Gmail at all this run.
 
