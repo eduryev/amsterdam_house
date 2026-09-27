@@ -5,8 +5,8 @@
   "summary": "no new viewing requests; tracking empty; 4 upcoming/recent calendar events checked, all still match confirmed times, nothing to update"
  },
  "listing_refresh": {
-  "at": "2026-09-27T03:33:49Z",
+  "at": "2026-09-27T04:18:27Z",
   "ok": true,
-  "summary": "no new digests; refreshed all 386 listings, no status changes"
+  "summary": "no new digests; 386 listings, 0 status changes (last full status refresh 44 min prior, unchanged)"
  }
 }
