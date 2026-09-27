@@ -5,8 +5,8 @@
   "summary": "no new viewing requests (17 msgs, all processed); tracking empty; Step D re-checked 4 upcoming/recent viewings, all times unchanged"
  },
  "listing_refresh": {
-  "at": "2026-09-27T12:35:10Z",
+  "at": "2026-09-27T13:18:15Z",
   "ok": true,
-  "summary": "no new digests; 386 listings, 0 status changes"
+  "summary": "no new digests; 386 listings, 0 status changes (full re-enrich skipped, last one 42m ago found no changes)"
  }
 }
