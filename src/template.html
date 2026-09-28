@@ -1522,12 +1522,27 @@ async function checkBuild(){
 }
 /* Coming back to a tab left open for hours is the moment a reload costs
    nothing, so take it — but never yank the page out from under someone
-   mid-edit. */
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) return;
-  checkBuild();
+   mid-edit.
+
+   `await` matters more than it looks. This used to call checkBuild() without
+   waiting and then test staleBuild on the very next line, where it was still
+   false because the fetch hadn't resolved — so returning to the tab never
+   reloaded it, only the *next* return did. On a phone that's fatal rather
+   than merely slow: a backgrounded tab's timers are frozen, so the 2-minute
+   poll never runs and this handler is the only thing that can notice a new
+   build at all. Four listings sat at the top of Backlog on the live site
+   while the phone kept showing yesterday's copy.
+
+   pageshow covers the other mobile path: Safari and Chrome restore a
+   backgrounded tab from the bfcache without ever firing visibilitychange. */
+async function refreshIfStale(){
+  await checkBuild();
   if (staleBuild && !document.querySelector('dialog[open]')) location.reload();
+}
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) refreshIfStale();
 });
+window.addEventListener('pageshow', e => { if (e.persisted) refreshIfStale(); });
 
 async function fetchHealth(){
   try {

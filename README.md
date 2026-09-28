@@ -142,6 +142,25 @@ the race is rejected, and the next tick re-reads, merges and retries.
 > (`eduryev.github.io`). Keep it scoped to this repository, set an expiry, and
 > revoke it when we've bought somewhere.
 
+### The tab you left open on your phone
+
+The listing catalogue is baked into the page, so a tab loaded before a rebuild
+can never show a listing added since — and the board sync deliberately skips
+ids the page doesn't know, so a card the viewing tracker moved stays invisible
+too. `docs/version.json` carries the build id; the page polls it every two
+minutes, shows a banner when it has fallen behind, and reloads itself when you
+come back to the tab.
+
+**On a phone the two-minute poll does not exist.** A backgrounded tab's timers
+are frozen, so returning to the tab is the *only* moment staleness can be
+noticed. That path was broken: the handler called `checkBuild()` without
+awaiting it and tested the result on the next line, before the fetch had
+resolved, so the first return never reloaded — only a second one did. Four
+listings sat at the top of Backlog on the live site while the phone showed the
+previous day's copy. The handler now awaits, and also listens for `pageshow`,
+since Safari and Chrome restore a backgrounded tab from the bfcache without
+firing `visibilitychange` at all.
+
 ## Automation
 
 A routine reads new AVT digests, enriches, rebuilds and pushes, three times a
